@@ -1,0 +1,27 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Scene",
+  "category": "Video-to-4D",
+  "projectPage": "https://geometry.stanford.edu/projects/dynamic-gaussian-marbles.github.io/",
+  "paperUrl": "https://arxiv.org/abs/2406.18717",
+  "codeUrl": "https://github.com/coltonstearns/dynamic-gaussian-marbles",
+  "tags": [],
+  "motion": "Tracking",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{stearns2024dynamic, title={Dynamic gaussian marbles for novel view synthesis of casual monocular videos}, author={Stearns, Colton and Harley, Adam and Uy, Mikaela and Dubost, Florian and Tombari, Federico and Wetzstein, Gordon and Guibas, Leonidas}, booktitle={SIGGRAPH Asia 2024 Conference Papers}, pages={1--11}, year={2024} }",
+  "title": "Dynamic gaussian marbles for novel view synthesis of casual monocular videos",
+  "authors": [
+    "Colton Stearns",
+    "Adam Harley",
+    "Mikaela Uy",
+    "Florian Dubost",
+    "Federico Tombari",
+    "Gordon Wetzstein",
+    "Leonidas Guibas"
+  ],
+  "year": "2024",
+  "venue": "Siggraph Asia",
+  "dataset": false,
+  "survey": false
+}

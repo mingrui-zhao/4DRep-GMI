@@ -1,0 +1,32 @@
+{
+  "representation": [
+    "Part",
+    "Point Cloud"
+  ],
+  "task": "Object",
+  "category": "3D-to-4D",
+  "projectPage": "",
+  "paperUrl": "https://arxiv.org/abs/2504.02747",
+  "codeUrl": "",
+  "tags": [],
+  "motion": [
+    "Articulation",
+    "Deformation"
+  ],
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@article{goyal2025geopard,   title={GEOPARD: Geometric Pretraining for Articulation Prediction in 3D Shapes},   author={Goyal, Pradyumn and Petrov, Dmitry and Andrews, Sheldon and Ben-Shabat, Yizhak and Liu, Hsueh-Ti Derek and Kalogerakis, Evangelos},   journal={ICCV},   year={2025} }",
+  "title": "GEOPARD: Geometric Pretraining for Articulation Prediction in 3D Shapes",
+  "authors": [
+    "Pradyumn Goyal",
+    "Dmitry Petrov",
+    "Sheldon Andrews",
+    "Yizhak Ben-Shabat",
+    "Hsueh-Ti Derek Liu",
+    "Evangelos Kalogerakis"
+  ],
+  "year": "2025",
+  "venue": "ICCV",
+  "dataset": false,
+  "survey": false
+}

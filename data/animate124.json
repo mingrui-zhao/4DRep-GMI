@@ -1,0 +1,28 @@
+{
+  "representation": "NeRF",
+  "task": "Scene",
+  "category": [
+    "Image-to-4D"
+  ],
+  "projectPage": "https://animate124.github.io/",
+  "paperUrl": "https://arxiv.org/pdf/2311.14603",
+  "codeUrl": "https://github.com/HeliosZhao/Animate124",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{zhao2023animate124,  author    = {Zhao, Yuyang and Yan, Zhiwen and Xie, Enze and Hong, Lanqing and Li, Zhenguo and Lee, Gim Hee},  title     = {Animate124: Animating One Image to 4D Dynamic Scene},  journal   = {ArXiv},  year      = {2024},}",
+  "title": "Animate124: Animating One Image to 4D Dynamic Scene",
+  "authors": [
+    "Yuyang Zhao",
+    "Zhiwen Yan",
+    "Enze Xie",
+    "Lanqing Hong",
+    "Zhenguo Li",
+    "Gim Hee Lee"
+  ],
+  "year": "2024",
+  "venue": "ArXiv",
+  "dataset": false,
+  "survey": false
+}

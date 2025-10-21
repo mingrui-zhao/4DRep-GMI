@@ -1,0 +1,30 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Scene",
+  "category": [
+    "Video-to-4D",
+    "Image-to-4D"
+  ],
+  "projectPage": "https://cat-4d.github.io/",
+  "paperUrl": "https://arxiv.org/pdf/2411.18613",
+  "codeUrl": "",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@article{wu2024cat4d,title={{CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models}},author={Wu, Rundi and Gao, Ruiqi and Poole, Ben and Trevithick, Alex and Zheng, Changxi and Barron, Jonathan T. and Holynski, Aleksander}journal={CVPR},year={2025}}",
+  "title": "CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models",
+  "authors": [
+    "Rundi Wu",
+    "Ruiqi Gao",
+    "Ben Poole",
+    "Alex Trevithick",
+    "Changxi Zheng",
+    "Jonathan T. Barron",
+    "Aleksander Holynski"
+  ],
+  "year": "2025",
+  "venue": "CVPR",
+  "dataset": false,
+  "survey": false
+}

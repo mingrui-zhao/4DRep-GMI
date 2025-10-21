@@ -1,0 +1,31 @@
+{
+  "representation": "",
+  "task": "",
+  "category": [],
+  "projectPage": "https://github.com/yukangcao/Awesome-4D-Spatial-Intelligence",
+  "paperUrl": "https://arxiv.org/pdf/2507.21045",
+  "codeUrl": "",
+  "tags": [],
+  "motion": "",
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@article{cao2025reconstructing,  title={Reconstructing 4D Spatial Intelligence: A Survey},  author={Cao, Yukang and Lu, Jiahao and Huang, Zhisheng and Shen, Zhuowen and Zhao, Chengfeng and Hong, Fangzhou and Chen, Zhaoxi and Li, Xin and Wang, Wenping and Liu, Yuan and others},  journal={ArXiv},  year={2025}}",
+  "title": "Reconstructing 4D Spatial Intelligence: A Survey",
+  "authors": [
+    "Yukang Cao",
+    "Jiahao Lu",
+    "Zhisheng Huang",
+    "Zhuowen Shen",
+    "Chengfeng Zhao",
+    "Fangzhou Hong",
+    "Zhaoxi Chen",
+    "Xin Li",
+    "Wenping Wang",
+    "Yuan Liu",
+    "Ziwei Liu"
+  ],
+  "year": "2025",
+  "venue": "ArXiv",
+  "dataset": false,
+  "survey": true
+}

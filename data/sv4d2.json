@@ -1,0 +1,30 @@
+{
+  "representation": "NeRF",
+  "task": [
+    "Object",
+    "Scene"
+  ],
+  "category": [
+    "Video-to-4D"
+  ],
+  "projectPage": "https://sv4d20.github.io/",
+  "paperUrl": "https://arxiv.org/pdf/2503.16396",
+  "codeUrl": "https://github.com/Stability-AI/generative-models",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{yao2024sv4d2,    title={{SV4D2.0}: Enhancing Spatio-Temporal Consistency in Multi-View Video Diffusion for High-Quality 4D Generation},     author={Chun-Han Yao and Yiming Xie and Vikram Voleti and Huaizu Jiang and Varun Jampani},    journal={ICCV},    year={2025},}",
+  "title": "SV4D2.0: Enhancing Spatio-Temporal Consistency in Multi-View Video Diffusion for High-Quality 4D Generation",
+  "authors": [
+    "Chun-Han Yao",
+    "Yiming Xie",
+    "Vikram Voleti",
+    "Huaizu Jiang",
+    "Varun Jampani"
+  ],
+  "year": "2025",
+  "venue": "ICCV",
+  "dataset": false,
+  "survey": false
+}

@@ -1,0 +1,26 @@
+{
+  "representation": "",
+  "task": "",
+  "category": "",
+  "projectPage": "",
+  "paperUrl": "https://arxiv.org/abs/2505.10049",
+  "codeUrl": "",
+  "tags": [],
+  "motion": "",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{fan2025advances, title={Advances in Radiance Field for Dynamic Scene: From Neural Field to Gaussian Field}, author={Fan, Jinlong and Zeng, Xuepu and Zhang, Jing and Gong, Mingming and Yang, Yuxiang and Tao, Dacheng}, journal={arXiv preprint arXiv:2505.10049}, year={2025} }",
+  "dataset": false,
+  "survey": true,
+  "title": "Advances in Radiance Field for Dynamic Scene: From Neural Field to Gaussian Field",
+  "authors": [
+    "Jinlong Fan",
+    "Xuepu Zeng",
+    "Jing Zhang",
+    "Mingming Gong",
+    "Yuxiang Yang",
+    "Dacheng Tao"
+  ],
+  "year": "2025",
+  "venue": "ArXiv"
+}

@@ -1,0 +1,34 @@
+{
+  "representation": [
+    "Gaussian Splatting"
+  ],
+  "task": [
+    "Object",
+    "Scene"
+  ],
+  "category": "Image-to-4D",
+  "projectPage": "https://gen-x-d.github.io/",
+  "paperUrl": "https://arxiv.org/pdf/2411.02319",
+  "codeUrl": "https://github.com/HeliosZhao/GenXD",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{zhao2024genxd,   author={Zhao, Yuyang and Lin, Chung-Ching and Lin, Kevin and Yan, Zhiwen and Li, Linjie and Yang, Zhengyuan and Wang, Jianfeng and Lee, Gim Hee and Wang, Lijuan},   title={GenXD: Generating Any 3D and 4D Scenes},   booktitle={ICLR},   year={2025} }",
+  "title": "GenXD: Generating Any 3D and 4D Scenes",
+  "authors": [
+    "Yuyang Zhao",
+    "Chung-Ching Lin",
+    "Kevin Lin",
+    "Zhiwen Yan",
+    "Linjie Li",
+    "Zhengyuan Yang",
+    "Jianfeng Wang",
+    "Gim Hee Lee",
+    "Lijuan Wang"
+  ],
+  "year": "2025",
+  "venue": "ICLR",
+  "dataset": true,
+  "survey": false
+}

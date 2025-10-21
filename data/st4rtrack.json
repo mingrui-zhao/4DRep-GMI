@@ -1,0 +1,28 @@
+{
+  "representation": "Point Cloud",
+  "task": "Scene",
+  "category": "Video-to-4D",
+  "projectPage": "https://st4rtrack.github.io/",
+  "paperUrl": "https://arxiv.org/abs/2504.13152",
+  "codeUrl": "https://github.com/HavenFeng/St4RTrack",
+  "tags": [],
+  "motion": "Tracking",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{st4rtrack2025,     title={St4RTrack: Simultaneous 4D Reconstruction and Tracking in the World},<br>     author={Feng*, Haiwen and Zhang*, Junyi and Wang, Qianqian and Ye, Yufei and Yu, Pengcheng and Black, Michael J. and Darrell, Trevor and Kanazawa, Angjoo},<br>     booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},<br>     year={2025} }",
+  "title": "St4RTrack: Simultaneous 4D Reconstruction and Tracking in the World",
+  "authors": [
+    "Haiwen Feng*",
+    "Junyi Zhang*",
+    "Qianqian Wang",
+    "Yufei Ye",
+    "Pengcheng Yu",
+    "Michael J. Black",
+    "Trevor Darrell",
+    "Angjoo Kanazawa"
+  ],
+  "year": "2025",
+  "venue": "ICCV",
+  "dataset": false,
+  "survey": false
+}

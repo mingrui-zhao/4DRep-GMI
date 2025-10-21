@@ -1,0 +1,26 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Object",
+  "category": "Text-to-4D",
+  "projectPage": "https://vidu4d-dgs.github.io/",
+  "paperUrl": "https://arxiv.org/abs/2405.16822",
+  "codeUrl": "https://github.com/yikaiw/vidu4d",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{wang2024vidu4d,   title={Vidu4D: Single Generated Video to High-Fidelity 4D Reconstruction with Dynamic Gaussian Surfels},   author={Yikai Wang and Xinzhou Wang and Zilong Chen and Zhengyi Wang and Fuchun Sun and Jun Zhu},   booktitle={Advances in Neural Information Processing Systems (NeurIPS)},   year={2024} }",
+  "title": "Vidu4D: Single Generated Video to High-Fidelity 4D Reconstruction with Dynamic Gaussian Surfels",
+  "authors": [
+    "Yikai Wang",
+    "Xinzhou Wang",
+    "Zilong Chen",
+    "Zhengyi Wang",
+    "Fuchun Sun",
+    "Jun Zhu"
+  ],
+  "year": "2024",
+  "venue": "NeurIPS",
+  "dataset": false,
+  "survey": false
+}

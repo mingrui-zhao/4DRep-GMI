@@ -1,0 +1,26 @@
+{
+  "representation": "Template",
+  "task": "Object",
+  "category": "3D-to-4D",
+  "projectPage": "https://anytop2025.github.io/Anytop-page/",
+  "paperUrl": "https://arxiv.org/abs/2502.17327",
+  "codeUrl": "https://github.com/Anytop2025/Anytop",
+  "tags": [],
+  "motion": "Articulation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{gat2025anytop,                 title={AnyTop: Character Animation Diffusion with Any Topology},                 author={Gat, Inbar and Raab, Sigal and Tevet, Guy and Reshef, Yuval and Bermano, Amit H and Cohen-Or, Daniel},                 journal={SIGGRAPH},                 year={2025}               }",
+  "title": "AnyTop: Character Animation Diffusion with Any Topology",
+  "authors": [
+    "Inbar Gat",
+    "Sigal Raab",
+    "Guy Tevet",
+    "Yuval Reshef",
+    "Amit H Bermano",
+    "Daniel Cohen-Or"
+  ],
+  "year": "2025",
+  "venue": "SIGGRAPH",
+  "dataset": false,
+  "survey": false
+}

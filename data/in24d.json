@@ -1,0 +1,24 @@
+{
+  "representation": [
+    "Gaussian Splatting"
+  ],
+  "task": "Object",
+  "category": "Image-to-4D",
+  "projectPage": "https://in-2-4d.github.io/",
+  "paperUrl": "http://arxiv.org/abs/2504.08366",
+  "codeUrl": "https://github.com/sauradip/In-2-4D",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@article{nag20254din,     title={{In-2-4D}: Inbetweening from Two Single-View Images to 4D Generation},     author = {Nag, Sauradip, Cohen-Or Daniel, Zhang, Hao and Mahdavi-Amiri, Ali},     journal = {SIGGRAPH Asia Conference Papers},     publisher = {ACM New York, NY, USA},     year = {2025},     doi = {https://doi.org/10.1145/3757377.3763904}}",
+  "title": "In-2-4D: Inbetweening from Two Single-View Images to 4D Generation",
+  "authors": [
+    "Sauradip Nag, Daniel Cohen-Or, Hao Zhang",
+    "Ali Mahdavi-Amiri"
+  ],
+  "year": "2025",
+  "venue": "Siggraph Asia",
+  "dataset": true,
+  "survey": false
+}

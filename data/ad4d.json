@@ -1,0 +1,29 @@
+{
+  "representation": "",
+  "task": "",
+  "category": "",
+  "projectPage": "",
+  "paperUrl": "https://arxiv.org/abs/2503.14501",
+  "codeUrl": "https://github.com/MiaoQiaowei/Awesome-4D",
+  "tags": [],
+  "motion": "",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{miao2025advances, title={Advances in 4d generation: A survey}, author={Miao, Qiaowei and Li, Kehan and Quan, Jinsheng and Min, Zhiyuan and Ma, Shaojie and Xu, Yichao and Yang, Yi and Liu, Ping and Luo, Yawei}, journal={arXiv preprint arXiv:2503.14501}, year={2025} }",
+  "dataset": false,
+  "survey": true,
+  "title": "Advances in 4d generation: A survey",
+  "authors": [
+    "Qiaowei Miao",
+    "Kehan Li",
+    "Jinsheng Quan",
+    "Zhiyuan Min",
+    "Shaojie Ma",
+    "Yichao Xu",
+    "Yi Yang",
+    "Ping Liu",
+    "Yawei Luo"
+  ],
+  "year": "2025",
+  "venue": "ArXiv"
+}

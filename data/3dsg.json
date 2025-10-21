@@ -1,0 +1,23 @@
+{
+  "representation": "Graph",
+  "task": "Scene",
+  "category": "Video-to-4D",
+  "projectPage": "https://www.youtube.com/watch?v=SWbofjhyPzI",
+  "paperUrl": "https://arxiv.org/abs/2002.06289",
+  "codeUrl": "https://github.com/MIT-SPARK/Kimera",
+  "tags": [],
+  "motion": "Scene Graph",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@InProceedings{Rosinol20rss-dynamicSceneGraphs,   title = {3D Dynamic Scene Graphs: Actionable Spatial Perception with Places, Objects, and Humans},   author = {A. Rosinol and A. Gupta and M. Abate and J. Shi and L. Carlone},   year = {2020},   booktitle = {Robotics: Science and Systems (RSS)},   pdf = {https://arxiv.org/pdf/2002.06289.pdf} }",
+  "title": "3D Dynamic Scene Graphs: Actionable Spatial Perception with Places, Objects, and Humans",
+  "authors": [
+    "A. Rosinol",
+    "A. Gupta",
+    "M. Abate",
+    "J. Shi",
+    "L. Carlone"
+  ],
+  "year": "2020",
+  "venue": "RSS"
+}

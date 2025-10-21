@@ -1,0 +1,25 @@
+{
+  "representation": "Graph",
+  "task": "Scene",
+  "category": "Video-to-4D",
+  "projectPage": "https://sqwu.top/PSG-4D-LLM/",
+  "paperUrl": "https://arxiv.org/abs/2503.15019",
+  "codeUrl": "https://github.com/ChocoWu/PSG-4D-LLM",
+  "tags": [],
+  "motion": "Scene Graph",
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@inproceedings{wu2025psg4dllm,     title={Learning 4D Panoptic Scene Graph Generation from Rich 2D Visual Scene},     author={Shengqiong Wu and Hao Fei and Jingkang Yang and Xiangtai Li and Juncheng Li and Hanwang Zhang and Tat-Seng Chua1},     booktitle={CVPR},     year={2025} }",
+  "title": "Learning 4D Panoptic Scene Graph Generation from Rich 2D Visual Scene",
+  "authors": [
+    "Shengqiong Wu",
+    "Hao Fei",
+    "Jingkang Yang",
+    "Xiangtai Li",
+    "Juncheng Li",
+    "Hanwang Zhang",
+    "Tat-Seng Chua1"
+  ],
+  "year": "2025",
+  "venue": "CVPR"
+}

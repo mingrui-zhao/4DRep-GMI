@@ -1,0 +1,29 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Object",
+  "category": [
+    "Image-to-4D"
+  ],
+  "projectPage": "https://jiawei-ren.github.io/projects/dreamgaussian4d/",
+  "paperUrl": "https://arxiv.org/pdf/2312.17142",
+  "codeUrl": "https://github.com/jiawei-ren/dreamgaussian4d",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{ren2023dreamgaussian4d,title={DreamGaussian4D: Generative 4D Gaussian Splatting},author={Ren, Jiawei and Pan, Liang and Tang, Jiaxiang and Zhang, Chi and Cao, Ang and Zeng, Gang and Liu, Ziwei},journal={ArXiv},year={2023}}",
+  "title": "DreamGaussian4D: Generative 4D Gaussian Splatting",
+  "authors": [
+    "Jiawei Ren",
+    "Liang Pan",
+    "Jiaxiang Tang",
+    "Chi Zhang",
+    "Ang Cao",
+    "Gang Zeng",
+    "Ziwei Liu"
+  ],
+  "year": "2023",
+  "venue": "ArXiv",
+  "dataset": false,
+  "survey": false
+}

@@ -1,0 +1,32 @@
+{
+  "representation": "Mesh",
+  "task": "Object",
+  "category": [
+    "3D-to-4D",
+    "Text-to-4D"
+  ],
+  "projectPage": "https://chaoyuesong.github.io/Puppeteer/",
+  "paperUrl": "https://arxiv.org/pdf/2508.10898",
+  "codeUrl": "https://github.com/Seed3D/Puppeteer",
+  "tags": [],
+  "motion": "Articulation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{song2025puppeteer,         title={Puppeteer: Rig and Animate Your 3D Models},         author={Chaoyue Song and Xiu Li and Fan Yang and Zhongcong Xu and Jiacheng Wei and Fayao Liu and Jiashi Feng and Guosheng Lin and Jianfeng Zhang},         journal={Advances in Neural Information Processing Systems},         year={2025}       }",
+  "title": "Puppeteer: Rig and Animate Your 3D Models",
+  "authors": [
+    "Chaoyue Song",
+    "Xiu Li",
+    "Fan Yang",
+    "Zhongcong Xu",
+    "Jiacheng Wei",
+    "Fayao Liu",
+    "Jiashi Feng",
+    "Guosheng Lin",
+    "Jianfeng Zhang"
+  ],
+  "year": "2025",
+  "venue": "NeurIPS",
+  "dataset": false,
+  "survey": false
+}

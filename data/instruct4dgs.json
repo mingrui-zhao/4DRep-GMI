@@ -1,0 +1,25 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Scene",
+  "category": "Video-to-4D",
+  "projectPage": "https://hanbyelcho.info/instruct-4dgs/",
+  "paperUrl": "https://arxiv.org/abs/2502.02091",
+  "codeUrl": "https://github.com/juhyeon-kwon/Instruct-4DGS",
+  "tags": [
+    "editing"
+  ],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@InProceedings{Kwon_2025_CVPR,     author    = {Kwon, Joohyun and Cho, Hanbyel and Kim, Junmo},     title     = {Efficient Dynamic Scene Editing via 4D Gaussian-based Static-Dynamic Separation},     booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},     month     = {June},     year      = {2025},     pages     = {26855-26865}     }",
+  "title": "Efficient Dynamic Scene Editing via 4D Gaussian-based Static-Dynamic Separation",
+  "authors": [
+    "Joohyun Kwon",
+    "Hanbyel Cho",
+    "Junmo Kim"
+  ],
+  "year": "2025",
+  "venue": "CVPR",
+  "dataset": false,
+  "survey": false
+}

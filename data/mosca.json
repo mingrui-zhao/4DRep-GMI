@@ -1,0 +1,25 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Scene",
+  "category": "Video-to-4D",
+  "projectPage": "https://jiahuilei.com/projects/mosca/",
+  "paperUrl": "https://www.cis.upenn.edu/~leijh/projects/mosca/pub/mosca_v2.pdf",
+  "codeUrl": "https://github.com/JiahuiLei/MoSca",
+  "tags": [],
+  "motion": "Tracking",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{lei2024mosca, title={MoSca: Dynamic Gaussian Fusion from Casual Videos via 4D Motion Scaffolds}, author={Lei, Jiahui and Weng, Yijia and Harley, Adam and Guibas, Leonidas and Daniilidis, Kostas}, journal={CVPR}, year={2025} }",
+  "title": "MoSca: Dynamic Gaussian Fusion from Casual Videos via 4D Motion Scaffolds",
+  "authors": [
+    "Jiahui Lei",
+    "Yijia Weng",
+    "Adam Harley",
+    "Leonidas Guibas",
+    "Kostas Daniilidis"
+  ],
+  "year": "2025",
+  "venue": "CVPR",
+  "dataset": false,
+  "survey": false
+}

@@ -1,0 +1,26 @@
+{
+  "representation": "Point Cloud",
+  "task": "Object",
+  "category": "3D-to-4D",
+  "projectPage": "https://dyfcalid.github.io/NeuralPCI",
+  "paperUrl": "https://arxiv.org/abs/2303.15126",
+  "codeUrl": "https://github.com/ispc-lab/NeuralPCI",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{zheng2023neuralpci,     title     = {NeuralPCI: Spatio-temporal Neural Field for 3D Point Cloud Multi-frame Non-linear Interpolation},     author    = {Zheng, Zehan and Wu, Danni and Lu, Ruisi and Lu, Fan and Chen, Guang and Jiang, Changjun},     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},     year      = {2023}     }",
+  "title": "NeuralPCI: Spatio-temporal Neural Field for 3D Point Cloud Multi-frame Non-linear Interpolation",
+  "authors": [
+    "Zehan Zheng",
+    "Danni Wu",
+    "Ruisi Lu",
+    "Fan Lu",
+    "Guang Chen",
+    "Changjun Jiang"
+  ],
+  "year": "2023",
+  "venue": "CVPR",
+  "dataset": false,
+  "survey": false
+}

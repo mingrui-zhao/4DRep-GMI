@@ -1,0 +1,35 @@
+{
+  "representation": "NeRF",
+  "task": "Object",
+  "category": [
+    "Video-to-4D"
+  ],
+  "projectPage": "https://zz7379.github.io/AnimatableDreamer/",
+  "paperUrl": "https://arxiv.org/abs/2312.03795",
+  "codeUrl": "",
+  "tags": [],
+  "motion": [
+    "Articulation"
+  ],
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@inproceedings{wang2024animatabledreamer,  title={Animatabledreamer: Text-guided non-rigid 3d model generation and reconstruction with canonical score distillation},  author={Wang, Xinzhou and Wang, Yikai and Ye, Junliang and Sun, Fuchun and Wang, Zhengyi and Wang, Ling and Liu, Pengkun and Sun, Kai and Wang, Xintong and Xie, Wende and others},  booktitle={ECCV},  pages={321--339},  year={2024},  organization={Springer}}",
+  "title": "Animatabledreamer: Text-guided non-rigid 3d model generation and reconstruction with canonical score distillation",
+  "authors": [
+    "Xinzhou Wang",
+    "Yikai Wang",
+    "Junliang Ye",
+    "Fuchun Sun",
+    "Zhengyi Wang",
+    "Ling Wang",
+    "Pengkun Liu",
+    "Kai Sun",
+    "Xintong Wang",
+    "Wende Xie",
+    "others"
+  ],
+  "year": "2024",
+  "venue": "ECCV",
+  "dataset": false,
+  "survey": false
+}

@@ -1,0 +1,27 @@
+{
+  "representation": "",
+  "task": "Object",
+  "category": "",
+  "projectPage": "https://hi-zhengcheng.github.io/vividzoo/",
+  "paperUrl": "https://arxiv.org/pdf/2406.08659v1",
+  "codeUrl": "https://github.com/hi-zhengcheng/vividzoo",
+  "tags": [],
+  "motion": "",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@misc{li2024vividzoo,  title={Vivid-ZOO: Multi-View Video Generation with Diffusion Model},   author={Bing Li and Cheng Zheng and Wenxuan Zhu and Jinjie Mai and Biao Zhang and Peter Wonka and Bernard Ghanem},  year={2024},  eprint={2406.08659},  archivePrefix={arXiv},}",
+  "title": "Vivid-ZOO: Multi-View Video Generation with Diffusion Model",
+  "authors": [
+    "Bing Li",
+    "Cheng Zheng",
+    "Wenxuan Zhu",
+    "Jinjie Mai",
+    "Biao Zhang",
+    "Peter Wonka",
+    "Bernard Ghanem"
+  ],
+  "year": "2024",
+  "venue": "ArXiv",
+  "dataset": true,
+  "survey": false
+}

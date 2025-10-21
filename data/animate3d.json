@@ -1,0 +1,28 @@
+{
+  "representation": [
+    "Gaussian Splatting"
+  ],
+  "task": "Object",
+  "category": "3D-to-4D",
+  "projectPage": "https://animate3d.github.io/",
+  "paperUrl": "https://arxiv.org/abs/2407.11398",
+  "codeUrl": "https://github.com/yanqinJiang/Animate3D",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{jiang2024animate3d,   title={Animate3d: Animating any 3d model with multi-view video diffusion},   author={Jiang, Yanqin and Yu, Chaohui and Cao, Chenjie and Wang, Fan and Hu, Weiming and Gao, Jin},   journal={Advances in Neural Information Processing Systems},   volume={37},   pages={125879--125906},   year={2024} }",
+  "title": "Animate3d: Animating any 3d model with multi-view video diffusion",
+  "authors": [
+    "Yanqin Jiang",
+    "Chaohui Yu",
+    "Chenjie Cao",
+    "Fan Wang",
+    "Weiming Hu",
+    "Jin Gao"
+  ],
+  "year": "2024",
+  "venue": "NeurIPS",
+  "dataset": true,
+  "survey": false
+}

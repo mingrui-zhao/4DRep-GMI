@@ -1,0 +1,29 @@
+{
+  "representation": "NeRF",
+  "task": "Scene",
+  "category": "Video-to-4D",
+  "projectPage": "https://sungheonpark.github.io/tempinterpnerf/",
+  "paperUrl": "https://arxiv.org/abs/2302.09311",
+  "codeUrl": "",
+  "tags": [],
+  "motion": [
+    "Space-Time",
+    "Deformation"
+  ],
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@inproceedings{park2023temporal,   title={Temporal interpolation is all you need for dynamic neural radiance fields},   author={Park, Sungheon and Son, Minjung and Jang, Seokhwan and Ahn, Young Chun and Kim, Ji-Yeon and Kang, Nahyup},   booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},   pages={4212--4221},   year={2023} }",
+  "title": "Temporal interpolation is all you need for dynamic neural radiance fields",
+  "authors": [
+    "Sungheon Park",
+    "Minjung Son",
+    "Seokhwan Jang",
+    "Young Chun Ahn",
+    "Ji-Yeon Kim",
+    "Nahyup Kang"
+  ],
+  "year": "2023",
+  "venue": "CVPR",
+  "dataset": false,
+  "survey": false
+}

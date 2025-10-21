@@ -1,0 +1,28 @@
+{
+  "representation": "Point Cloud",
+  "task": "Scene",
+  "category": "Image-to-4D",
+  "projectPage": "https://monst3r-project.github.io/",
+  "paperUrl": "https://arxiv.org/abs/2410.03825",
+  "codeUrl": "https://github.com/Junyi42/monst3r",
+  "tags": [],
+  "motion": "Tracking",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{zhang2024monst3r,   title={Monst3r: A simple approach for estimating geometry in the presence of motion},   author={Zhang, Junyi and Herrmann, Charles and Hur, Junhwa and Jampani, Varun and Darrell, Trevor and Cole, Forrester and Sun, Deqing and Yang, Ming-Hsuan},   journal={ICLR},   year={2025} }",
+  "title": "Monst3r: A simple approach for estimating geometry in the presence of motion",
+  "authors": [
+    "Junyi Zhang",
+    "Charles Herrmann",
+    "Junhwa Hur",
+    "Varun Jampani",
+    "Trevor Darrell",
+    "Forrester Cole",
+    "Deqing Sun",
+    "Ming-Hsuan Yang"
+  ],
+  "year": "2025",
+  "venue": "ICLR",
+  "dataset": false,
+  "survey": false
+}

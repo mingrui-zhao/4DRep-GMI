@@ -1,0 +1,21 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Scene",
+  "category": "Video-to-4D",
+  "projectPage": "https://dnvtmf.github.io/SP_GS.github.io/",
+  "paperUrl": "https://arxiv.org/abs/2406.03697",
+  "codeUrl": "https://github.com/dnvtmf/SP_GS",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{ icml2024-sp-gs, title={Superpoint Gaussian Splatting for Real-Time High-Fidelity Dynamic Scene Reconstruction}, author={Diwen Wan, Ruijie Lu, Gang Zeng}, booktitle={Forty-first International Conference on Machine Learning}, year={2024} }",
+  "title": "Superpoint Gaussian Splatting for Real-Time High-Fidelity Dynamic Scene Reconstruction",
+  "authors": [
+    "Ruijie Lu, Gang Zeng Diwen Wan"
+  ],
+  "year": "2024",
+  "venue": "ICML",
+  "dataset": false,
+  "survey": false
+}

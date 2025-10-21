@@ -1,0 +1,28 @@
+{
+  "representation": "NeRF",
+  "task": "Object",
+  "category": [
+    "Video-to-4D"
+  ],
+  "projectPage": "https://aejion.github.io/4diffusion/",
+  "paperUrl": "http://arxiv.org/abs/2405.20674",
+  "codeUrl": "https://github.com/aejion/4Diffusion",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{zhang20244diffusion,   title={4diffusion: Multi-view video diffusion model for 4d generation},   author={Zhang, Haiyu and Chen, Xinyuan and Wang, Yaohui and Liu, Xihui and Wang, Yunhong and Qiao, Yu},   journal={Advances in Neural Information Processing Systems},   volume={37},   pages={15272--15295},   year={2024} }",
+  "title": "4diffusion: Multi-view video diffusion model for 4d generation",
+  "authors": [
+    "Haiyu Zhang",
+    "Xinyuan Chen",
+    "Yaohui Wang",
+    "Xihui Liu",
+    "Yunhong Wang",
+    "Yu Qiao"
+  ],
+  "year": "2024",
+  "venue": "NeurIPS",
+  "dataset": false,
+  "survey": false
+}

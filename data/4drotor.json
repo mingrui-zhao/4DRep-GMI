@@ -1,0 +1,26 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Scene",
+  "category": "Video-to-4D",
+  "projectPage": "https://weify627.github.io/4drotorgs/",
+  "paperUrl": "https://arxiv.org/abs/2402.03307",
+  "codeUrl": "https://github.com/weify627/4D-Rotor-Gaussians",
+  "tags": [],
+  "motion": "Space-Time",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{duan20244d,   title={4d-rotor gaussian splatting: towards efficient novel view synthesis for dynamic scenes},   author={Duan, Yuanxing and Wei, Fangyin and Dai, Qiyu and He, Yuhang and Chen, Wenzheng and Chen, Baoquan},   booktitle={ACM SIGGRAPH 2024 Conference Papers},   pages={1--11},   year={2024} }",
+  "title": "4d-rotor gaussian splatting: towards efficient novel view synthesis for dynamic scenes",
+  "authors": [
+    "Yuanxing Duan",
+    "Fangyin Wei",
+    "Qiyu Dai",
+    "Yuhang He",
+    "Wenzheng Chen",
+    "Baoquan Chen"
+  ],
+  "year": "2024",
+  "venue": "SIGGRAPH",
+  "dataset": false,
+  "survey": false
+}

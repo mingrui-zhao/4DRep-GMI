@@ -1,0 +1,30 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Object",
+  "category": [
+    "Video-to-4D"
+  ],
+  "projectPage": "https://sc4d.github.io/",
+  "paperUrl": "https://arxiv.org/abs/2404.03736",
+  "codeUrl": "https://github.com/JarrentWu1031/SC4D",
+  "tags": [],
+  "motion": [
+    "Deformation"
+  ],
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{wu2024sc4d,   title={Sc4d: Sparse-controlled video-to-4d generation and motion transfer},   author={Wu, Zijie and Yu, Chaohui and Jiang, Yanqin and Cao, Chenjie and Wang, Fan and Bai, Xiang},   booktitle={European Conference on Computer Vision},   pages={361--379},   year={2024},   organization={Springer} }",
+  "title": "Sc4d: Sparse-controlled video-to-4d generation and motion transfer",
+  "authors": [
+    "Zijie Wu",
+    "Chaohui Yu",
+    "Yanqin Jiang",
+    "Chenjie Cao",
+    "Fan Wang",
+    "Xiang Bai"
+  ],
+  "year": "2024",
+  "venue": "ECCV",
+  "dataset": false,
+  "survey": false
+}

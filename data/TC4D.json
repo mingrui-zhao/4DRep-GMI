@@ -1,0 +1,33 @@
+{
+  "representation": "NeRF",
+  "task": "Scene",
+  "category": [
+    "Text-to-4D"
+  ],
+  "projectPage": "https://sherwinbahmani.github.io/tc4d/",
+  "paperUrl": "https://arxiv.org/pdf/2403.17920",
+  "codeUrl": "https://github.com/sherwinbahmani/tc4d",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{bahmani2024tc4d, title={Tc4d: Trajectory-conditioned text-to-4d generation}, author={Bahmani, Sherwin and Liu, Xian and Yifan, Wang and Skorokhodov, Ivan and Rong, Victor and Liu, Ziwei and Liu, Xihui and Park, Jeong Joon and Tulyakov, Sergey and Wetzstein, Gordon and others}, booktitle={European Conference on Computer Vision},pages={53--72},year={2024},organization={Springer}}",
+  "title": "TC4d: Trajectory-conditioned text-to-4d generation",
+  "authors": [
+    "Sherwin Bahmani",
+    "Xian Liu",
+    "Wang Yifan",
+    "Ivan Skorokhodov",
+    "Victor Rong",
+    "Ziwei Liu",
+    "Xihui Liu",
+    "Jeong Joon Park",
+    "Sergey Tulyakov",
+    "Gordon Wetzstein",
+    "others"
+  ],
+  "year": "2024",
+  "venue": "ECCV",
+  "dataset": false,
+  "survey": false
+}

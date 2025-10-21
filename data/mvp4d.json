@@ -1,0 +1,28 @@
+{
+  "representation": [
+    "Template",
+    "Gaussian Splatting"
+  ],
+  "task": "Object",
+  "category": "Image-to-4D",
+  "projectPage": "https://felixtaubner.github.io/mvp4d/",
+  "paperUrl": "http://arxiv.org/abs/2510.12785",
+  "codeUrl": "https://github.com/felixtaubner/mvp4d/",
+  "tags": [],
+  "motion": "Articulation",
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": " @article{taubner2025mvp4d,   title={MVP4D: Multi-View Portrait Video Diffusion for Animatable {4D} Avatars},    author={Felix Taubner and Ruihang Zhang and Mathieu Tuli and Sherwin Bahmani and David B. Lindell},   year={2025},   eprint={2510.12785},   archivePrefix={Siggraph},   primaryClass={cs.CV},   url={https://arxiv.org/abs/2510.12785},  }",
+  "title": "MVP4D: Multi-View Portrait Video Diffusion for Animatable {4D",
+  "authors": [
+    "Felix Taubner",
+    "Ruihang Zhang",
+    "Mathieu Tuli",
+    "Sherwin Bahmani",
+    "David B. Lindell"
+  ],
+  "year": "2025",
+  "venue": "ArXiv",
+  "dataset": false,
+  "survey": false
+}

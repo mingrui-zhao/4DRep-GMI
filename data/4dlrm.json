@@ -1,0 +1,35 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Scene",
+  "category": [
+    "Image-to-4D"
+  ],
+  "projectPage": "https://4dlrm.github.io/",
+  "paperUrl": "https://arxiv.org/pdf/2506.18890",
+  "codeUrl": "https://github.com/Mars-tin/4D-LRM",
+  "tags": [],
+  "motion": "Space-Time",
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@misc{ma20254dlrmlargespacetimereconstruction,title={4D-LRM: Large Space-Time Reconstruction Model From and To Any View at Any Time},author={Ziqiao Ma and Xuweiyi Chen and Shoubin Yu and Sai Bi and Kai Zhang and Chen Ziwen and Sihan Xu and Jianing Yang and Zexiang Xu and Kalyan Sunkavalli and Mohit Bansal and Joyce Chai and Hao Tan},year={2025},eprint={2506.18890},archivePrefix={arXiv},primaryClass={http://cs.cv/},url={https://arxiv.org/abs/2506.18890},}",
+  "title": "4D-LRM: Large Space-Time Reconstruction Model From and To Any View at Any Time",
+  "authors": [
+    "Ziqiao Ma",
+    "Xuweiyi Chen",
+    "Shoubin Yu",
+    "Sai Bi",
+    "Kai Zhang",
+    "Chen Ziwen",
+    "Sihan Xu",
+    "Jianing Yang",
+    "Zexiang Xu",
+    "Kalyan Sunkavalli",
+    "Mohit Bansal",
+    "Joyce Chai",
+    "Hao Tan"
+  ],
+  "year": "2025",
+  "venue": "NeurIPS",
+  "dataset": false,
+  "survey": false
+}

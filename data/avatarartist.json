@@ -1,0 +1,24 @@
+{
+  "representation": [
+    "Template",
+    "Mesh"
+  ],
+  "task": "Human",
+  "category": "Image-to-4D",
+  "projectPage": "https://kumapowerliu.github.io/AvatarArtist/",
+  "paperUrl": "https://arxiv.org/abs/2503.19906",
+  "codeUrl": "https://github.com/ant-research/AvatarArtist",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": " @inproceedings{liu2025avatarartist,     author    = {Hongyu Liu, Xuan Wang, Ziyu Wan, Yue Ma, Jingye Chen, Yanbo Fan, Yujun Shen, Yibing Song, Qifeng Chen },     title     = {AvatarArtist: Open-Domain 4D Avatarization},     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},     year      = {2025}}",
+  "title": "AvatarArtist: Open-Domain 4D Avatarization",
+  "authors": [
+    "Xuan Wang, Ziyu Wan, Yue Ma, Jingye Chen, Yanbo Fan, Yujun Shen, Yibing Song, Qifeng Chen Hongyu Liu"
+  ],
+  "year": "2025",
+  "venue": "CVPR",
+  "dataset": false,
+  "survey": false
+}

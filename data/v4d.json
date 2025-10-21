@@ -1,0 +1,28 @@
+{
+  "representation": "NeRF",
+  "task": "Object",
+  "category": "Video-to-4D",
+  "projectPage": "",
+  "paperUrl": "https://arxiv.org/abs/2205.14332",
+  "codeUrl": "https://github.com/GANWANSHUI/V4D",
+  "tags": [],
+  "motion": [
+    "Space-Time",
+    "Deformation"
+  ],
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{gan2023v4d,   title={V4d: Voxel for 4d novel view synthesis},   author={Gan, Wanshui and Xu, Hongbin and Huang, Yi and Chen, Shifeng and Yokoya, Naoto},   journal={IEEE Transactions on Visualization and Computer Graphics},   year={2023},   publisher={IEEE} }",
+  "title": "V4d: Voxel for 4d novel view synthesis",
+  "authors": [
+    "Wanshui Gan",
+    "Hongbin Xu",
+    "Yi Huang",
+    "Shifeng Chen",
+    "Naoto Yokoya"
+  ],
+  "year": "2023",
+  "venue": "TVCG",
+  "dataset": false,
+  "survey": false
+}

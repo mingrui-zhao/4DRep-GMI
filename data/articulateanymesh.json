@@ -1,0 +1,31 @@
+{
+  "representation": [
+    "Part",
+    "Mesh"
+  ],
+  "task": "Object",
+  "category": "3D-to-4D",
+  "projectPage": "https://articulate-anymesh.github.io/",
+  "paperUrl": "https://arxiv.org/abs/2502.02590",
+  "codeUrl": "https://github.com/UMass-Embodied-AGI/Articulate-Anymesh",
+  "tags": [],
+  "motion": "Articulation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{qiu2025articulate,   title={Articulate anymesh: Open-vocabulary 3d articulated objects modeling},   author={Qiu, Xiaowen and Yang, Jincheng and Wang, Yian and Chen, Zhehuan and Wang, Yufei and Wang, Tsun-Hsuan and Xian, Zhou and Gan, Chuang},   journal={CoRL},   year={2025} }",
+  "title": "Articulate anymesh: Open-vocabulary 3d articulated objects modeling",
+  "authors": [
+    "Xiaowen Qiu",
+    "Jincheng Yang",
+    "Yian Wang",
+    "Zhehuan Chen",
+    "Yufei Wang",
+    "Tsun-Hsuan Wang",
+    "Zhou Xian",
+    "Chuang Gan"
+  ],
+  "year": "2025",
+  "venue": "CoRL",
+  "dataset": false,
+  "survey": false
+}

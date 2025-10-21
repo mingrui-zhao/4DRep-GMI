@@ -1,0 +1,32 @@
+{
+  "representation": "NeRF",
+  "task": [
+    "Object",
+    "Scene"
+  ],
+  "category": [
+    "Image-to-4D",
+    "Text-to-4D"
+  ],
+  "projectPage": "https://research.nvidia.com/labs/nxp/dream-in-4d/",
+  "paperUrl": "https://arxiv.org/abs/2311.16854",
+  "codeUrl": "https://github.com/NVlabs/dream-in-4d",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@InProceedings{zheng2024unified,title = {Dream in 4D:A Unified Approach for Text- and Image-guided 4D Scene Generation},author    = {Yufeng Zheng and Xueting Li and Koki Nagano and Sifei Liu and Otmar Hilliges and Shalini De Mello},booktitle = {CVPR},year      = {2024}}",
+  "title": "Dream in 4D:A Unified Approach for Text- and Image-guided 4D Scene Generation",
+  "authors": [
+    "Yufeng Zheng",
+    "Xueting Li",
+    "Koki Nagano",
+    "Sifei Liu",
+    "Otmar Hilliges",
+    "Shalini De Mello"
+  ],
+  "year": "2024",
+  "venue": "CVPR",
+  "dataset": false,
+  "survey": false
+}

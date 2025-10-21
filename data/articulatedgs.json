@@ -1,0 +1,26 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Object",
+  "category": "Multiview Images to 4D",
+  "projectPage": "https://guojunfu-tech.github.io/articulatedGS-io/",
+  "paperUrl": "https://arxiv.org/abs/2503.08135",
+  "codeUrl": "https://github.com/GuoJunfu-tech/ArticulatedGaussians",
+  "tags": [],
+  "motion": "Articulation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{guo2025articulatedgs, title={Articulatedgs: Self-supervised digital twin modeling of articulated objects using 3d gaussian splatting}, author={Guo, Junfu and Xin, Yu and Liu, Gaoyi and Xu, Kai and Liu, Ligang and Hu, Ruizhen}, booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference}, pages={27144--27153}, year={2025} }",
+  "title": "Articulatedgs: Self-supervised digital twin modeling of articulated objects using 3d gaussian splatting",
+  "authors": [
+    "Junfu Guo",
+    "Yu Xin",
+    "Gaoyi Liu",
+    "Kai Xu",
+    "Ligang Liu",
+    "Ruizhen Hu"
+  ],
+  "year": "2025",
+  "venue": "CVPR",
+  "dataset": false,
+  "survey": false
+}

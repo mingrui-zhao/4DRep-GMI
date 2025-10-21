@@ -1,0 +1,28 @@
+{
+  "representation": [
+    "Part",
+    "Mesh"
+  ],
+  "task": "Object",
+  "category": "Video-to-4D",
+  "projectPage": "https://stablepartdiffusion4d.github.io/",
+  "paperUrl": "https://arxiv.org/abs/2509.10687",
+  "codeUrl": "https://stablepartdiffusion4d.github.io/#",
+  "tags": [],
+  "motion": "Articulation",
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@article{zhang2025stable,   title={Stable Part Diffusion 4D: Multi-View RGB and Kinematic Parts Video Generation},   author={Zhang, Hao and Yao, Chun-Han and Donne, Simon and Ahuja, Narendra and Jampani, Varun},   journal={NeurIPS},   year={2025} }",
+  "title": "Stable Part Diffusion 4D: Multi-View RGB and Kinematic Parts Video Generation",
+  "authors": [
+    "Hao Zhang",
+    "Chun-Han Yao",
+    "Simon Donne",
+    "Narendra Ahuja",
+    "Varun Jampani"
+  ],
+  "year": "2025",
+  "venue": "NeurIPS",
+  "dataset": false,
+  "survey": false
+}

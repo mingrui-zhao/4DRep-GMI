@@ -1,0 +1,31 @@
+{
+  "representation": [
+    "Template",
+    "NeRF"
+  ],
+  "task": "Human",
+  "category": "Video-to-4D",
+  "projectPage": "https://moygcc.github.io/vid2avatar/",
+  "paperUrl": "https://arxiv.org/abs/2302.11566",
+  "codeUrl": "https://github.com/MoyGcc/vid2avatar",
+  "tags": [],
+  "motion": [
+    "Articulation",
+    "Deformation"
+  ],
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{guo2023vid2avatar,       title={Vid2Avatar: 3D Avatar Reconstruction from Videos in the Wild via Self-supervised Scene Decomposition},       author={Guo, Chen and Jiang, Tianjian and Chen, Xu and Song, Jie and Hilliges, Otmar},           booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},       month     = {June},       year      = {2023},     }",
+  "title": "Vid2Avatar: 3D Avatar Reconstruction from Videos in the Wild via Self-supervised Scene Decomposition",
+  "authors": [
+    "Chen Guo",
+    "Tianjian Jiang",
+    "Xu Chen",
+    "Jie Song",
+    "Otmar Hilliges"
+  ],
+  "year": "2023",
+  "venue": "CVPR",
+  "dataset": false,
+  "survey": false
+}

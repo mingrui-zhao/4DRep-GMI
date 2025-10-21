@@ -1,0 +1,29 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Scene",
+  "category": "Video-to-4D",
+  "projectPage": "https://guanjunwu.github.io/4dgs/",
+  "paperUrl": "https://arxiv.org/abs/2310.08528",
+  "codeUrl": "https://github.com/hustvl/4DGaussians",
+  "tags": [],
+  "motion": ["Space-Time", "Deformation"],
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@InProceedings{Wu_2024_CVPR,                         author    = {Wu, Guanjun and Yi, Taoran and Fang, Jiemin and Xie, Lingxi and Zhang, Xiaopeng and Wei, Wei and Liu, Wenyu and Tian, Qi and Wang, Xinggang},                         title     = {4D Gaussian Splatting for Real-Time Dynamic Scene Rendering},                         booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},                         month     = {June},                         year      = {2024},                         pages     = {20310-20320}                     }",
+  "title": "4D Gaussian Splatting for Real-Time Dynamic Scene Rendering",
+  "authors": [
+    "Guanjun Wu",
+    "Taoran Yi",
+    "Jiemin Fang",
+    "Lingxi Xie",
+    "Xiaopeng Zhang",
+    "Wei Wei",
+    "Wenyu Liu",
+    "Qi Tian",
+    "Xinggang Wang"
+  ],
+  "year": "2024",
+  "venue": "CVPR",
+  "dataset": false,
+  "survey": false
+}

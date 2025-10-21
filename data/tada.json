@@ -1,0 +1,32 @@
+{
+  "representation": "Template",
+  "task": "Human",
+  "category": [
+    "Text-to-4D"
+  ],
+  "projectPage": "https://tada.is.tue.mpg.de/",
+  "paperUrl": "https://arxiv.org/abs/2308.10899",
+  "codeUrl": "https://github.com/TingtingLiao/TADA?tab=readme-ov-file",
+  "tags": [],
+  "motion": [
+    "Deformation",
+    "Articulation"
+  ],
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{liao2024tada, title={TADA! Text to Animatable Digital Avatars}, author={Liao, Tingting and Yi, Hongwei and Xiu, Yuliang and Tang, Jiaxiang and Huang, Yangyi and Thies, Justus and Black, Michael J.}, booktitle={International Conference on 3D Vision (3DV)}, year={2024} }",
+  "title": "TADA! Text to Animatable Digital Avatars",
+  "authors": [
+    "Tingting Liao",
+    "Hongwei Yi",
+    "Yuliang Xiu",
+    "Jiaxiang Tang",
+    "Yangyi Huang",
+    "Justus Thies",
+    "Michael J. Black"
+  ],
+  "year": "2024",
+  "venue": "3DV",
+  "dataset": false,
+  "survey": false
+}

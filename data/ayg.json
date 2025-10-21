@@ -1,0 +1,27 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Scene",
+  "category": [
+    "Text-to-4D"
+  ],
+  "projectPage": "https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/",
+  "paperUrl": "https://arxiv.org/abs/2312.13763",
+  "codeUrl": "",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@inproceedings{ling2024alignyourgaussians,    title={Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models},    author={Ling, Huan and Kim, Seung Wook and Torralba, Antonio and Fidler, Sanja and Kreis, Karsten},    booktitle={CVPR})},    year={2024}}",
+  "title": "Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models",
+  "authors": [
+    "Huan Ling",
+    "Seung Wook Kim",
+    "Antonio Torralba",
+    "Sanja Fidler",
+    "Karsten Kreis"
+  ],
+  "year": "2024",
+  "venue": "CVPR",
+  "dataset": false,
+  "survey": false
+}

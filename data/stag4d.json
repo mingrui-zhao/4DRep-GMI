@@ -1,0 +1,32 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Object",
+  "category": [
+    "Text-to-4D",
+    "Video-to-4D"
+  ],
+  "projectPage": "https://nju-3dv.github.io/projects/STAG4D/",
+  "paperUrl": "https://arxiv.org/abs/2403.14939",
+  "codeUrl": "https://github.com/zeng-yifei/STAG4D",
+  "tags": [],
+  "bibtex": "@inproceedings{zeng2024stag4d,   title={Stag4d: Spatial-temporal anchored generative 4d gaussians},   author={Zeng, Yifei and Jiang, Yanqin and Zhu, Siyu and Lu, Yuanxun and Lin, Youtian and Zhu, Hao and Hu, Weiming and Cao, Xun and Yao, Yao},   booktitle={European Conference on Computer Vision},   pages={163--179},   year={2024},   organization={Springer} }",
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "title": "STAG4D: Spatial-Temporal Anchored Generative 4D Gaussians",
+  "authors": [
+    "Yifei Zeng",
+    "Yanqin Jiang",
+    "Siyu Zhu",
+    "Yuanxun Lu",
+    "Youtian Lin",
+    "Hao Zhu",
+    "Weiming Hu",
+    "Xun Cao",
+    "Yao Yao"
+  ],
+  "year": "2024",
+  "venue": "ECCV",
+  "dataset": false,
+  "survey": false
+}

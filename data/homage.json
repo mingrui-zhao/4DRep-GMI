@@ -1,0 +1,30 @@
+{
+  "representation": [
+    "Graph"
+  ],
+  "task": "Scene",
+  "category": "",
+  "projectPage": "https://homeactiongenome.org/",
+  "paperUrl": "https://arxiv.org/pdf/2105.05226",
+  "codeUrl": "",
+  "tags": [],
+  "motion": "",
+  "codeAvailability": false,
+  "interaction": "Human-Scene Interaction",
+  "bibtex": "@inproceedings{rai2021home,   title={Home action genome: Cooperative compositional action understanding},   author={Rai, Nishant and Chen, Haofeng and Ji, Jingwei and Desai, Rishi and Kozuka, Kazuki and Ishizaka, Shun and Adeli, Ehsan and Niebles, Juan Carlos},   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},   pages={11184--11193},   year={2021} }",
+  "title": "Home action genome: Cooperative compositional action understanding",
+  "authors": [
+    "Nishant Rai",
+    "Haofeng Chen",
+    "Jingwei Ji",
+    "Rishi Desai",
+    "Kazuki Kozuka",
+    "Shun Ishizaka",
+    "Ehsan Adeli",
+    "Juan Carlos Niebles"
+  ],
+  "year": "2021",
+  "venue": "CVPR",
+  "dataset": true,
+  "survey": false
+}

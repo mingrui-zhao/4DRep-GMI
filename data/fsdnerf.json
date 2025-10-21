@@ -1,0 +1,29 @@
+{
+  "representation": "NeRF",
+  "task": "Scene",
+  "category": [
+    "Video-to-4D"
+  ],
+  "projectPage": "https://mightychaos.github.io/projects/fsdnerf/",
+  "paperUrl": "https://arxiv.org/pdf/2303.16333.pdf",
+  "codeUrl": "",
+  "tags": [],
+  "motion": [
+    "Tracking",
+    "Deformation"
+  ],
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@InProceedings{Wang_2023_CVPR, author = {Wang, Chaoyang and MacDonald, Lachlan Ewen and Jeni, Laszlo A. and Lucey, Simon}, title = {Flow Supervision for Deformable NeRF}, booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, month = {June}, year = {2023}, pages = {21128-21137} }",
+  "title": "Flow Supervision for Deformable NeRF",
+  "authors": [
+    "Chaoyang Wang",
+    "Lachlan Ewen MacDonald",
+    "Laszlo A. Jeni",
+    "Simon Lucey"
+  ],
+  "year": "2023",
+  "venue": "CVPR",
+  "dataset": false,
+  "survey": false
+}

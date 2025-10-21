@@ -1,0 +1,25 @@
+{
+  "representation": "Mesh",
+  "task": "Object",
+  "category": [
+    "Video-to-4D"
+  ],
+  "projectPage": "https://lizhiqi49.github.io/DreamMesh4D/",
+  "paperUrl": "https://arxiv.org/abs/2410.06756",
+  "codeUrl": "https://github.com/WU-CVGL/DreamMesh4D",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{li2024dreammesh4d,        title={DreamMesh4D: Video-to-4D Generation with Sparse-Controlled Gaussian-Mesh Hybrid Representation},        author={Zhiqi Li and Yiming Chen and Peidong Liu},        booktitle={NeurIPS},        year={2024}    }",
+  "title": "DreamMesh4D: Video-to-4D Generation with Sparse-Controlled Gaussian-Mesh Hybrid Representation",
+  "authors": [
+    "Zhiqi Li",
+    "Yiming Chen",
+    "Peidong Liu"
+  ],
+  "year": "2024",
+  "venue": "NeurIPS",
+  "dataset": false,
+  "survey": false
+}

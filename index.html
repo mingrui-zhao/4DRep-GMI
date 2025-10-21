@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advances in 4D Representation: Geometry, Motion and Interaction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(15, 15, 35, 0.3);
+        }
+
+        .header h1 {
+            font-size: 2.0em;
+            margin-bottom: 15px;
+            font-weight: 600;
+            line-height: 1.1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            white-space: nowrap;
+        }
+
+        .header-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 12px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .header-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        .authors {
+            margin: 20px 0;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .author-link {
+            color: #06b6d4;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .author-link:hover {
+            color: #0891b2;
+            text-decoration: underline;
+        }
+
+        .paper-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .paper-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+            color: white;
+            padding: 16px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            margin: 20px auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: center;
+            width: auto;
+            min-width: 200px;
+            position: relative;
+            overflow: hidden;
+            font-size: 1.1em;
+            letter-spacing: 0.5px;
+        }
+
+        .paper-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .paper-link:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .paper-link:hover::before {
+            left: 100%;
+        }
+
+        .citation-request {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid #10b981;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .bibtex {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+
+        .email-contact {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid #f59e0b;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 6px 6px 0;
+            text-align: center;
+        }
+
+        .email-contact a {
+            color: #f59e0b;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .email-contact a:hover {
+            color: #d97706;
+            text-decoration: underline;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .loading::after {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .filters {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .filter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .filter-group label {
+            font-weight: 600;
+            color: #333;
+            font-size: 0.9em;
+        }
+
+        .filter-group select, .filter-group input {
+            padding: 10px 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+
+        .filter-group select:focus, .filter-group input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            background: white;
+            padding: 20px 25px;
+            border-radius: 10px 10px 0 0;
+            border-left: 5px solid #667eea;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .section-count {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .papers-grid {
+            display: grid;
+            gap: 20px;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .paper-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 0;
+        }
+
+        .paper-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .paper-card.nerf { border-left-color: #e74c3c; }
+        .paper-card.gaussians { border-left-color: #3498db; }
+        .paper-card.mesh { border-left-color: #2ecc71; }
+        .paper-card.hybrid { border-left-color: #f39c12; }
+        .paper-card.other { border-left-color: #9b59b6; }
+
+        .paper-thumbnail {
+            width: 200px;
+            height: 150px;
+            padding: 0;
+            overflow: hidden;
+            position: relative;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .paper-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* fill panel by cropping as needed */
+            object-position: center; /* center the crop */
+            transition: transform 0.3s ease;
+            display: block;
+        }
+
+        .paper-thumbnail:hover img {
+            transform: scale(1.05);
+        }
+
+        .paper-thumbnail.placeholder {
+            background: linear-gradient(135deg, #667eea22 0%, #764ba233 100%);
+            color: #666;
+            font-size: 0.8em;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .paper-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .paper-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 12px;
+            line-height: 1.4;
+            color: #2c3e50;
+        }
+
+        .paper-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .paper-title a:hover {
+            color: #667eea;
+        }
+
+        .paper-authors {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .paper-badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .badge {
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge.venue {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .badge.task {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            color: #475569;
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 2px 8px rgba(71, 85, 105, 0.1);
+        }
+
+        .badge.taxonomy {
+            color: white;
+            border: none;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        .badge.taxonomy::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .badge.taxonomy:hover::before {
+            left: 100%;
+        }
+
+        .badge.taxonomy.representation {
+            background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .badge.taxonomy.motion {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .badge.taxonomy.interaction {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .badge.category {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            color: #92400e;
+            border: 1px solid #f59e0b;
+            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
+        }
+
+        .badge.code-available {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .badge.code-tentative {
+            background: linear-gradient(135deg, #fef3c7 0%, #f59e0b 100%);
+            color: #92400e;
+            border: 1px solid #f59e0b;
+            box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
+        }
+
+        .badge.dataset {
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .badge.survey {
+            background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .badge.bibtex {
+            background: #e5e7eb; /* neutral */
+            color: #374151;
+            border: 1px solid #d1d5db;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            cursor: pointer;
+        }
+
+        .paper-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9em;
+        }
+
+        .meta-label {
+            font-weight: 500;
+            color: #555;
+            min-width: 80px;
+        }
+
+        .meta-value {
+            color: #333;
+        }
+
+        .paper-summary {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+            border-left: 3px solid #667eea;
+            flex-grow: 1;
+        }
+
+        .paper-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: auto;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+        }
+
+        .paper-link {
+            padding: 8px 16px;
+            background: #f8f9fa;
+            color: #495057;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            border: 1px solid #dee2e6;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            text-align: center;
+            min-width: 140px;
+            line-height: 1.1;
+            box-sizing: border-box;
+            -webkit-appearance: none;
+            appearance: none;
+            cursor: pointer;
+            flex: 0 0 auto;
+        }
+
+        .paper-link:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .paper-link.project {
+            background: #e3f2fd;
+            color: #1565c0;
+            border-color: #90caf9;
+        }
+
+        .paper-link.project:hover {
+            background: #1565c0;
+            color: white;
+            border-color: #1565c0;
+        }
+
+        .paper-link.paper {
+            background: #fff3e0;
+            color: #e65100;
+            border-color: #ffb74d;
+        }
+
+        .paper-link.paper:hover {
+            background: #e65100;
+            color: white;
+            border-color: #e65100;
+        }
+
+        .paper-link.code {
+            background: #e8f5e8;
+            color: #2e7d32;
+            border-color: #81c784;
+        }
+
+        .paper-link.code:hover {
+            background: #2e7d32;
+            color: white;
+            border-color: #2e7d32;
+        }
+
+        .paper-link.code-tentative {
+            background: #fef3c7;
+            color: #92400e;
+            border-color: #f59e0b;
+        }
+
+        .paper-link.code-tentative:hover {
+            background: #f59e0b;
+            color: white;
+            border-color: #f59e0b;
+        }
+
+        .paper-link.no-code {
+            background: #fee2e2;  /* red-100 */
+            color: #b91c1c;       /* red-700 */
+            border-color: #fecaca;/* red-200 */
+        }
+
+        .paper-link.no-code:hover {
+            background: #b91c1c;  /* red-700 */
+            color: white;
+            border-color: #b91c1c;
+        }
+
+        /* BibTeX link styling (same family as other links) */
+        .paper-link.bibtex {
+            background: #f8f9fa;   /* match base */
+            color: #495057;        /* match base */
+            border-color: #dee2e6; /* match base */
+        }
+
+        .paper-link.bibtex:hover {
+            background: #667eea;   /* match hover */
+            color: white;
+            border-color: #667eea;
+        }
+
+        /* Collapsible BibTeX panel */
+        .bibtex-panel {
+            display: none;
+            background: #111827;
+            color: #e5e7eb;
+            border: 1px solid #1f2937;
+            border-radius: 6px;
+            padding: 12px;
+            margin-top: 10px;
+            font-family: "Courier New", monospace;
+            font-size: 0.85em;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        .bibtex-panel .panel-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .bibtex-panel .copy-btn {
+            background: #e5e7eb;
+            color: #374151;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-size: 0.8em;
+            cursor: pointer;
+        }
+
+        .bibtex-panel .copy-btn:hover {
+            background: #374151;
+            color: white;
+            border-color: #374151;
+        }
+
+        .paper-link.read-our-paper {
+            background: #f3e5f5;
+            color: #7b1fa2;
+            border-color: #ba68c8;
+        }
+
+        .paper-link.read-our-paper:hover {
+            background: #7b1fa2;
+            color: white;
+            border-color: #7b1fa2;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #6c757d;
+            background: white;
+            border-radius: 10px;
+        }
+
+        .empty-state h3 {
+            margin-bottom: 10px;
+            color: #495057;
+        }
+
+        .error-state {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #f5c6cb;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .stats {
+                gap: 20px;
+            }
+
+            .filter-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .paper-meta {
+                grid-template-columns: 1fr;
+            }
+
+            .paper-card {
+                grid-template-columns: 1fr;
+            }
+
+            .paper-thumbnail {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                <div class="header-logo">
+                    <img src="logo2.png" alt="4D Survey Logo">
+                </div>
+                Advances in 4D Representation: Geometry, Motion and Interaction
+            </h1>
+            
+            <div class="authors">
+                <a href="https://mingrui-zhao.github.io/" class="author-link" target="_blank" rel="noopener">Mingrui Zhao</a>, 
+                <a href="https://sauradip.github.io/" class="author-link" target="_blank" rel="noopener">Sauradip Nag</a>, 
+                <a href="https://kwang-ether.github.io/" class="author-link" target="_blank" rel="noopener">Kai Wang</a>, 
+                <a href="https://aditya-vora.github.io/" class="author-link" target="_blank" rel="noopener">Aditya Vora</a>,
+                <a href="https://quantaji.github.io/" class="author-link" target="_blank" rel="noopener">Guangda Ji</a>, 
+                <a href="https://ca.linkedin.com/in/peter-chun-87416646" class="author-link" target="_blank" rel="noopener">Peter Chun</a>, 
+                <a href="https://arash-mham.github.io/" class="author-link" target="_blank" rel="noopener">Ali Mahdavi-Amiri</a>, 
+                <a href="https://www.cs.sfu.ca/~haoz/" class="author-link" target="_blank" rel="noopener">Hao (Richard) Zhang</a>
+            </div>
+
+            <div class="paper-info">
+                <div style="display: flex; justify-content: center; width: 100%;">
+                    <a href="#" class="paper-link read-our-paper">📄 Read Our Paper</a>
+                </div>
+                
+                <div style="margin: 20px 0;">
+                    <h3 style="margin-top: 0; color: #e5e7eb; font-size: 1.2em;">📖 Abstract</h3>
+                    <p style="line-height: 1.6; color: #d1d5db; text-align: justify;">
+                        We present a survey on 4D generation and reconstruction, a fast-evolving subfield of computer graphics whose developments have been propelled by recent advances in neural fields, geometric and motion deep learning, as well 3D generative artificial intelligence (GenAI). While our survey is not the first of its kind, we build our coverage of the domain from a unique and distinctive perspective of 4D <em>representations</em>, to model 3D geometry evolving over time while exhibiting motion and interaction. Specifically, instead of offering an exhaustive enumeration of many works, we take a more selective approach by focusing on representative works to highlight both the desirable properties and ensuing challenges of each representation under different computation, application, and data scenarios. The main take-away message we aim to convey to the readers is on how to select and then customize the appropriate 4D representations for their tasks. Organizationally, we separate the 4D representations based on three key pillars: <em>geometry</em>, <em>motion</em>, and <em>interaction</em>. Our discourse will not only encompass the most popular representations of today, such as neural radiance fields (NeRFs) and 3D Gaussian Splatting (3DGS), but also bring attention to relatively under-explored representations in the 4D context, such as <em>structured</em> models and long-range motions. Throughout our survey, we will reprise the role of large language models (LLMs) and video foundational models (VFMs) in a variety of 4D applications, while steering our discussion towards their current limitations and how they can be addressed. We also provide a dedicated coverage on what 4D datasets are currently available, as well as what is lacking, in driving the subfield forward.
+                    </p>
+                </div>
+                
+                <div class="citation-request">
+                    <strong>📚 Please cite our work:</strong><br>
+                    If you find this survey helpful, please consider citing our paper in your research.
+                    
+                    <div class="bibtex">
+@article{zhao2024advances4d,<br>
+&nbsp;&nbsp;title={Advances in 4D Representation: Geometry, Motion and Interaction},<br>
+&nbsp;&nbsp;author={Mingrui Zhao and Sauradip Nag and Kai Wang and Guangda Ji and Aditya Vora and Peter Chun and Ali Mahdavi-Amiri and Richard Hao Zhang},<br>
+&nbsp;&nbsp;journal={[Journal Name]},<br>
+&nbsp;&nbsp;year={2024},<br>
+&nbsp;&nbsp;note={[To be added]}<br>
+}
+                    </div>
+                </div>
+
+                <div class="email-contact" style="text-align: left;">
+                    <strong style="text-align: center; display: block;">📧 Contact & Contributions</strong>
+                    <p style="margin: 15px 0; line-height: 1.6;">
+                        We acknowledge that this website is not exhaustive and may not include all relevant 4D works. We would appreciate your contributions and feedback:
+                    </p>
+                    <ul style="margin: 15px 0; padding-left: 20px; line-height: 1.6;">
+                        <li><strong>Missing works:</strong> To include your work in our survey</li>
+                        <li><strong>Corrections:</strong> If you find that we have tagged your paper incorrectly</li>
+                        <li><strong>Updates:</strong> For code availability, conference acceptance, or other information</li>
+                        <li><strong>Feedback:</strong> Suggestions for improving this resource</li>
+                    </ul>
+                    <p style="margin: 15px 0; line-height: 1.6;">
+                        Contact us at <a href="mailto:mza143@sfu.ca">mza143@sfu.ca</a>
+                    </p>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number" id="totalPapers">-</span>
+                    <span class="stat-label">Total Papers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="totalRepresentations">-</span>
+                    <span class="stat-label">Representation Types</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="totalVenues">-</span>
+                    <span class="stat-label">Venues</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="totalWithCode">-</span>
+                    <span class="stat-label">With Code</span>
+                </div>
+            </div>
+            <div style="margin-top: 20px;">
+                <button onclick="toggleDebug()" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3); padding: 8px 16px; border-radius: 5px; cursor: pointer;">🔧 Show Debug Info</button>
+            </div>
+        </div>
+
+        <div class="filters">
+            <div class="filter-grid">
+                <div class="filter-group">
+                    <label for="searchInput">🔍 Search Papers</label>
+                    <input type="text" id="searchInput" placeholder="Search by title, authors, or keywords...">
+                </div>
+                <div class="filter-group">
+                    <label for="representationFilter">🔧 Representation Type</label>
+                    <select id="representationFilter">
+                        <option value="">All Representations</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="categoryFilter">📝 Task</label>
+                    <select id="categoryFilter">
+                        <option value="">All Tasks</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="taskFilter">🎯 Target Type</label>
+                    <select id="taskFilter">
+                        <option value="">All Targets</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="venueFilter">🏛️ Venue</label>
+                    <select id="venueFilter">
+                        <option value="">All Venues</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="codeFilter">💻 Code Availability</label>
+                    <select id="codeFilter">
+                        <option value="">Any</option>
+                        <option value="yes">With Code</option>
+                        <option value="no">No Code</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="typeFilter">📋 Paper Type</label>
+                    <select id="typeFilter">
+                        <option value="">All Types</option>
+                        <option value="dataset">Datasets</option>
+                        <option value="survey">Surveys</option>
+                        <option value="method">Method Papers</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="motionFilter">🏃 Motion Type</label>
+                    <select id="motionFilter">
+                        <option value="">All Motions</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="papersContainer">
+            <div class="loading">Loading papers from data folder...</div>
+        </div>
+
+        <!-- Debug panel (hidden by default) -->
+        <div id="debugPanel" style="display: none; background: #f8f9fa; padding: 20px; margin-top: 20px; border-radius: 8px; border: 1px solid #dee2e6;">
+            <h3>Debug Information</h3>
+            <div id="debugContent"></div>
+            <button onclick="toggleDebug()" style="margin-top: 10px; padding: 5px 10px;">Hide Debug</button>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let allPapers = [];
+        let filteredPapers = [];
+        function escapeHtmlAttr(value) {
+            if (!value) return '';
+            return String(value)
+                .replace(/&/g, '&amp;')
+                .replace(/"/g, '&quot;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+        }
+
+        function onBibtexBadgeClick(event) {
+            const target = event.target;
+            const bibtex = target.getAttribute('data-bibtex');
+            if (!bibtex) return;
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(bibtex).then(() => {
+                    const original = target.textContent;
+                    target.textContent = '📑 BibTeX Copied';
+                    setTimeout(() => { target.textContent = original; }, 1200);
+                }).catch(() => {/* ignore */});
+            }
+        }
+
+        document.addEventListener('click', (e) => {
+            // Old inline badge copy handler (kept for backward compat if present)
+            if (e.target && e.target.classList && e.target.classList.contains('bibtex') && e.target.hasAttribute('data-bibtex')) {
+                onBibtexBadgeClick(e);
+                return;
+            }
+            // Toggle bibtex panel
+            if (e.target && e.target.hasAttribute('data-bibtex-toggle')) {
+                const card = e.target.closest('.paper-content');
+                const panel = card ? card.querySelector('[data-bibtex-panel]') : null;
+                if (panel) {
+                    panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+                }
+                return;
+            }
+            // Copy button inside bibtex panel
+            if (e.target && e.target.hasAttribute('data-bibtex-copy')) {
+                const panel = e.target.closest('[data-bibtex-panel]');
+                const contentEl = panel ? panel.querySelector('.bibtex-content') : null;
+                const text = contentEl ? contentEl.textContent : '';
+                if (text && navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(text).then(() => {
+                        const original = e.target.textContent;
+                        e.target.textContent = 'Copied!';
+                        setTimeout(() => { e.target.textContent = original; }, 1000);
+                    }).catch(() => {/* ignore */});
+                }
+            }
+        });
+        
+        // Paper data structure
+        class Paper {
+            constructor(data) {
+                // Dynamically copy all properties from the JSON data
+                Object.assign(this, data);
+                
+                // Set computed properties
+                this.hasReleasedCode = this.codeAvailability === true;
+                this.hasCodeLink = !!this.codeUrl;
+                this.filename = data.filename || '';
+                
+                // Ensure arrays are properly initialized
+                if (!Array.isArray(this.authors)) this.authors = [];
+                if (!Array.isArray(this.category)) this.category = [];
+                if (!Array.isArray(this.tags)) this.tags = [];
+            }
+        }
+
+        // Data loading functions
+        async function loadPapersFromDataFolder() {
+            try {
+                addDebugInfo('Attempting to load papers from data folder...');
+                console.log('Attempting to load papers from data folder...');
+                
+                // Try to load from actual data folder first
+                const paperFiles = await getPaperFileList();
+                addDebugInfo(`Paper files found: ${JSON.stringify(paperFiles)}`);
+                console.log('Paper files found:', paperFiles);
+                
+                const papers = [];
+                
+                for (const filename of paperFiles) {
+                    try {
+                        addDebugInfo(`Loading paper file: ${filename}`);
+                        console.log(`Loading paper file: ${filename}`);
+                        const paperData = await loadPaperFile(filename);
+                        addDebugInfo(`Successfully loaded: ${filename}`);
+                        console.log(`Successfully loaded: ${filename}`, paperData);
+                        
+                        paperData.filename = filename;
+                        // Set thumbnail URL - check for both .png and .jpg
+                        if (!paperData.thumbnailUrl) {
+                            const baseName = filename.replace('.json', '');
+                            paperData.thumbnailUrl = `images/${baseName}.png`;
+                        }
+                        const paper = new Paper(paperData);
+                        papers.push(paper);
+                    } catch (error) {
+                        addDebugInfo(`Failed to load paper file: ${filename} - ${error.message}`);
+                        console.error(`Failed to load paper file: ${filename}`, error);
+                    }
+                }
+                
+                addDebugInfo(`Successfully loaded ${papers.length} papers from files`);
+                console.log(`Successfully loaded ${papers.length} papers from files`);
+                
+                // If no papers loaded from files, throw an error
+                if (papers.length === 0) {
+                    addDebugInfo('No papers loaded from files');
+                    console.log('No papers loaded from files');
+                    throw new Error('No papers could be loaded from the data folder. Please check that the JSON files exist and are properly formatted.');
+                }
+                
+                return papers;
+            } catch (error) {
+                addDebugInfo(`Failed to load from data folder: ${error.message}`);
+                console.error('Failed to load from data folder:', error);
+                throw error; // Re-throw the error instead of falling back to mock data
+            }
+        }
+
+        async function getPaperFileList() {
+            try {
+                addDebugInfo('Attempting to load paper-list.json...');
+                console.log('Attempting to load paper-list.json...');
+                const response = await fetch('data/paper-list.json');
+                if (response.ok) {
+                    const fileList = await response.json();
+                    addDebugInfo(`Successfully loaded paper-list.json: ${JSON.stringify(fileList)}`);
+                    console.log('Successfully loaded paper-list.json:', fileList);
+                    return fileList.files || [];
+                } else {
+                    addDebugInfo(`paper-list.json returned status: ${response.status}`);
+                    console.warn(`paper-list.json returned status: ${response.status}`);
+                }
+            } catch (error) {
+                addDebugInfo(`paper-list.json not found or failed to load: ${error.message}`);
+                console.warn('paper-list.json not found or failed to load:', error);
+            }
+            
+            // Fallback: try to load known files
+            addDebugInfo('Using fallback method with known files');
+            console.log('Using fallback method with known files');
+            return ['stag4d.json'];
+        }
+
+        async function loadPaperFile(filename) {
+            addDebugInfo(`Fetching data/${filename}...`);
+            console.log(`Fetching data/${filename}...`);
+            const response = await fetch(`data/${filename}`);
+            if (!response.ok) {
+                const errorMsg = `HTTP ${response.status}: ${response.statusText} for file ${filename}`;
+                addDebugInfo(`Error: ${errorMsg}`);
+                throw new Error(errorMsg);
+            }
+            const data = await response.json();
+            addDebugInfo(`Successfully parsed JSON for ${filename}`);
+            console.log(`Successfully parsed JSON for ${filename}`);
+            return data;
+        }
+
+        // Filtering and display functions
+        function setupFilters() {
+            const representations = [...new Set(allPapers.flatMap(p => Array.isArray(p.representation) ? p.representation : [p.representation]).filter(Boolean))];
+            const categories = [...new Set(allPapers.flatMap(p => Array.isArray(p.category) ? p.category : [p.category]).filter(Boolean))];
+            const tasks = [...new Set(allPapers.flatMap(p => Array.isArray(p.task) ? p.task : [p.task]).filter(Boolean))];
+            const venues = [...new Set(allPapers.map(p => p.venue).filter(Boolean))];
+            const motions = [...new Set(allPapers.flatMap(p => Array.isArray(p.motion) ? p.motion : [p.motion]).filter(Boolean))];
+
+            populateSelect('representationFilter', representations.sort());
+            populateSelect('categoryFilter', categories.sort());
+            populateSelect('taskFilter', tasks.sort());
+            populateSelect('venueFilter', venues.sort());
+            populateSelect('motionFilter', motions.sort());
+
+            // Add event listeners
+            ['searchInput', 'representationFilter', 'categoryFilter', 'taskFilter', 'venueFilter', 'codeFilter', 'typeFilter', 'motionFilter'].forEach(id => {
+                document.getElementById(id).addEventListener('input', applyFilters);
+            });
+        }
+
+        function populateSelect(selectId, options) {
+            const select = document.getElementById(selectId);
+            const firstOption = select.children[0];
+            select.innerHTML = '';
+            select.appendChild(firstOption);
+            
+            options.forEach(option => {
+                const optionElement = document.createElement('option');
+                optionElement.value = option;
+                optionElement.textContent = option;
+                select.appendChild(optionElement);
+            });
+        }
+
+        function applyFilters() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const representation = document.getElementById('representationFilter').value;
+            const category = document.getElementById('categoryFilter').value;
+            const task = document.getElementById('taskFilter').value;
+            const venue = document.getElementById('venueFilter').value;
+            const codeFilter = document.getElementById('codeFilter').value;
+            const typeFilter = document.getElementById('typeFilter').value;
+            const motionFilter = document.getElementById('motionFilter').value;
+
+            filteredPapers = allPapers.filter(paper => {
+                const authorsText = Array.isArray(paper.authors) ? paper.authors.join(' ') : paper.authors;
+                const tagsText = Array.isArray(paper.tags) ? paper.tags.join(' ') : paper.tags;
+                
+                const matchesSearch = !search || 
+                    paper.title.toLowerCase().includes(search) ||
+                    authorsText.toLowerCase().includes(search) ||
+                    (paper.summary || '').toLowerCase().includes(search) ||
+                    tagsText.toLowerCase().includes(search);
+                
+                const matchesRepresentation = !representation || 
+                    (Array.isArray(paper.representation) ? paper.representation.includes(representation) : paper.representation === representation);
+                const matchesCategory = !category || (Array.isArray(paper.category) ? paper.category.includes(category) : paper.category === category);
+                const matchesTask = !task || 
+                    (Array.isArray(paper.task) ? paper.task.includes(task) : paper.task === task);
+                const matchesVenue = !venue || paper.venue === venue;
+                const matchesCode = !codeFilter || 
+                    (codeFilter === 'yes' && paper.hasReleasedCode) ||
+                    (codeFilter === 'no' && !paper.hasReleasedCode);
+                const matchesType = !typeFilter || 
+                    (typeFilter === 'dataset' && paper.dataset === true) ||
+                    (typeFilter === 'survey' && paper.survey === true) ||
+                    (typeFilter === 'method' && paper.dataset !== true && paper.survey !== true);
+                const matchesMotion = !motionFilter || 
+                    (Array.isArray(paper.motion) ? paper.motion.includes(motionFilter) : paper.motion === motionFilter);
+
+                return matchesSearch && matchesRepresentation && matchesCategory && 
+                       matchesTask && matchesVenue && matchesCode && matchesType && matchesMotion;
+            });
+
+            renderPapers();
+            updateStats();
+        }
+
+        function renderPapers() {
+            const container = document.getElementById('papersContainer');
+            
+            if (filteredPapers.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <h3>No papers found</h3>
+                        <p>Try adjusting your filters or search terms.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            // Separate papers into different categories
+            const regularPapers = [];
+            const datasetPapers = [];
+            const surveyPapers = [];
+            
+            filteredPapers.forEach(paper => {
+                if (paper.dataset === true) {
+                    datasetPapers.push(paper);
+                } else if (paper.survey === true) {
+                    surveyPapers.push(paper);
+                } else {
+                    regularPapers.push(paper);
+                }
+            });
+
+            let html = '';
+
+            // Render Datasets section if there are any
+            if (datasetPapers.length > 0) {
+                html += `
+                    <div class="section" id="datasets">
+                        <div class="section-header">
+                            <div class="section-title">📊 Datasets</div>
+                            <div class="section-count">${datasetPapers.length} dataset${datasetPapers.length !== 1 ? 's' : ''}</div>
+                        </div>
+                        <div class="papers-grid">
+                            ${datasetPapers.map(paper => renderPaper(paper)).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Render Surveys section if there are any
+            if (surveyPapers.length > 0) {
+                html += `
+                    <div class="section" id="surveys">
+                        <div class="section-header">
+                            <div class="section-title">📚 Surveys</div>
+                            <div class="section-count">${surveyPapers.length} survey${surveyPapers.length !== 1 ? 's' : ''}</div>
+                        </div>
+                        <div class="papers-grid">
+                            ${surveyPapers.map(paper => renderPaper(paper)).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Group regular papers by representation
+            const papersByRepr = {};
+            regularPapers.forEach(paper => {
+                const representations = Array.isArray(paper.representation) ? paper.representation : [paper.representation || 'Other'];
+                representations.forEach(repr => {
+                    if (!papersByRepr[repr]) {
+                        papersByRepr[repr] = [];
+                    }
+                    papersByRepr[repr].push(paper);
+                });
+            });
+
+            // Render regular papers by representation
+            Object.keys(papersByRepr).sort().forEach(repr => {
+                const papers = papersByRepr[repr];
+                html += `
+                    <div class="section" id="${repr.replace(/\s+/g, '-').toLowerCase()}">
+                        <div class="section-header">
+                            <div class="section-title">${repr}</div>
+                            <div class="section-count">${papers.length} paper${papers.length !== 1 ? 's' : ''}</div>
+                        </div>
+                        <div class="papers-grid">
+                            ${papers.map(paper => renderPaper(paper)).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        function renderPaper(paper) {
+            const reprClass = getRepresentationClass(paper.representation);
+            const authorsText = Array.isArray(paper.authors) ? paper.authors.join(', ') : paper.authors;
+            
+            // Debug logging for task rendering
+            if (paper.title && (paper.title.includes('TC4d') || paper.title.includes('Dream'))) {
+                console.log(`Debug ${paper.title}:`, {
+                    task: paper.task,
+                    isArray: Array.isArray(paper.task),
+                    type: typeof paper.task
+                });
+            }
+            
+            return `
+                <div class="paper-card ${reprClass}">
+                    <div class="paper-thumbnail">
+                        ${paper.thumbnailUrl ? 
+                            `<img src="${paper.thumbnailUrl}" alt="${paper.title}" onerror="this.parentElement.className='paper-thumbnail placeholder'; this.parentElement.innerHTML='📊<br>Preview<br>Coming Soon';">` :
+                            `<div class="placeholder">📊<br>Preview<br>Coming Soon</div>`
+                        }
+                    </div>
+                    
+                    <div class="paper-content">
+                        <div class="paper-title">
+                            ${paper.projectPage ? 
+                                `<a href="${paper.projectPage}" target="_blank" rel="noopener">${paper.title}</a>` : 
+                                paper.title}
+                        </div>
+                        
+                        ${authorsText ? `<div class="paper-authors">${authorsText}</div>` : ''}
+                        
+                        <div class="paper-badges">
+                            <span class="badge venue">${paper.venue} ${paper.year}</span>
+                            ${paper.dataset === true ? '<span class="badge dataset">📊 Dataset</span>' : ''}
+                            ${paper.survey === true ? '<span class="badge survey">📚 Survey</span>' : ''}
+                            ${paper.representation ? 
+                                (Array.isArray(paper.representation) ? 
+                                    paper.representation.map(repr => `<span class="badge taxonomy representation">${repr}</span>`).join('') :
+                                    `<span class="badge taxonomy representation">${paper.representation}</span>`) : ''}
+                            ${paper.motion ? 
+                                (Array.isArray(paper.motion) ? 
+                                    paper.motion.map(motion => `<span class="badge taxonomy motion">${motion}</span>`).join('') :
+                                    `<span class="badge taxonomy motion">${paper.motion}</span>`) : ''}
+                            ${paper.interaction ? `<span class="badge taxonomy interaction">${paper.interaction}</span>` : ''}
+                            ${paper.task ? 
+                                (Array.isArray(paper.task) ? 
+                                    paper.task.map(task => `<span class="badge task">${task}</span>`).join('') :
+                                    `<span class="badge task">${paper.task}</span>`) : ''}
+                            ${paper.category && paper.category.length > 0 ? paper.category.map(cat => `<span class="badge category">${cat.replace('-to-4D', '→4D')}</span>`).join('') : ''}
+                            ${paper.hasReleasedCode ? '<span class="badge code-available">Code ✓</span>' : ''}
+                            ${!paper.hasReleasedCode && paper.hasCodeLink ? '<span class="badge code-tentative" title="Repository link provided; code not yet released">Code (tentative)</span>' : ''}
+                        </div>
+
+                        <div class="paper-meta">
+                            <!-- Meta section now only shows additional details not covered by badges -->
+                        </div>
+
+                        ${paper.summary ? `
+                            <div class="paper-summary">
+                                <strong>Summary:</strong> ${paper.summary}
+                            </div>
+                        ` : ''}
+
+                        <div class="paper-links">
+                            ${paper.projectPage ? `
+                                <a href="${paper.projectPage}" class="paper-link project" target="_blank" rel="noopener">
+                                    🌐 Project Page
+                                </a>
+                            ` : ''}
+                            ${paper.paperUrl ? `
+                                <a href="${paper.paperUrl}" class="paper-link paper" target="_blank" rel="noopener">
+                                    📄 Paper
+                                </a>
+                            ` : ''}
+                            ${paper.codeUrl ? `
+                                <a href="${paper.codeUrl}" class="paper-link ${paper.hasReleasedCode ? 'code' : 'code-tentative'}" target="_blank" rel="noopener">
+                                    ${paper.hasReleasedCode ? '💻 Code' : '💻 Code (tentative)'}
+                                </a>
+                            ` : `
+                                <span class="paper-link no-code" aria-label="No code available">
+                                    ⛔ No Code
+                                </span>
+                            `}
+                            ${paper.bibtex ? `
+                                <button class="paper-link bibtex" type="button" data-bibtex-toggle>
+                                    📑 BibTeX
+                                </button>
+                            ` : ''}
+                        </div>
+                        ${paper.bibtex ? `
+                            <div class="bibtex-panel" data-bibtex-panel>
+                                <div class="panel-actions">
+                                    <button class="copy-btn" type="button" data-bibtex-copy>Copy</button>
+                                </div>
+                                <div class="bibtex-content">${escapeHtmlAttr(paper.bibtex)}</div>
+                            </div>
+                        ` : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        function getRepresentationClass(repr) {
+            if (!repr) return 'other';
+            const reprStr = Array.isArray(repr) ? repr.join(', ') : repr;
+            const lower = reprStr.toLowerCase();
+            if (lower.includes('nerf')) return 'nerf';
+            if (lower.includes('gaussian') || lower.includes('3dgs')) return 'gaussians';
+            if (lower.includes('mesh')) return 'mesh';
+            if (lower.includes('hybrid')) return 'hybrid';
+            return 'other';
+        }
+
+        function updateStats() {
+            const totalPapers = filteredPapers.length;
+            const totalRepresentations = new Set(filteredPapers.flatMap(p => Array.isArray(p.representation) ? p.representation : [p.representation]).filter(Boolean)).size;
+            const totalVenues = new Set(filteredPapers.map(p => p.venue).filter(Boolean)).size;
+            const totalWithCode = filteredPapers.filter(p => p.hasReleasedCode).length;
+
+            document.getElementById('totalPapers').textContent = totalPapers;
+            document.getElementById('totalRepresentations').textContent = totalRepresentations;
+            document.getElementById('totalVenues').textContent = totalVenues;
+            document.getElementById('totalWithCode').textContent = totalWithCode;
+        }
+
+        // Debug functions
+        function addDebugInfo(message) {
+            const debugContent = document.getElementById('debugContent');
+            if (debugContent) {
+                const timestamp = new Date().toLocaleTimeString();
+                debugContent.innerHTML += `<div>[${timestamp}] ${message}</div>`;
+            }
+        }
+
+        function toggleDebug() {
+            const debugPanel = document.getElementById('debugPanel');
+            if (debugPanel.style.display === 'none') {
+                debugPanel.style.display = 'block';
+            } else {
+                debugPanel.style.display = 'none';
+            }
+        }
+
+        // Show debug panel if there are issues
+        function showDebugPanel() {
+            const debugPanel = document.getElementById('debugPanel');
+            if (debugPanel) {
+                debugPanel.style.display = 'block';
+            }
+        }
+
+        // Initialize the application
+        async function initializeApp() {
+            try {
+                addDebugInfo('Starting application initialization...');
+                console.log('Loading papers...');
+                
+                allPapers = await loadPapersFromDataFolder();
+                filteredPapers = [...allPapers];
+                
+                addDebugInfo(`Successfully loaded ${allPapers.length} papers`);
+                console.log(`Loaded ${allPapers.length} papers`);
+                
+                setupFilters();
+                renderPapers();
+                updateStats();
+                
+                addDebugInfo('Application initialized successfully');
+            } catch (error) {
+                console.error('Failed to initialize app:', error);
+                addDebugInfo(`Error: ${error.message}`);
+                showDebugPanel();
+                
+                document.getElementById('papersContainer').innerHTML = `
+                    <div class="error-state">
+                        <h3>Error Loading Papers</h3>
+                        <p>Failed to load papers from the data folder. Please ensure:</p>
+                        <ul style="text-align: left; margin: 10px 0;">
+                            <li>The HTTP server is running (python3 -m http.server 8000)</li>
+                            <li>The data folder contains valid JSON files</li>
+                            <li>The files are accessible via HTTP (not file:// protocol)</li>
+                        </ul>
+                        <p><strong>Error:</strong> ${error.message}</p>
+                        <button onclick="toggleDebug()" style="margin-top: 10px; padding: 5px 10px;">Show Debug Info</button>
+                    </div>
+                `;
+            }
+        }
+
+        // Start the app when the page loads
+        document.addEventListener('DOMContentLoaded', initializeApp);
+    </script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+name: Submit Paper to 4D Survey
+description: Submit your paper to be included in the 4D Representation Survey
+title: "[SUBMISSION] Paper Title Here"
+labels: ["paper-submission", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Submit Your Paper to the 4D Representation Survey
+        Thank you for contributing! Please fill in all required fields below.
+
+  - type: input
+    id: paper-title
+    attributes:
+      label: Paper Title
+      placeholder: "In-2-4D: Inbetweening from Two Single-View Images to 4D Generation"
+    validations:
+      required: true
+
+  - type: input
+    id: authors
+    attributes:
+      label: Authors
+      description: "Enter author names in 'Firstname Lastname' format, separated by commas"
+      placeholder: "Sauradip Nag, Daniel Cohen-Or, Hao Zhang, Ali Mahdavi-Amiri"
+    validations:
+      required: true
+
+  - type: input
+    id: year
+    attributes:
+      label: Publication Year
+      placeholder: "2025"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: venue
+    attributes:
+      label: Venue
+      description: "Conference or journal where the paper was published"
+      options:
+        - CVPR
+        - ICCV
+        - ECCV
+        - SIGGRAPH
+        - SIGGRAPH Asia
+        - 3DV
+        - ICLR
+        - NeurIPS
+        - ICML
+        - TPAMI
+        - TVCG
+        - ArXiv
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: paper-url
+    attributes:
+      label: Paper URL
+      description: "arXiv link, PDF link, or publication page"
+      placeholder: "http://arxiv.org/abs/2504.08366"
+    validations:
+      required: true
+
+  - type: input
+    id: project-page
+    attributes:
+      label: Project Page
+      placeholder: "https://in-2-4d.github.io/"
+    validations:
+      required: false
+
+  - type: input
+    id: code-url
+    attributes:
+      label: Code Repository
+      placeholder: "https://github.com/sauradip/In-2-4D"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: representation
+    attributes:
+      label: Representation Type
+      description: "Primary 4D representation used (select all that apply)"
+      multiple: true
+      options:
+        - NeRF
+        - Gaussian Splatting
+        - Mesh
+        - Point Cloud
+        - Voxel
+        - Template
+        - Graph
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: task
+    attributes:
+      label: Task Type
+      description: "Primary task addressed (select all that apply)"
+      multiple: true
+      options:
+        - Scene
+        - Object
+        - Human
+        - Face
+        - Hand
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: "Input modality or generation type (select all that apply)"
+      multiple: true
+      options:
+        - Text-to-4D
+        - Image-to-4D
+        - Video-to-4D
+        - Point-to-4D
+        - Mesh-to-4D
+        - 3D-to-4D
+        - 4D understanding
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: motion
+    attributes:
+      label: Motion Type
+      description: "Type of motion or dynamics (select all that apply)"
+      multiple: true
+      options:
+        - Deformation
+        - Articulation
+        - Space-Time
+        - Tracking
+        - Scene Graph
+        - Other
+    validations:
+      required: false
+
+  - type: input
+    id: interaction
+    attributes:
+      label: Interaction/Control Method
+      description: "How can users interact with or control the 4D content? (Optional)"
+      placeholder: "Text-driven, keyframe animation, physics parameters, Human-Scene Interaction"
+
+  - type: dropdown
+    id: code-availability
+    attributes:
+      label: Code Availability
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: special-flags
+    attributes:
+      label: Special Flags
+      options:
+        - label: This paper has dataset contribution
+        - label: This is a survey/review paper
+
+  - type: textarea
+    id: bibtex
+    attributes:
+      label: BibTeX Citation
+      description: "Paste the complete BibTeX entry for your paper"
+      placeholder: |
+        @article{nag20254din,
+          title={{In-2-4D}: Inbetweening from Two Single-View Images to 4D Generation},
+          author = {Nag, Sauradip, Cohen-Or Daniel, Zhang, Hao and Mahdavi-Amiri, Ali},
+          journal = {SIGGRAPH Asia Conference Papers},
+          publisher = {ACM New York, NY, USA},
+          year = {2025},
+          doi = {https://doi.org/10.1145/3757377.3763904}
+        }
+      render: bibtex
+    validations:
+      required: true
+
+  - type: textarea
+    id: teaser-image
+    attributes:
+      label: Teaser Image
+      description: |
+        Upload a teaser image by dragging and dropping, or paste an image URL.
+        GitHub will automatically host the image when you drag and drop it here.
+        **Only PNG format accepted. Image should be named: [paper-name].png (e.g., in24d.png)**
+      placeholder: "Drag and drop a PNG image here, or paste image URL"
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: "Any other information you'd like to share"
+      placeholder: "e.g., This work extends our previous paper..., Won Best Paper at..., Special considerations for the survey..."
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Submission Agreement
+      options:
+        - label: I confirm this paper is relevant to 4D representations and dynamic 3D content
+          required: true
+        - label: I have filled in all required fields accurately
+          required: true
+        - label: I understand that this submission will be reviewed before being added to the survey
+          required: true

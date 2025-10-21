@@ -1,0 +1,34 @@
+{
+  "representation": [
+    "Gaussian Splatting"
+  ],
+  "task": "Object",
+  "category": [
+    "Text-to-4D",
+    "Image-to-4D",
+    "3D-to-4D"
+  ],
+  "projectPage": "https://vita-group.github.io/Diffusion4D/",
+  "paperUrl": "https://arxiv.org/abs/2405.16645",
+  "codeUrl": "https://github.com/VITA-Group/Diffusion4D",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@article{liang2024diffusion4d,   title={Diffusion4d: Fast spatial-temporal consistent 4d generation via video diffusion models},   author={Liang, Hanwen and Yin, Yuyang and Xu, Dejia and Liang, Hanxue and Wang, Zhangyang and Plataniotis, Konstantinos N and Zhao, Yao and Wei, Yunchao},   journal={NeurIPS},   year={2024} }",
+  "title": "Diffusion4d: Fast spatial-temporal consistent 4d generation via video diffusion models",
+  "authors": [
+    "Hanwen Liang",
+    "Yuyang Yin",
+    "Dejia Xu",
+    "Hanxue Liang",
+    "Zhangyang Wang",
+    "Konstantinos N Plataniotis",
+    "Yao Zhao",
+    "Yunchao Wei"
+  ],
+  "year": "2024",
+  "venue": "NeurIPS",
+  "dataset": true,
+  "survey": false
+}

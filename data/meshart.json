@@ -1,0 +1,27 @@
+{
+  "representation": [
+    "Part",
+    "Mesh"
+  ],
+  "task": "Object",
+  "category": "3D-to-4D",
+  "projectPage": "https://daoyig.github.io/Mesh_Art/",
+  "paperUrl": "https://arxiv.org/pdf/2412.11596",
+  "codeUrl": "https://github.com/DaoyiG/MeshArt",
+  "tags": [],
+  "motion": "Articulation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@InProceedings{gao2025meshart,   title={MeshArt: Generating Articulated Meshes with Structure-guided Transformers},   author={Gao, Daoyi and Siddiqui, Yawar and Li, Lei and Dai, Angela},   booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},   year={2025} } ",
+  "title": "MeshArt: Generating Articulated Meshes with Structure-guided Transformers",
+  "authors": [
+    "Daoyi Gao",
+    "Yawar Siddiqui",
+    "Lei Li",
+    "Angela Dai"
+  ],
+  "year": "2025",
+  "venue": "CVPR",
+  "dataset": true,
+  "survey": false
+}

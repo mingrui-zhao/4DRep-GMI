@@ -1,0 +1,27 @@
+{
+  "representation": "Mesh",
+  "task": "Object",
+  "category": [
+    "Text-to-4D"
+  ],
+  "projectPage": "",
+  "paperUrl": "https://arxiv.org/abs/2506.24121",
+  "codeUrl": "",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@article{TextMesh4D,title={TextMesh4D: High-Quality Text-to-4D Mesh Generation},author={Dai, Sisi and Su, Xinxin and Wan, Boyan and Hu, Ruizhen and Xu, Kai},journal={ArXiv},year={2025}}",
+  "title": "TextMesh4D: High-Quality Text-to-4D Mesh Generation",
+  "authors": [
+    "Sisi Dai",
+    "Xinxin Su",
+    "Boyan Wan",
+    "Ruizhen Hu",
+    "Kai Xu"
+  ],
+  "year": "2025",
+  "venue": "ArXiv",
+  "dataset": false,
+  "survey": false
+}

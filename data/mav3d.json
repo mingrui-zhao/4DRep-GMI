@@ -1,0 +1,36 @@
+{
+  "representation": "NeRF",
+  "task": [
+    "Object",
+    "Scene"
+  ],
+  "category": [
+    "Text-to-4D"
+  ],
+  "projectPage": "https://make-a-video3d.github.io/",
+  "paperUrl": "https://arxiv.org/abs/2301.11280",
+  "codeUrl": "",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@article{singer2023text,  title={Text-to-4d dynamic scene generation},  author={Singer, Uriel and Sheynin, Shelly and Polyak, Adam and Ashual, Oron and Makarov, Iurii and Kokkinos, Filippos and Goyal, Naman and Vedaldi, Andrea and Parikh, Devi and Johnson, Justin and others},  journal={ICML},  year={2023}}",
+  "title": "Text-to-4d dynamic scene generation",
+  "authors": [
+    "Uriel Singer",
+    "Shelly Sheynin",
+    "Adam Polyak",
+    "Oron Ashual",
+    "Iurii Makarov",
+    "Filippos Kokkinos",
+    "Naman Goyal",
+    "Andrea Vedaldi",
+    "Devi Parikh",
+    "Justin Johnson",
+    "others"
+  ],
+  "year": "2023",
+  "venue": "ICML",
+  "dataset": false,
+  "survey": false
+}

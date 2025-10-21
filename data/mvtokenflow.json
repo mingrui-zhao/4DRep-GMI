@@ -1,0 +1,29 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Object",
+  "category": "Video-to-4D",
+  "projectPage": "https://soolab.github.io/MVTokenFlow/",
+  "paperUrl": "https://arxiv.org/abs/2502.11697",
+  "codeUrl": "https://github.com/SooLab/MVTokenFlow",
+  "tags": [],
+  "motion": [
+    "Tracking",
+    "Deformation"
+  ],
+  "codeAvailability": false,
+  "interaction": "",
+  "bibtex": "@article{huang2025mvtokenflow,   title={MVTokenFlow: High-quality 4D Content Generation using Multiview Token Flow},   author={Huang, Hanzhuo and Liu, Yuan and Zheng, Ge and Wang, Jiepeng and Dou, Zhiyang and Yang, Sibei},   journal={ICLR},   year={2025} }",
+  "title": "MVTokenFlow: High-quality 4D Content Generation using Multiview Token Flow",
+  "authors": [
+    "Hanzhuo Huang",
+    "Yuan Liu",
+    "Ge Zheng",
+    "Jiepeng Wang",
+    "Zhiyang Dou",
+    "Sibei Yang"
+  ],
+  "year": "2025",
+  "venue": "ICLR",
+  "dataset": false,
+  "survey": false
+}

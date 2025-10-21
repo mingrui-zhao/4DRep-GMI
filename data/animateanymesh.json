@@ -1,0 +1,26 @@
+{
+  "representation": "Mesh",
+  "task": "Object",
+  "category": [
+    "3D-to-4D"
+  ],
+  "projectPage": "https://animateanymesh.github.io/AnimateAnyMesh/",
+  "paperUrl": "https://arxiv.org/pdf/2506.09982",
+  "codeUrl": "https://github.com/JarrentWu1031/AnimateAnyMesh",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{wu2025animateanymesh,     author = {Wu, Zijie and Yu, Chaohui and Wang, Fan and Bai, Xiang.},     title  = {AnimateAnyMesh: A Feed-Forward 4D Foundation Model for Text-Driven Universal Mesh Animation},     journal = {ICCV},     year   = {2025}, }",
+  "title": "AnimateAnyMesh: A Feed-Forward 4D Foundation Model for Text-Driven Universal Mesh Animation",
+  "authors": [
+    "Zijie Wu",
+    "Chaohui Yu",
+    "Fan Wang",
+    "Xiang. Bai"
+  ],
+  "year": "2025",
+  "venue": "ICCV",
+  "dataset": false,
+  "survey": false
+}

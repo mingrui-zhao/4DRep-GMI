@@ -1,0 +1,84 @@
+name: Process Paper Submissions
+
+on:
+  issues:
+    types: [opened, edited]
+  workflow_dispatch:
+
+jobs:
+  process-submission:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'paper-submission')
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        pip install requests
+    
+    - name: Process submission
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ISSUE_NUMBER: ${{ github.event.issue.number }}
+        ISSUE_TITLE: ${{ github.event.issue.title }}
+        ISSUE_BODY: ${{ github.event.issue.body }}
+      run: |
+        python process_submission.py
+    
+    - name: Create Pull Request
+      if: success()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        # Create a new branch for the submission
+        BRANCH_NAME="submission-${{ github.event.issue.number }}"
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # Create and switch to new branch
+        git checkout -b $BRANCH_NAME
+        
+        # Add and commit changes
+        git add data/
+        git add images/
+        git commit -m "Add paper submission from issue #${{ github.event.issue.number }}"
+        
+        # Push the branch
+        git push origin $BRANCH_NAME
+        
+        # Create pull request
+        gh pr create \
+          --title "Add paper: ${{ github.event.issue.title }}" \
+          --body "This PR adds a new paper submission from issue #${{ github.event.issue.number }}
+
+        **Paper Details:**
+        - Title: ${{ github.event.issue.title }}
+        - Issue: #${{ github.event.issue.number }}
+        - Submitted by: @${{ github.event.issue.user.login }}
+        
+        Please review the submission and merge if approved." \
+          --head $BRANCH_NAME \
+          --base main
+    
+    - name: Comment on issue
+      if: success()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh issue comment ${{ github.event.issue.number }} --body "✅ Your submission has been processed! A pull request has been created for review. We'll get back to you soon."
+    
+    - name: Comment on issue (failure)
+      if: failure()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh issue comment ${{ github.event.issue.number }} --body "❌ There was an error processing your submission. Please check that all required fields are filled correctly and try again."

@@ -1,0 +1,27 @@
+{
+  "representation": "NeRF",
+  "task": "Object",
+  "category": [
+    "Video-to-4D"
+  ],
+  "projectPage": "https://sv4d.github.io/",
+  "paperUrl": "https://arxiv.org/abs/2407.17470",
+  "codeUrl": "https://github.com/Stability-AI/generative-models",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{xie2024sv4d, title={Sv4d: Dynamic 3d content generation with multi-frame and multi-view consistency}, author={Xie, Yiming and Yao, Chun-Han and Voleti, Vikram and Jiang, Huaizu and Jampani, Varun}, journal={ICLR}, year={2025} } year = {2023}, pages = {21128-21137} }",
+  "title": "Sv4d: Dynamic 3d content generation with multi-frame and multi-view consistency",
+  "authors": [
+    "Yiming Xie",
+    "Chun-Han Yao",
+    "Vikram Voleti",
+    "Huaizu Jiang",
+    "Varun Jampani"
+  ],
+  "year": "2025",
+  "venue": "ICLR",
+  "dataset": false,
+  "survey": false
+}

@@ -1,0 +1,23 @@
+{
+  "representation": "Point Cloud",
+  "task": "Scene",
+  "category": "Image-to-4D",
+  "projectPage": "https://niopeng.github.io/PAPR-in-Motion/",
+  "paperUrl": "https://arxiv.org/abs/2406.05533",
+  "codeUrl": "https://github.com/niopeng/PAPR-in-Motion",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{peng2024papr,       title={PAPR in Motion: Seamless Point-level 3D Scene Interpolation},       author={Shichong Peng and Yanshu Zhang and Ke Li},       booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},       year={2024}   }",
+  "title": "PAPR in Motion: Seamless Point-level 3D Scene Interpolation",
+  "authors": [
+    "Shichong Peng",
+    "Yanshu Zhang",
+    "Ke Li"
+  ],
+  "year": "2024",
+  "venue": "CVPR",
+  "dataset": false,
+  "survey": false
+}

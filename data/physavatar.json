@@ -1,0 +1,37 @@
+{
+  "representation": [
+    "Template",
+    "Mesh"
+  ],
+  "task": "Human",
+  "category": [
+    "Video-to-4D",
+    "3D-to-4D"
+  ],
+  "projectPage": "https://qingqing-zhao.github.io/PhysAvatar",
+  "paperUrl": "https://arxiv.org/abs/2404.04421",
+  "codeUrl": "https://github.com/y-zheng18/PhysAvatar",
+  "tags": [],
+  "motion": ["Articulation", "Deformation"],
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{zheng2024physavatar,   title={Physavatar: Learning the physics of dressed 3d avatars from visual observations},   author={Zheng, Yang and Zhao, Qingqing and Yang, Guandao and Yifan, Wang and Xiang, Donglai and Dubost, Florian and Lagun, Dmitry and Beeler, Thabo and Tombari, Federico and Guibas, Leonidas and others},   booktitle={European Conference on Computer Vision},   pages={262--284},   year={2024},   organization={Springer} }",
+  "title": "Physavatar: Learning the physics of dressed 3d avatars from visual observations",
+  "authors": [
+    "Yang Zheng",
+    "Qingqing Zhao",
+    "Guandao Yang",
+    "Wang Yifan",
+    "Donglai Xiang",
+    "Florian Dubost",
+    "Dmitry Lagun",
+    "Thabo Beeler",
+    "Federico Tombari",
+    "Leonidas Guibas",
+    "others"
+  ],
+  "year": "2024",
+  "venue": "ECCV",
+  "dataset": false,
+  "survey": false
+}

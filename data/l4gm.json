@@ -1,0 +1,33 @@
+{
+  "representation": [
+    "Gaussian Splatting"
+  ],
+  "task": "Object",
+  "category": "Video-to-4D",
+  "projectPage": "https://research.nvidia.com/labs/toronto-ai/l4gm/",
+  "paperUrl": "https://arxiv.org/abs/2406.10324",
+  "codeUrl": "https://github.com/nv-tlabs/L4GM-official",
+  "tags": [],
+  "motion": "Per frame",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{ren2024l4gm,           title={L4GM: Large 4D Gaussian Reconstruction Model},           author={Ren, Jiawei and Xie, Kevin and Mirzaei, Ashkan and Liang, Hanxue and Zeng, Xiaohui and Kreis, Karsten and Liu, Ziwei and Torralba, Antonio and Fidler, Sanja and Kim, Seung Wook and Ling, Huan},           booktitle={Advances in Neural Information Processing Systems},           month={December},           year={2024} }",
+  "title": "L4GM: Large 4D Gaussian Reconstruction Model",
+  "authors": [
+    "Jiawei Ren",
+    "Kevin Xie",
+    "Ashkan Mirzaei",
+    "Hanxue Liang",
+    "Xiaohui Zeng",
+    "Karsten Kreis",
+    "Ziwei Liu",
+    "Antonio Torralba",
+    "Sanja Fidler",
+    "Seung Wook Kim",
+    "Huan Ling"
+  ],
+  "year": "2024",
+  "venue": "NeurIPS",
+  "dataset": true,
+  "survey": false
+}

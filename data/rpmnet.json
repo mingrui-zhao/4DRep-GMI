@@ -1,0 +1,29 @@
+{
+  "representation": [
+    "Point Cloud"
+  ],
+  "task": "Object",
+  "category": "3D-to-4D",
+  "projectPage": "https://vcc.tech/research/2019/RPMNet",
+  "paperUrl": "https://arxiv.org/abs/2006.14865",
+  "codeUrl": "https://github.com/Salingo/RPM-Net",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{RPMNet19, title = {RPM-Net: Recurrent Prediction of Motion and Parts from Point Cloud}, author = {Zihao Yan and Ruizhen Hu and Xingguang Yan and Luanmin Chen and Oliver van Kaick and Hao Zhang and Hui Huang}, journal = {ACM Transactions on Graphics (Proceedings of SIGGRAPH ASIA 2019)}, volume = {38}, number = {6}, pages = {240:1--240:15},   year = {2019}, } ",
+  "title": "RPM-Net: Recurrent Prediction of Motion and Parts from Point Cloud",
+  "authors": [
+    "Zihao Yan",
+    "Ruizhen Hu",
+    "Xingguang Yan",
+    "Luanmin Chen",
+    "Oliver van Kaick",
+    "Hao Zhang",
+    "Hui Huang"
+  ],
+  "year": "2019",
+  "venue": "Siggraph Asia",
+  "dataset": true,
+  "survey": false
+}

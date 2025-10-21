@@ -1,0 +1,24 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Scene",
+  "category": "Video-to-4D",
+  "projectPage": "https://dynamic3dgaussians.github.io/",
+  "paperUrl": "https://arxiv.org/pdf/2308.09713.pdf",
+  "codeUrl": "https://github.com/JonathonLuiten/Dynamic3DGaussians",
+  "tags": [],
+  "motion": ["Space-Time", "Tracking"],
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{luiten2023dynamic,   title={Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis},   author={Luiten, Jonathon and Kopanas, Georgios and Leibe, Bastian and Ramanan, Deva},   booktitle={3DV},   year={2024} }",
+  "title": "Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis",
+  "authors": [
+    "Jonathon Luiten",
+    "Georgios Kopanas",
+    "Bastian Leibe",
+    "Deva Ramanan"
+  ],
+  "year": "2024",
+  "venue": "3DV",
+  "dataset": false,
+  "survey": false
+}

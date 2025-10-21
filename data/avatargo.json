@@ -1,0 +1,28 @@
+{
+  "representation": [
+    "Template",
+    "Gaussian Splatting"
+  ],
+  "task": "Human",
+  "category": "Text-to-4D",
+  "projectPage": "https://yukangcao.github.io/AvatarGO/",
+  "paperUrl": "https://arxiv.org/abs/2410.07164",
+  "codeUrl": "https://github.com/yukangcao/AvatarGO",
+  "tags": [],
+  "motion": "",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{cao2024avatargo,   title={Avatargo: Zero-shot 4d human-object interaction generation and animation},   author={Cao, Yukang and Pan, Liang and Han, Kai and Wong, Kwan-Yee K and Liu, Ziwei},   journal={ICLR},   year={2025} }",
+  "title": "Avatargo: Zero-shot 4d human-object interaction generation and animation",
+  "authors": [
+    "Yukang Cao",
+    "Liang Pan",
+    "Kai Han",
+    "Kwan-Yee K Wong",
+    "Ziwei Liu"
+  ],
+  "year": "2025",
+  "venue": "ICLR",
+  "dataset": false,
+  "survey": false
+}

@@ -1,0 +1,29 @@
+{
+  "representation": [
+    "Template",
+    "Gaussian Splatting"
+  ],
+  "task": "Human",
+  "category": "Image-to-4D",
+  "projectPage": "https://disco-4d.github.io/",
+  "paperUrl": "https://arxiv.org/pdf/2409.17280",
+  "codeUrl": "https://github.com/disco-4d/Disco4D",
+  "tags": [],
+  "motion": ["Articulation", "Deformation"],
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{   title={Disco4D: Disentangled 4D Human Generation and Animation from a Single Image},   author={Pang, Hui En and Liu, Shuai and Cai, Zhongang and Yang, Lei and Zhang, Tianwei and Liu, Ziwei},   booktitle={CVPR},   year={2025} }",
+  "title": "Disco4D: Disentangled 4D Human Generation and Animation from a Single Image",
+  "authors": [
+    "Hui En Pang",
+    "Shuai Liu",
+    "Zhongang Cai",
+    "Lei Yang",
+    "Tianwei Zhang",
+    "Ziwei Liu"
+  ],
+  "year": "2025",
+  "venue": "CVPR",
+  "dataset": false,
+  "survey": false
+}

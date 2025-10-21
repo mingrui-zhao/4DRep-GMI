@@ -1,0 +1,31 @@
+{
+  "representation": [
+    "Graph",
+    "Point Cloud"
+  ],
+  "task": "Scene",
+  "category": "4D understanding",
+  "projectPage": "",
+  "paperUrl": "https://arxiv.org/abs/2405.10305",
+  "codeUrl": "https://github.com/Jingkang50/PSG4D",
+  "tags": [],
+  "motion": "Scene Graph",
+  "codeAvailability": true,
+  "interaction": "Human-Object Interaction",
+  "bibtex": "@inproceedings{yang2023psg4d,     author = {Yang, Jingkang and Cen, Jun and Peng, Wenxuan and Liu, Shuai amd Hong, Fangzhou and Li, Xiangtai and Zhou, Kaiyang and Chen, Qifeng and Liu, Ziwei}     title = {4D Panoptic Scene Graph Generation},     booktitle = {NeurIPS},     year = {2023}, }",
+  "title": "4D Panoptic Scene Graph Generation",
+  "authors": [
+    "Jingkang Yang",
+    "Jun Cen",
+    "Wenxuan Peng",
+    "Shuai amd Hong, Fangzhou Liu",
+    "Xiangtai Li",
+    "Kaiyang Zhou",
+    "Qifeng Chen",
+    "Ziwei Liu"
+  ],
+  "year": "2023",
+  "venue": "NeurIPS",
+  "dataset": true,
+  "survey": false
+}

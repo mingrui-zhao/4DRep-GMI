@@ -1,0 +1,32 @@
+{
+  "representation": "Gaussian Splatting",
+  "task": "Scene",
+  "category": [
+    "Image-to-4D"
+  ],
+  "projectPage": "https://free4d.github.io/",
+  "paperUrl": "https://arxiv.org/pdf/2503.20785",
+  "codeUrl": "https://github.com/TQTQliu/Free4D",
+  "tags": [],
+  "motion": "Deformation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@article{liu2025free4d,     title={Free4D: Tuning-free 4D Scene Generation with Spatial-Temporal Consistency},     author={Liu, Tianqi and Huang, Zihao and Chen, Zhaoxi and Wang, Guangcong and Hu, Shoukang and Shen, liao and Sun, Huiqiang and Cao, Zhiguo and Li, Wei and Liu, Ziwei},     journal={ICCV},     year={2025} }",
+  "title": "Free4D: Tuning-free 4D Scene Generation with Spatial-Temporal Consistency",
+  "authors": [
+    "Tianqi Liu",
+    "Zihao Huang",
+    "Zhaoxi Chen",
+    "Guangcong Wang",
+    "Shoukang Hu",
+    "liao Shen",
+    "Huiqiang Sun",
+    "Zhiguo Cao",
+    "Wei Li",
+    "Ziwei Liu"
+  ],
+  "year": "2025",
+  "venue": "ICCV",
+  "dataset": false,
+  "survey": false
+}
