@@ -28,7 +28,7 @@
   <p align="center">
     <a href="#" target="_blank"><strong>Paper</strong></a>
     |
-    <a href="#" target="_blank"><strong>Project Page</strong></a>
+    <a href="https://mingrui-zhao.github.io/4DRep-GMI/" target="_blank"><strong>Project Page</strong></a>
   </p>
 </p>
 
