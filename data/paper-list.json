@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "/home/mingrui/Github/4D-Survey",
-  "totalPapers": 76,
+  "lastUpdated": "/local-scratch2/localhome/mza143/Github/4DRep-GMI",
+  "totalPapers": 77,
   "files": [
     "3dsg.json",
     "4d-fy.json",
@@ -52,6 +52,7 @@
     "meshart.json",
     "monst3r.json",
     "mosca.json",
+    "motiondreamer.json",
     "mvp4d.json",
     "mvtokenflow.json",
     "neuralpci.json",

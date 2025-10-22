@@ -1,0 +1,26 @@
+{
+  "representation": "Template",
+  "task": "Human",
+  "category": "3D-to-4D",
+  "projectPage": "https://motiondreamer.github.io/",
+  "paperUrl": "https://arxiv.org/abs/2504.08959",
+  "codeUrl": "https://github.com/MotionDreamer/MotionDreamer",
+  "tags": [],
+  "motion": "Articulation",
+  "codeAvailability": true,
+  "interaction": "",
+  "bibtex": "@inproceedings{ wang2025motiondreamer, title={MotionDreamer: One-to-Many Motion Synthesis with Localized Generative Masked Transformer}, author={Yilin Wang and chuan guo and Yuxuan Mu and Muhammad Gohar Javed and Xinxin Zuo and Juwei Lu and Hai Jiang and Li cheng}, booktitle={The Thirteenth International Conference on Learning Representations}, year={2025}, url={https://openreview.net/forum?id=d23EVDRJ6g} }",
+  "title": "MotionDreamer: One-to-Many Motion Synthesis with Localized Generative Masked Transformer",
+  "authors": [
+    "Yilin Wang",
+    "chuan guo",
+    "Yuxuan Mu",
+    "Muhammad Gohar Javed",
+    "Xinxin Zuo",
+    "Juwei Lu",
+    "Hai Jiang",
+    "Li cheng"
+  ],
+  "year": "2025",
+  "venue": "ICLR"
+}
