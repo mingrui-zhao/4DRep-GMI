@@ -2,7 +2,7 @@
 
   <div align="center" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
     <img src="asset/logo2.png" alt="4D Survey Logo" width="80" height="80" style="border-radius: 50%;">
-    <h1 align="center"><a href="#" target="_blank">Advances in 4D Representation: Geometry, Motion and Interaction</a></h1>
+    <h1 align="center"><a href="https://arxiv.org/abs/2510.19255" target="_blank">Advances in 4D Representation: Geometry, Motion and Interaction</a></h1>
   </div>
 
   <p align="center">
@@ -26,7 +26,7 @@
   </p>
 
   <p align="center">
-    <a href="#" target="_blank"><strong>Paper</strong></a>
+    <a href="https://arxiv.org/abs/2510.19255" target="_blank"><strong>Paper</strong></a>
     |
     <a href="https://mingrui-zhao.github.io/4DRep-GMI/" target="_blank"><strong>Project Page</strong></a>
   </p>
@@ -112,17 +112,13 @@ We welcome contributions to this survey! If you have a paper related to 4D repre
 If you found our survey helpful, please consider citing:
 
 ```bibtex
-@article{zhao2024advances4d,
-    title={Advances in 4D Representation: Geometry, Motion and Interaction},
-    author={Mingrui Zhao and Sauradip Nag and Kai Wang and Guangda Ji and Aditya Vora and Peter Chun and Ali Mahdavi-Amiri and Richard Hao Zhang},
-    journal={[Journal Name]},
-    year={2024},
-    note={[To be added]}
+@misc{zhao2025advances4drepresentationgeometry,
+      title={Advances in 4D Representation: Geometry, Motion, and Interaction}, 
+      author={Mingrui Zhao and Sauradip Nag and Kai Wang and Aditya Vora and Guangda Ji and Peter Chun and Ali Mahdavi-Amiri and Hao Zhang},
+      year={2025},
+      eprint={2510.19255},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2510.19255}, 
 }
 ```
-
----
-
-**Ready to contribute?** 🚀
-
-[Submit your paper now](https://github.com/your-username/4D-Survey/issues/new/choose) and help us build the most comprehensive 4D representation survey!
