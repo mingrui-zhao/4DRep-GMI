@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "/local-scratch2/localhome/mza143/Github/4DRep-GMI",
-  "totalPapers": 77,
+  "lastUpdated": "2025-10-27 13:45:51",
+  "totalPapers": 78,
   "files": [
     "3dsg.json",
     "4d-fy.json",
@@ -78,6 +78,7 @@
     "v4d.json",
     "vid2avatar.json",
     "vidu4d.json",
-    "vividzoo.json"
+    "vividzoo.json",
+    "phystwin.json"
   ]
 }

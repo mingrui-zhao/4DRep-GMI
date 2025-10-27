@@ -1,0 +1,18 @@
+{
+  "title": "PhysTwin",
+  "authors": ["Hanxiao Jiang", "Hao-Yu Hsu", "Kaifeng Zhang", "Hsin-Ni Yu", "Shenlong Wang", "Yunzhu Li"],
+  "year": "2025",
+  "venue": "ICCV",
+  "paperUrl": "https://arxiv.org/abs/2503.17973",
+  "projectPage": "https://jianghanxiao.github.io/phystwin-web/",
+  "codeUrl": "https://github.com/Jianghanxiao/PhysTwin",
+  "representation": ["Gaussian Splatting", "Point Cloud"],
+  "task": ["Object", "Hand"],
+  "category": ["Video-to-4D", "4D understanding"],
+  "motion": ["Deformation"],
+  "interaction": "Human-Object Interaction",
+  "codeAvailability": true,
+  "bibtex": "@article{jiang2025phystwin, title={PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos}, author={Jiang, Hanxiao and Hsu, Hao-Yu and Zhang, Kaifeng and Yu, Hsin-Ni and Wang, Shenlong and Li, Yunzhu}, journal={ICCV}, year={2025} }",
+  "dataset": false,
+  "survey": false
+}
