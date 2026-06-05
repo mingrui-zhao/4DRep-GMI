@@ -1,0 +1,33 @@
+{
+  "title": "3D AffordanceNet: A Benchmark for Visual Object Affordance Understanding",
+  "authors": [
+    "Shengheng Deng",
+    "Xun Xu",
+    "Chaozheng Wu",
+    "Ke Chen",
+    "Kui Jia"
+  ],
+  "year": "2021",
+  "venue": "CVPR",
+  "paperUrl": "https://arxiv.org/abs/2103.16397",
+  "projectPage": "",
+  "codeUrl": "https://github.com/Gorilla-Lab-SCUT/AffordanceNet",
+  "representation": [
+    "Point Cloud"
+  ],
+  "motion": [],
+  "prior": "TD",
+  "inputCondition": "Point Cloud",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "Affordance prediction",
+  "task": "Object",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{deng20213d,\n  title={3D AffordanceNet: A Benchmark for Visual Object Affordance Understanding},\n  author={Deng, Shengheng and Xu, Xun and Wu, Chaozheng and Chen, Ke and Jia, Kui},\n  booktitle={CVPR},\n  year={2021}\n}",
+  "bibkey": "3DAffordanceNet"
+}

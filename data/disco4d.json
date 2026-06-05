@@ -9,7 +9,10 @@
   "paperUrl": "https://arxiv.org/pdf/2409.17280",
   "codeUrl": "https://github.com/disco-4d/Disco4D",
   "tags": [],
-  "motion": ["Articulation", "Deformation"],
+  "motion": [
+    "Articulation",
+    "Deformation"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@inproceedings{   title={Disco4D: Disentangled 4D Human Generation and Animation from a Single Image},   author={Pang, Hui En and Liu, Shuai and Cai, Zhongang and Yang, Lei and Zhang, Tianwei and Liu, Ziwei},   booktitle={CVPR},   year={2025} }",
@@ -25,5 +28,9 @@
   "year": "2025",
   "venue": "CVPR",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "pang_disco4d_2024",
+  "prior": "FM",
+  "inputCondition": "Image",
+  "trainingStrategy": "Per-scene"
 }

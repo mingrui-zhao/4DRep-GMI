@@ -1,5 +1,7 @@
 {
-  "representation": "Gaussian Splatting",
+  "representation": [
+    "Gaussian Splatting"
+  ],
   "task": "Object",
   "category": [
     "Video-to-4D"
@@ -9,6 +11,7 @@
   "codeUrl": "https://github.com/JarrentWu1031/SC4D",
   "tags": [],
   "motion": [
+    "Articulation",
     "Deformation"
   ],
   "codeAvailability": true,
@@ -26,5 +29,9 @@
   "year": "2024",
   "venue": "ECCV",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "wu_sc4d_2024",
+  "prior": "FM",
+  "inputCondition": "Video",
+  "trainingStrategy": "Per-scene"
 }

@@ -10,8 +10,7 @@
   "codeUrl": "",
   "tags": [],
   "motion": [
-    "Articulation",
-    "Deformation"
+    "Articulation"
   ],
   "codeAvailability": false,
   "interaction": "",
@@ -28,5 +27,9 @@
   "year": "2025",
   "venue": "ICCV",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "goyal2025geopard",
+  "prior": "TD",
+  "inputCondition": "Point Cloud",
+  "trainingStrategy": "Feed-forward"
 }

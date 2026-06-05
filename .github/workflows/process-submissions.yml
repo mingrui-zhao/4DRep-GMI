@@ -33,7 +33,11 @@ jobs:
         ISSUE_BODY: ${{ github.event.issue.body }}
       run: |
         python process_submission.py
-    
+
+    - name: Rebuild consolidated data bundle
+      run: |
+        python scripts/build_bundle.py
+
     - name: Create Pull Request
       if: success()
       env:
@@ -47,9 +51,10 @@ jobs:
         # Create and switch to new branch
         git checkout -b $BRANCH_NAME
         
-        # Add and commit changes
+        # Add and commit changes (data bundle + stamped index.html)
         git add data/
         git add images/
+        git add index.html
         git commit -m "Add paper submission from issue #${{ github.event.issue.number }}"
         
         # Push the branch

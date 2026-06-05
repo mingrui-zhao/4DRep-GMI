@@ -9,7 +9,10 @@
   "paperUrl": "https://arxiv.org/abs/2410.07164",
   "codeUrl": "https://github.com/yukangcao/AvatarGO",
   "tags": [],
-  "motion": "",
+  "motion": [
+    "Articulation",
+    "Deformation"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@article{cao2024avatargo,   title={Avatargo: Zero-shot 4d human-object interaction generation and animation},   author={Cao, Yukang and Pan, Liang and Han, Kai and Wong, Kwan-Yee K and Liu, Ziwei},   journal={ICLR},   year={2025} }",
@@ -24,5 +27,10 @@
   "year": "2025",
   "venue": "ICLR",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "cao_avatargo_2024",
+  "prior": "FM+LLM",
+  "inputCondition": "Text",
+  "trainingStrategy": "Per-scene",
+  "interactionType": "HOI"
 }

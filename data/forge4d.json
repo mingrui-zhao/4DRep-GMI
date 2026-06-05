@@ -1,0 +1,38 @@
+{
+  "title": "Forge4D: Feed-Forward 4D Human Reconstruction and Interpolation from Uncalibrated Sparse-view Videos",
+  "authors": [
+    "Yingdong Hu",
+    "Yisheng He",
+    "Jinnan Chen",
+    "Weihao Yuan",
+    "Kejie Qiu",
+    "Zehong Lin",
+    "Siyu Zhu",
+    "Zilong Dong",
+    "Jun Zhang"
+  ],
+  "year": "2025",
+  "venue": "ArXiv",
+  "paperUrl": "https://arxiv.org/abs/2509.24209",
+  "projectPage": "https://zhenliuzju.github.io/huyingdong/Forge4D/",
+  "codeUrl": "https://github.com/zhenliuZJU/Forge4D",
+  "representation": [
+    "Gaussian Splatting"
+  ],
+  "motion": [
+    "Tracking"
+  ],
+  "prior": "TD",
+  "inputCondition": "Multi-view",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "",
+  "task": "Human",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@article{forge4d,\n  title={Forge4D: Feed-Forward 4D Human Reconstruction and Interpolation from Uncalibrated Sparse-view Videos},\n  author={Yingdong Hu and Yisheng He and Jinnan Chen and Weihao Yuan and Kejie Qiu and Zehong Lin and Siyu Zhu and Zilong Dong and Jun Zhang},\n  journal={arXiv preprint arXiv:2509.24209},\n  year={2025}\n}"
+}

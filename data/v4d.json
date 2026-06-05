@@ -1,5 +1,7 @@
 {
-  "representation": "NeRF",
+  "representation": [
+    "NeRF"
+  ],
   "task": "Object",
   "category": "Video-to-4D",
   "projectPage": "",
@@ -7,8 +9,7 @@
   "codeUrl": "https://github.com/GANWANSHUI/V4D",
   "tags": [],
   "motion": [
-    "Space-Time",
-    "Deformation"
+    "Space-Time"
   ],
   "codeAvailability": true,
   "interaction": "",
@@ -22,7 +23,11 @@
     "Naoto Yokoya"
   ],
   "year": "2023",
-  "venue": "TVCG",
+  "venue": "IEEE TVCG",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "gan2023v4d",
+  "prior": "Input",
+  "inputCondition": "Video",
+  "trainingStrategy": "Per-scene"
 }

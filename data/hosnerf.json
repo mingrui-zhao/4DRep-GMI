@@ -1,0 +1,40 @@
+{
+  "title": "HOSNeRF: Dynamic Human-Object-Scene Neural Radiance Fields from a Single Video",
+  "authors": [
+    "Jia-Wei Liu",
+    "Yan-Pei Cao",
+    "Tianyuan Yang",
+    "Eric Zhongcong Xu",
+    "Jussi Keppo",
+    "Ying Shan",
+    "Xiaohu Qie",
+    "Mike Zheng Shou"
+  ],
+  "year": "2023",
+  "venue": "ICCV",
+  "paperUrl": "https://arxiv.org/abs/2304.12281",
+  "projectPage": "https://showlab.github.io/HOSNeRF/",
+  "codeUrl": "https://github.com/TencentARC/HOSNeRF",
+  "representation": [
+    "Template",
+    "NeRF"
+  ],
+  "motion": [
+    "Articulation",
+    "Deformation"
+  ],
+  "prior": "Input",
+  "inputCondition": "Video",
+  "trainingStrategy": "Per-scene",
+  "interactionType": "HOI/HSI",
+  "task": "Human",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{liu2023hosnerf,\n  title={HOSNeRF: Dynamic Human-Object-Scene Neural Radiance Fields from a Single Video},\n  author={Liu, Jia-Wei and Cao, Yan-Pei and Yang, Tianyuan and Xu, Eric Zhongcong and Keppo, Jussi and Shan, Ying and Qie, Xiaohu and Shou, Mike Zheng},\n  booktitle={ICCV},\n  year={2023}\n}",
+  "bibkey": "liu2023hosnerf"
+}

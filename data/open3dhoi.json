@@ -1,0 +1,40 @@
+{
+  "title": "Reconstructing In-the-Wild Open-Vocabulary Human-Object Interactions",
+  "authors": [
+    "Boran Wen",
+    "Dingbang Huang",
+    "Zichen Zhang",
+    "Jiahong Zhou",
+    "Jianbin Deng",
+    "Jingyu Gong",
+    "Yulong Chen",
+    "Lizhuang Ma",
+    "Yong-Lu Li"
+  ],
+  "year": "2025",
+  "venue": "CVPR",
+  "paperUrl": "https://arxiv.org/abs/2503.15898",
+  "projectPage": "https://wenboran2002.github.io/3dhoi/",
+  "codeUrl": "https://github.com/wenboran2002/open-3dhoi",
+  "representation": [
+    "Template",
+    "Gaussian Splatting"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "FM+Human",
+  "inputCondition": "Image",
+  "trainingStrategy": "Per-scene",
+  "interactionType": "HOI",
+  "task": "Human",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": false,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{wen2025reconstructing,\n  title={Reconstructing In-the-Wild Open-Vocabulary Human-Object Interactions},\n  author={Wen, Boran and Huang, Dingbang and Zhang, Zichen and Zhou, Jiahong and Deng, Jianbin and Gong, Jingyu and Chen, Yulong and Ma, Lizhuang and Li, Yong-Lu},\n  booktitle={CVPR},\n  year={2025}\n}",
+  "bibkey": "wen2025reconstructing"
+}

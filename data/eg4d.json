@@ -1,12 +1,16 @@
 {
-  "representation": "Gaussian Splatting",
+  "representation": [
+    "Gaussian Splatting"
+  ],
   "task": "Object",
   "category": "Image-to-4D",
   "projectPage": "",
   "paperUrl": "https://arxiv.org/abs/2405.18132v1",
   "codeUrl": "https://github.com/jasongzy/EG4D",
   "tags": [],
-  "motion": "Deformation",
+  "motion": [
+    "Deformation"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@inproceedings{sun2024eg4d,   title={EG4D: Explicit Generation of 4D Object without Score Distillation},   author={Qi Sun and Zhiyang Guo and Ziyu Wan and Jing Nathan Yan and Shengming Yin and Wengang Zhou and Jing Liao and Houqiang Li},   booktitle={ICLR},   year={2025} }",
@@ -24,5 +28,9 @@
   "year": "2025",
   "venue": "ICLR",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "sun_eg4d_2024",
+  "prior": "FM",
+  "inputCondition": "Image",
+  "trainingStrategy": "Per-scene"
 }

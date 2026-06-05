@@ -11,7 +11,9 @@
   "paperUrl": "https://arxiv.org/pdf/2411.02319",
   "codeUrl": "https://github.com/HeliosZhao/GenXD",
   "tags": [],
-  "motion": "Deformation",
+  "motion": [
+    "Deformation"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@inproceedings{zhao2024genxd,   author={Zhao, Yuyang and Lin, Chung-Ching and Lin, Kevin and Yan, Zhiwen and Li, Linjie and Yang, Zhengyuan and Wang, Jianfeng and Lee, Gim Hee and Wang, Lijuan},   title={GenXD: Generating Any 3D and 4D Scenes},   booktitle={ICLR},   year={2025} }",
@@ -30,5 +32,9 @@
   "year": "2025",
   "venue": "ICLR",
   "dataset": true,
-  "survey": false
+  "survey": false,
+  "bibkey": "zhao2024genxd",
+  "prior": "FM+TD",
+  "inputCondition": "Image",
+  "trainingStrategy": "Hybrid"
 }

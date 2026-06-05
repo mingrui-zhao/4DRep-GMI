@@ -12,7 +12,9 @@
   "paperUrl": "https://arxiv.org/abs/2510.06219",
   "codeUrl": "https://github.com/fanegg/Human3R",
   "tags": [],
-  "motion": "Articulation",
+  "motion": [
+    "Articulation"
+  ],
   "codeAvailability": true,
   "interaction": "Human-Scene Interaction",
   "bibtex": "@article{chen2025human3r,     title={Human3R: Everyone Everywhere All at Once},     author={Chen, Yue and Chen, Xingyu and Xue, Yuxuan and Chen, Anpei and Xiu, Yuliang and Gerard, Pons-Moll},     journal={arXiv preprint arXiv:2510.06219},     year={2025}     }",
@@ -25,8 +27,12 @@
     "Yuliang Xiu",
     "Pons-Moll Gerard"
   ],
-  "year": "2025",
-  "venue": "ArXiv",
+  "year": "2026",
+  "venue": "ICLR",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "chen2025human3r",
+  "prior": "TD",
+  "inputCondition": "Video",
+  "trainingStrategy": "Feed-forward"
 }

@@ -27,5 +27,9 @@
   "year": "2023",
   "venue": "CVPR",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "guo2023vid2avatar",
+  "prior": "Input",
+  "inputCondition": "Video",
+  "trainingStrategy": "Per-scene"
 }

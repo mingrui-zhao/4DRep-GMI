@@ -1,12 +1,16 @@
 {
-  "representation": "Point Cloud",
+  "representation": [
+    "Point Cloud"
+  ],
   "task": "Scene",
   "category": "Image-to-4D",
   "projectPage": "https://cut3r.github.io/",
   "paperUrl": "http://arxiv.org/abs/2501.12387",
   "codeUrl": "https://github.com/CUT3R/CUT3R",
   "tags": [],
-  "motion": "Per frame",
+  "motion": [
+    "Per frame"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@inproceedings{cut3r,  Author = {Qianqian Wang* and Yifei Zhang* and Aleksander Holynski and Alexei A. Efros and Angjoo Kanazawa},         Title = {Continuous 3D Perception Model with Persistent State},         Year = {2025},           booktitle={CVPR},         }",
@@ -21,5 +25,9 @@
   "year": "2025",
   "venue": "CVPR",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "cut3r",
+  "prior": "TD",
+  "inputCondition": "Image",
+  "trainingStrategy": "Feed-forward"
 }

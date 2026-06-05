@@ -1,0 +1,32 @@
+{
+  "title": "CG-HOI: Contact-Guided 3D Human-Object Interaction Generation",
+  "authors": [
+    "Christian Diller",
+    "Angela Dai"
+  ],
+  "year": "2024",
+  "venue": "CVPR",
+  "paperUrl": "https://arxiv.org/abs/2311.16097",
+  "projectPage": "https://www.christian-diller.de/projects/cg-hoi/",
+  "codeUrl": "",
+  "representation": [
+    "Template",
+    "Mesh"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "TD",
+  "inputCondition": "Text",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "HOI",
+  "task": "Human",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": false,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{cghoi,\n  title={CG-HOI: Contact-Guided 3D Human-Object Interaction Generation},\n  author={Christian Diller and Angela Dai},\n  booktitle={CVPR},\n  year={2024}\n}"
+}

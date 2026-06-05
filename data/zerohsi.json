@@ -1,0 +1,35 @@
+{
+  "title": "ZeroHSI: Zero-Shot 4D Human-Scene Interaction by Video Generation",
+  "authors": [
+    "Hongjie Li",
+    "Hong-Xing Yu",
+    "Jiaman Li",
+    "Jiajun Wu"
+  ],
+  "year": "2026",
+  "venue": "3DV",
+  "paperUrl": "https://arxiv.org/abs/2412.18600",
+  "projectPage": "https://awfuact.github.io/zerohsi/",
+  "codeUrl": "",
+  "representation": [
+    "Template",
+    "Gaussian Splatting"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "FM",
+  "inputCondition": "Text+Scene",
+  "trainingStrategy": "Per-scene",
+  "interactionType": "HSI",
+  "task": "Human",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": false,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@article{li2024zerohsi,\n  title={ZeroHSI: Zero-Shot 4D Human-Scene Interaction by Video Generation},\n  author={Li, Hongjie and Yu, Hong-Xing and Li, Jiaman and Wu, Jiajun},\n  journal={arXiv preprint arXiv:2412.18600},\n  year={2024}\n}",
+  "bibkey": "li2024zerohsi"
+}

@@ -1,0 +1,36 @@
+{
+  "title": "Shape of Motion: 4D Reconstruction from a Single Video",
+  "authors": [
+    "Qianqian Wang",
+    "Vickie Ye",
+    "Hang Gao",
+    "Jake Austin",
+    "Zhengqi Li",
+    "Angjoo Kanazawa"
+  ],
+  "year": "2024",
+  "venue": "ArXiv",
+  "paperUrl": "https://arxiv.org/abs/2407.13764",
+  "projectPage": "https://shape-of-motion.github.io/",
+  "codeUrl": "https://github.com/vye16/shape-of-motion",
+  "representation": [
+    "Gaussian Splatting"
+  ],
+  "motion": [
+    "Deformation",
+    "Tracking"
+  ],
+  "prior": "Input",
+  "inputCondition": "Video",
+  "trainingStrategy": "Per-scene",
+  "interactionType": "",
+  "task": "Scene",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@article{shapeofmotion,\n  title={Shape of Motion: 4D Reconstruction from a Single Video},\n  author={Qianqian Wang and Vickie Ye and Hang Gao and Jake Austin and Zhengqi Li and Angjoo Kanazawa},\n  journal={arXiv preprint arXiv:2407.13764},\n  year={2024}\n}"
+}

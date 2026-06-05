@@ -1,0 +1,41 @@
+{
+  "title": "Trans4D: Realistic Geometry-Aware Transition for Compositional Text-to-4D Synthesis",
+  "authors": [
+    "Bohan Zeng",
+    "Ling Yang",
+    "Siyu Li",
+    "Jiaming Liu",
+    "Zixiang Zhang",
+    "Juanxi Tian",
+    "Kaixin Zhu",
+    "Yongzhen Guo",
+    "Fu-Yun Wang",
+    "Minkai Xu",
+    "Stefano Ermon",
+    "Wentao Zhang"
+  ],
+  "year": "2024",
+  "venue": "ICLR",
+  "paperUrl": "https://arxiv.org/abs/2410.07155",
+  "projectPage": "",
+  "codeUrl": "https://github.com/YangLing0818/Trans4D",
+  "representation": [
+    "Gaussian Splatting"
+  ],
+  "motion": [
+    "Deformation"
+  ],
+  "prior": "FM+LLM",
+  "inputCondition": "Text",
+  "trainingStrategy": "Per-scene",
+  "interactionType": "",
+  "task": "Scene",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{trans4d,\n  title={Trans4D: Realistic Geometry-Aware Transition for Compositional Text-to-4D Synthesis},\n  author={Bohan Zeng and Ling Yang and Siyu Li and Jiaming Liu and Zixiang Zhang and Juanxi Tian and Kaixin Zhu and Yongzhen Guo and Fu-Yun Wang and Minkai Xu and Stefano Ermon and Wentao Zhang},\n  booktitle={ICLR},\n  year={2024}\n}"
+}

@@ -1,5 +1,7 @@
 {
-  "representation": "Template",
+  "representation": [
+    "Template"
+  ],
   "task": "Human",
   "category": [
     "Text-to-4D"
@@ -9,8 +11,8 @@
   "codeUrl": "https://github.com/TingtingLiao/TADA?tab=readme-ov-file",
   "tags": [],
   "motion": [
-    "Deformation",
-    "Articulation"
+    "Articulation",
+    "Deformation"
   ],
   "codeAvailability": true,
   "interaction": "",
@@ -28,5 +30,9 @@
   "year": "2024",
   "venue": "3DV",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "liao2024tada",
+  "prior": "FM+LLM",
+  "inputCondition": "Text",
+  "trainingStrategy": "Per-scene"
 }

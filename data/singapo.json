@@ -1,7 +1,7 @@
 {
   "representation": [
-    "Graph",
     "Part",
+    "Graph",
     "Mesh"
   ],
   "task": "Object",
@@ -10,7 +10,9 @@
   "paperUrl": "https://arxiv.org/pdf/2410.16499",
   "codeUrl": "https://github.com/3dlg-hcvc/singapo",
   "tags": [],
-  "motion": "Articulation",
+  "motion": [
+    "Articulation"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@article{jiayi2025singapo,           author    = {Liu, Jiayi and Iliash, Denys and Chang, Angel X. and Savva, Manolis and Mahdavi-Amiri, Ali},           title     = {SINGAPO: Single Image Controlled Generation of Articulated Parts in Object},           year      = {2025},           journal   = {ICLR}       }",
@@ -25,5 +27,9 @@
   "year": "2025",
   "venue": "ICLR",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "liu2024singapo",
+  "prior": "TD+LLM",
+  "inputCondition": "Image",
+  "trainingStrategy": "Feed-forward"
 }

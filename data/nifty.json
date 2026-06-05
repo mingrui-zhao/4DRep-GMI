@@ -1,0 +1,37 @@
+{
+  "title": "NIFTY: Neural Object Interaction Fields for Guided Human Motion Synthesis",
+  "authors": [
+    "Nilesh Kulkarni",
+    "Davis Rempe",
+    "Kyle Genova",
+    "Abhijit Kundu",
+    "Justin Johnson",
+    "David Fouhey",
+    "Leonidas Guibas"
+  ],
+  "year": "2024",
+  "venue": "CVPR",
+  "paperUrl": "https://arxiv.org/abs/2307.07511",
+  "projectPage": "https://nileshkulkarni.github.io/nifty/",
+  "codeUrl": "",
+  "representation": [
+    "Template"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "TD",
+  "inputCondition": "Object",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "HOI",
+  "task": "Human",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": false,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{kulkarni2024nifty,\n  title={NIFTY: Neural Object Interaction Fields for Guided Human Motion Synthesis},\n  author={Kulkarni, Nilesh and Rempe, Davis and Genova, Kyle and Kundu, Abhijit and Johnson, Justin and Fouhey, David and Guibas, Leonidas},\n  booktitle={CVPR},\n  year={2024}\n}",
+  "bibkey": "kulkarni2024nifty"
+}

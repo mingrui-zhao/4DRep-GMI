@@ -1,0 +1,35 @@
+{
+  "title": "InterGen: Diffusion-based Multi-human Motion Generation under Complex Interactions",
+  "authors": [
+    "Han Liang",
+    "Wenqian Zhang",
+    "Wenxuan Li",
+    "Jingyi Yu",
+    "Lan Xu"
+  ],
+  "year": "2024",
+  "venue": "IJCV",
+  "paperUrl": "https://arxiv.org/abs/2304.05684",
+  "projectPage": "https://tr3e.github.io/intergen-page/",
+  "codeUrl": "https://github.com/tr3e/InterGen",
+  "representation": [
+    "Template"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "TD",
+  "inputCondition": "Text",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "HHI",
+  "task": "Human",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@article{liang2024intergen,\n  title={InterGen: Diffusion-based Multi-human Motion Generation under Complex Interactions},\n  author={Liang, Han and Zhang, Wenqian and Li, Wenxuan and Yu, Jingyi and Xu, Lan},\n  journal={IJCV},\n  year={2024}\n}",
+  "bibkey": "Intergen"
+}

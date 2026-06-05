@@ -1,0 +1,33 @@
+{
+  "title": "DreamScene4D: Dynamic Multi-Object Scene Generation from Monocular Videos",
+  "authors": [
+    "Wen-Hsuan Chu",
+    "Lei Ke",
+    "Katerina Fragkiadaki"
+  ],
+  "year": "2024",
+  "venue": "NeurIPS",
+  "paperUrl": "https://arxiv.org/abs/2405.02280",
+  "projectPage": "https://dreamscene4d.github.io/",
+  "codeUrl": "https://github.com/dreamscene4d/dreamscene4d",
+  "representation": [
+    "Gaussian Splatting"
+  ],
+  "motion": [
+    "Deformation",
+    "Tracking"
+  ],
+  "prior": "FM",
+  "inputCondition": "Video",
+  "trainingStrategy": "Per-scene",
+  "interactionType": "",
+  "task": "Scene",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{dreamscene4d,\n  title={DreamScene4D: Dynamic Multi-Object Scene Generation from Monocular Videos},\n  author={Wen-Hsuan Chu and Lei Ke and Katerina Fragkiadaki},\n  booktitle={NeurIPS},\n  year={2024}\n}"
+}

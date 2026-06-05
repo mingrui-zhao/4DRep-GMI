@@ -1,0 +1,33 @@
+{
+  "title": "GanHand: Predicting Human Grasp Affordances in Multi-Object Scenes",
+  "authors": [
+    "Enric Corona",
+    "Albert Pumarola",
+    "Guillem Alenyà",
+    "Francesc Moreno-Noguer",
+    "Grégory Rogez"
+  ],
+  "year": "2020",
+  "venue": "CVPR",
+  "paperUrl": "https://openaccess.thecvf.com/content_CVPR_2020/html/Corona_GanHand_Predicting_Human_Grasp_Affordances_in_Multi-Object_Scenes_CVPR_2020_paper.html",
+  "projectPage": "https://enriccorona.github.io/ganhand/",
+  "codeUrl": "https://github.com/enriccorona/GanHand",
+  "representation": [
+    "Template"
+  ],
+  "motion": [],
+  "prior": "TD",
+  "inputCondition": "Image",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "Hand-O",
+  "task": "Hand",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{corona2020ganhand,\n  title={GanHand: Predicting Human Grasp Affordances in Multi-Object Scenes},\n  author={Corona, Enric and Pumarola, Albert and Aleny{\\`a}, Guillem and Moreno-Noguer, Francesc and Rogez, Gr{\\'e}gory},\n  booktitle={CVPR},\n  year={2020}\n}",
+  "bibkey": "corona2020ganhand"
+}

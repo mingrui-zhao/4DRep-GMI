@@ -12,7 +12,10 @@
   "paperUrl": "https://arxiv.org/abs/2404.04421",
   "codeUrl": "https://github.com/y-zheng18/PhysAvatar",
   "tags": [],
-  "motion": ["Articulation", "Deformation"],
+  "motion": [
+    "Articulation",
+    "Deformation"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@inproceedings{zheng2024physavatar,   title={Physavatar: Learning the physics of dressed 3d avatars from visual observations},   author={Zheng, Yang and Zhao, Qingqing and Yang, Guandao and Yifan, Wang and Xiang, Donglai and Dubost, Florian and Lagun, Dmitry and Beeler, Thabo and Tombari, Federico and Guibas, Leonidas and others},   booktitle={European Conference on Computer Vision},   pages={262--284},   year={2024},   organization={Springer} }",
@@ -33,5 +36,9 @@
   "year": "2024",
   "venue": "ECCV",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "PhysAavatar24",
+  "prior": "Input",
+  "inputCondition": "Video+Mesh",
+  "trainingStrategy": "Per-scene"
 }

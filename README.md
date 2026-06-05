@@ -95,17 +95,46 @@ We welcome contributions to this survey! If you have a paper related to 4D repre
 
 ```
 4D-Survey/
-├── data/                           # Paper JSON files
-│   ├── 4d-fy.json                 # Individual paper data
+├── data/                           # Paper data
+│   ├── 4d-fy.json                 # Individual paper data (editable source of truth)
 │   ├── 4dgs.json
 │   ├── ...
-│   └── paper-list.json            # Complete paper list
+│   ├── paper-list.json            # Per-paper file manifest
+│   └── papers.json                # GENERATED consolidated bundle (loaded by the site)
 ├── images/                         # Paper teaser images
-│   ├── 4d-fy.png
-│   ├── 4dgs.png
-│   └── ...
-└── index.html                     # Survey website
+├── scripts/                        # Build & sync tooling (Python, no deps)
+│   ├── tex_lib.py                 # Shared LaTeX-table parser + vocabularies
+│   ├── tex_sync.py                # Sync tags from the LaTeX source-of-truth tables
+│   ├── build_bundle.py            # Compile data/*.json -> data/papers.json (+ validate)
+│   ├── check_drift.py             # Flag drift between the .tex tables and the JSON
+│   └── devserver.py               # Local static preview server
+├── process_submission.py           # Convert GitHub-issue submissions -> data/<name>.json
+├── RECONCILIATION.md               # Generated tag reconciliation report
+└── index.html                      # Survey website (single static page)
 ```
+
+### 🛠️ Building the site
+
+The website loads **one** file — `data/papers.json` — for fast startup. The per-paper
+`data/*.json` files remain the editable source of truth; the bundle is generated:
+
+```bash
+python scripts/build_bundle.py     # compile + validate + cache-bust index.html
+python scripts/build_bundle.py --check   # validate only (CI)
+```
+
+The taxonomy tags (Geometry / Motion / Generative Prior / Input Condition /
+Training Strategy / Interaction Type) are kept in sync with the LaTeX survey
+tables. To re-sync after the tables change and verify there is no drift:
+
+```bash
+python scripts/tex_sync.py         # writes tags into data/*.json + RECONCILIATION.md
+python scripts/check_drift.py      # exits non-zero if JSON != .tex tables
+```
+
+Each paper JSON additionally carries the fields `prior`, `inputCondition`,
+`trainingStrategy`, and (for interaction papers) `interactionType` — all
+backward-compatible additions.
 
 ## Citation
 

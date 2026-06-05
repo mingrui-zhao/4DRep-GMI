@@ -1,3 +1,32 @@
 bibtex_parser.py
 workflow.py
 data_backup/
+
+# ---------------------------------------------------------------------------
+# Public repo = final cleaned site output only.
+# Everything below is local-only: research material, LLM/agent traces,
+# intermediate reports, editor/preview config. Kept on disk, never synced.
+# ---------------------------------------------------------------------------
+
+# Local research archive: downloaded PDFs, per-paper descriptive text,
+# tagging rationale, and generated reconciliation / venue-code reports.
+archive/
+
+# Claude / preview / editor working config (incl. the local maintenance skill)
+.claude/
+
+# Local-only repo guide for Claude sessions (not published)
+CLAUDE.md
+
+# Stray downloaded PDFs anywhere outside the archive
+*.pdf
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Python
+__pycache__/
+*.pyc

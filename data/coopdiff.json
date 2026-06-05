@@ -1,0 +1,38 @@
+{
+  "title": "CoopDiff: Anticipating 3D Human-object Interactions via Contact-consistent Decoupled Diffusion",
+  "authors": [
+    "Xiaotong Lin",
+    "Tianming Liang",
+    "Jian-Fang Hu",
+    "Kun-Yu Lin",
+    "Yulei Kang",
+    "Chunwei Tian",
+    "Jianhuang Lai",
+    "Wei-Shi Zheng"
+  ],
+  "year": "2025",
+  "venue": "ArXiv",
+  "paperUrl": "https://arxiv.org/abs/2508.07162",
+  "projectPage": "",
+  "codeUrl": "",
+  "representation": [
+    "Template",
+    "Mesh"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "TD",
+  "inputCondition": "Motion",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "HOI",
+  "task": "Human",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": false,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@article{coopdiff,\n  title={CoopDiff: Anticipating 3D Human-object Interactions via Contact-consistent Decoupled Diffusion},\n  author={Xiaotong Lin and Tianming Liang and Jian-Fang Hu and Kun-Yu Lin and Yulei Kang and Chunwei Tian and Jianhuang Lai and Wei-Shi Zheng},\n  journal={arXiv preprint arXiv:2508.07162},\n  year={2025}\n}"
+}

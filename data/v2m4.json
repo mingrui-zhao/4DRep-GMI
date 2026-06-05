@@ -1,5 +1,7 @@
 {
-  "representation": "Mesh",
+  "representation": [
+    "Mesh"
+  ],
   "task": "Object",
   "category": [
     "Video-to-4D"
@@ -8,7 +10,9 @@
   "paperUrl": "https://arxiv.org/pdf/2503.09631",
   "codeUrl": "https://github.com/WindVChen/V2M4",
   "tags": [],
-  "motion": "Deformation",
+  "motion": [
+    "Deformation"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@inproceedings{chen2025v2m4, title={V2M4: 4D Mesh Animation Reconstruction from a Single Monocular Video}, author={Chen, Jianqi and Zhang, Biao and Tang, Xiangjun and Wonka, Peter}, booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}, year={2025} }",
@@ -22,5 +26,9 @@
   "year": "2025",
   "venue": "ICCV",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "chen2025v2m4",
+  "prior": "FM",
+  "inputCondition": "Video",
+  "trainingStrategy": "Per-scene"
 }

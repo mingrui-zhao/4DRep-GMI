@@ -1,5 +1,7 @@
 {
-  "representation": "Gaussian Splatting",
+  "representation": [
+    "Gaussian Splatting"
+  ],
   "task": "Scene",
   "category": [
     "Text-to-4D",
@@ -9,7 +11,9 @@
   "paperUrl": "https://arxiv.org/abs/2406.07472",
   "codeUrl": "",
   "tags": [],
-  "motion": "Deformation",
+  "motion": [
+    "Deformation"
+  ],
   "codeAvailability": false,
   "interaction": "",
   "bibtex": "@article{yu20244real,   title={4real: Towards photorealistic 4d scene generation via video diffusion models},   author={Yu, Heng and Wang, Chaoyang and Zhuang, Peiye and Menapace, Willi and Siarohin, Aliaksandr and Cao, Junli and Jeni, Laszlo and Tulyakov, Sergey and Lee, Hsin-Ying},   journal={Advances in Neural Information Processing Systems},   volume={37},   pages={45256--45280},   year={2024} }",
@@ -28,5 +32,9 @@
   "year": "2024",
   "venue": "NeurIPS",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "yu_4real_2024",
+  "prior": "FM",
+  "inputCondition": "Text",
+  "trainingStrategy": "Per-scene"
 }

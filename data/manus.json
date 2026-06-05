@@ -1,0 +1,38 @@
+{
+  "title": "MANUS: Markerless Grasp Capture using Articulated 3D Gaussians",
+  "authors": [
+    "Chandradeep Pokhariya",
+    "Ishaan Nikhil Shah",
+    "Angela Xing",
+    "Zekun Li",
+    "Kefan Chen",
+    "Avinash Sharma",
+    "Srinath Sridhar"
+  ],
+  "year": "2024",
+  "venue": "CVPR",
+  "paperUrl": "https://arxiv.org/abs/2312.02137",
+  "projectPage": "https://ivl.cs.brown.edu/research/manus.html",
+  "codeUrl": "https://github.com/brown-ivl/manus",
+  "representation": [
+    "Template",
+    "Gaussian Splatting"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "Input",
+  "inputCondition": "Multi-view",
+  "trainingStrategy": "Per-scene",
+  "interactionType": "Hand-O",
+  "task": "Hand",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{pokhariya2024manus,\n  title={MANUS: Markerless Grasp Capture using Articulated 3D Gaussians},\n  author={Pokhariya, Chandradeep and Shah, Ishaan Nikhil and Xing, Angela and Li, Zekun and Chen, Kefan and Sharma, Avinash and Sridhar, Srinath},\n  booktitle={CVPR},\n  year={2024}\n}",
+  "bibkey": "pokhariya2024manus"
+}

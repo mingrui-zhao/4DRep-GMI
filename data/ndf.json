@@ -1,0 +1,35 @@
+{
+  "title": "Neural Descriptor Fields: SE(3)-Equivariant Object Representations for Manipulation",
+  "authors": [
+    "Anthony Simeonov",
+    "Yilun Du",
+    "Andrea Tagliasacchi",
+    "Joshua B. Tenenbaum",
+    "Alberto Rodriguez",
+    "Pulkit Agrawal",
+    "Vincent Sitzmann"
+  ],
+  "year": "2022",
+  "venue": "ICRA",
+  "paperUrl": "https://arxiv.org/abs/2112.05124",
+  "projectPage": "https://yilundu.github.io/ndf/",
+  "codeUrl": "https://github.com/anthonysimeonov/ndf_robot",
+  "representation": [
+    "Point Cloud"
+  ],
+  "motion": [],
+  "prior": "TD",
+  "inputCondition": "Point Cloud",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "OOI",
+  "task": "Object",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{simeonov2022neural,\n  title={Neural Descriptor Fields: SE(3)-Equivariant Object Representations for Manipulation},\n  author={Simeonov, Anthony and Du, Yilun and Tagliasacchi, Andrea and Tenenbaum, Joshua B. and Rodriguez, Alberto and Agrawal, Pulkit and Sitzmann, Vincent},\n  booktitle={ICRA},\n  year={2022}\n}",
+  "bibkey": "NeuralDescriptorFields"
+}

@@ -26,6 +26,10 @@ def extract_issue_data(issue_body):
         'task': r'### Task Type\s*\n\n(.*?)(?=\n\n###|\n\n---|\Z)',
         'category': r'### Category\s*\n\n(.*?)(?=\n\n###|\n\n---|\Z)',
         'motion': r'### Motion Type\s*\n\n(.*?)(?=\n\n###|\n\n---|\Z)',
+        'prior': r'### Generative Prior\s*\n\n(.*?)(?=\n\n###|\n\n---|\Z)',
+        'input-condition': r'### Input Condition\s*\n\n(.*?)(?=\n\n###|\n\n---|\Z)',
+        'training-strategy': r'### Training Strategy\s*\n\n(.*?)(?=\n\n###|\n\n---|\Z)',
+        'interaction-type': r'### Interaction Type\s*\n\n(.*?)(?=\n\n###|\n\n---|\Z)',
         'interaction': r'### Interaction/Control Method\s*\n\n(.*?)(?=\n\n###|\n\n---|\Z)',
         'code-availability': r'### Code Availability\s*\n\n(.*?)(?=\n\n###|\n\n---|\Z)',
         'special-flags': r'### Special Flags\s*\n\n(.*?)(?=\n\n###|\n\n---|\Z)',
@@ -58,6 +62,17 @@ def parse_multiple_selection(text):
             items.append(item)
     
     return items
+
+def clean_optional(text):
+    """Normalize optional GitHub-form values; treat the default placeholders
+    ('_No response_', 'None', 'N/A') as empty."""
+    if not text:
+        return ""
+    t = text.strip()
+    if t.lower() in ('_no response_', 'none', 'n/a', '-', '--'):
+        return ""
+    return t
+
 
 def create_paper_filename(title):
     """Create a filename from paper title."""
@@ -103,7 +118,16 @@ def convert_to_json_format(issue_data, issue_title, issue_number):
     special_flags = parse_multiple_selection(issue_data.get('special-flags', ''))
     has_dataset = 'This paper has dataset contribution' in special_flags
     is_survey = 'This is a survey/review paper' in special_flags
-    
+
+    # Parse new taxonomy fields (synced with the LaTeX source-of-truth tables).
+    # Generative Prior may be multiple (checkboxes) and is stored as a '+'
+    # cascade, matching the table format (e.g. "FM+TD").
+    prior_list = parse_multiple_selection(issue_data.get('prior', ''))
+    prior = "+".join(prior_list) if prior_list else clean_optional(issue_data.get('prior', ''))
+    input_condition = clean_optional(issue_data.get('input-condition', ''))
+    training_strategy = clean_optional(issue_data.get('training-strategy', ''))
+    interaction_type = clean_optional(issue_data.get('interaction-type', ''))
+
     # Create JSON structure
     paper_data = {
         "title": title,
@@ -117,6 +141,10 @@ def convert_to_json_format(issue_data, issue_title, issue_number):
         "task": task,
         "category": category,
         "motion": motion,
+        "prior": prior,
+        "inputCondition": input_condition,
+        "trainingStrategy": training_strategy,
+        "interactionType": interaction_type,
         "interaction": issue_data.get('interaction', ''),
         "codeAvailability": issue_data.get('code-availability', 'No') == 'Yes',
         "bibtex": issue_data.get('bibtex', ''),
@@ -126,7 +154,7 @@ def convert_to_json_format(issue_data, issue_title, issue_number):
         "doi": "",
         "filename": create_paper_filename(title)
     }
-    
+
     return paper_data
 
 def update_paper_list(filename):

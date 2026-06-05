@@ -1,0 +1,34 @@
+{
+  "title": "AffordanceLLM: Grounding Affordance from Vision Language Models",
+  "authors": [
+    "Shengyi Qian",
+    "Weifeng Chen",
+    "Min Bai",
+    "Xiong Zhou",
+    "Zhuowen Tu",
+    "Li Erran Li"
+  ],
+  "year": "2024",
+  "venue": "CVPR Workshops",
+  "paperUrl": "https://arxiv.org/abs/2401.06341",
+  "projectPage": "https://jasonqsy.github.io/AffordanceLLM/",
+  "codeUrl": "",
+  "representation": [
+    "Image"
+  ],
+  "motion": [],
+  "prior": "TD+LLM",
+  "inputCondition": "Text+Image",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "Affordance prediction",
+  "task": "Object",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": false,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{qian2024affordancellm,\n  title={AffordanceLLM: Grounding Affordance from Vision Language Models},\n  author={Qian, Shengyi and Chen, Weifeng and Bai, Min and Zhou, Xiong and Tu, Zhuowen and Li, Li Erran},\n  booktitle={CVPR Workshops},\n  year={2024}\n}",
+  "bibkey": "AffordanceLLM"
+}

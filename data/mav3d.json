@@ -1,5 +1,7 @@
 {
-  "representation": "NeRF",
+  "representation": [
+    "NeRF"
+  ],
   "task": [
     "Object",
     "Scene"
@@ -11,7 +13,9 @@
   "paperUrl": "https://arxiv.org/abs/2301.11280",
   "codeUrl": "",
   "tags": [],
-  "motion": "Deformation",
+  "motion": [
+    "Deformation"
+  ],
   "codeAvailability": false,
   "interaction": "",
   "bibtex": "@article{singer2023text,  title={Text-to-4d dynamic scene generation},  author={Singer, Uriel and Sheynin, Shelly and Polyak, Adam and Ashual, Oron and Makarov, Iurii and Kokkinos, Filippos and Goyal, Naman and Vedaldi, Andrea and Parikh, Devi and Johnson, Justin and others},  journal={ICML},  year={2023}}",
@@ -32,5 +36,9 @@
   "year": "2023",
   "venue": "ICML",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "singer2023text",
+  "prior": "FM",
+  "inputCondition": "Text",
+  "trainingStrategy": "Per-scene"
 }

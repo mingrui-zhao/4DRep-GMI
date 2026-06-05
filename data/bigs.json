@@ -1,0 +1,38 @@
+{
+  "title": "BIGS: Bimanual Category-agnostic Interaction Reconstruction from Monocular Videos via 3D Gaussian Splatting",
+  "authors": [
+    "Jeongwan On",
+    "Kyeonghwan Gwak",
+    "Gunyoung Kang",
+    "Junuk Cha",
+    "Soohyun Hwang",
+    "Hyein Hwang",
+    "Seungryul Baek"
+  ],
+  "year": "2025",
+  "venue": "CVPR",
+  "paperUrl": "https://arxiv.org/abs/2504.09097",
+  "projectPage": "",
+  "codeUrl": "https://github.com/On-JungWoan/BIGS",
+  "representation": [
+    "Template",
+    "Gaussian Splatting"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "FM+Input",
+  "inputCondition": "Video",
+  "trainingStrategy": "Per-scene",
+  "interactionType": "Hand-O",
+  "task": "Hand",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{on2025bigs,\n  title={BIGS: Bimanual Category-agnostic Interaction Reconstruction from Monocular Videos via 3D Gaussian Splatting},\n  author={On, Jeongwan and Gwak, Kyeonghwan and Kang, Gunyoung and Cha, Junuk and Hwang, Soohyun and Hwang, Hyein and Baek, Seungryul},\n  booktitle={CVPR},\n  year={2025}\n}",
+  "bibkey": "on2025bigs"
+}

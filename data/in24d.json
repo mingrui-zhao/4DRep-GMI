@@ -8,7 +8,9 @@
   "paperUrl": "http://arxiv.org/abs/2504.08366",
   "codeUrl": "https://github.com/sauradip/In-2-4D",
   "tags": [],
-  "motion": "Deformation",
+  "motion": [
+    "Deformation"
+  ],
   "codeAvailability": false,
   "interaction": "",
   "bibtex": "@article{nag20254din,     title={{In-2-4D}: Inbetweening from Two Single-View Images to 4D Generation},     author = {Nag, Sauradip, Cohen-Or Daniel, Zhang, Hao and Mahdavi-Amiri, Ali},     journal = {SIGGRAPH Asia Conference Papers},     publisher = {ACM New York, NY, USA},     year = {2025},     doi = {https://doi.org/10.1145/3757377.3763904}}",
@@ -18,7 +20,11 @@
     "Ali Mahdavi-Amiri"
   ],
   "year": "2025",
-  "venue": "Siggraph Asia",
+  "venue": "SIGGRAPH Asia",
   "dataset": true,
-  "survey": false
+  "survey": false,
+  "bibkey": "nag20252",
+  "prior": "FM+LLM",
+  "inputCondition": "Few-Image",
+  "trainingStrategy": "Per-scene"
 }

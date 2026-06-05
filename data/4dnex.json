@@ -1,0 +1,38 @@
+{
+  "title": "4DNeX: Feed-Forward 4D Generative Modeling Made Easy",
+  "authors": [
+    "Zhaoxi Chen",
+    "Tianqi Liu",
+    "Long Zhuo",
+    "Jiawei Ren",
+    "Zeng Tao",
+    "He Zhu",
+    "Fangzhou Hong",
+    "Liang Pan",
+    "Ziwei Liu"
+  ],
+  "year": "2025",
+  "venue": "ArXiv",
+  "paperUrl": "https://arxiv.org/abs/2508.13154",
+  "projectPage": "https://4dnex.github.io/",
+  "codeUrl": "https://github.com/3DTopia/4DNeX",
+  "representation": [
+    "Point Cloud"
+  ],
+  "motion": [
+    "Space-Time"
+  ],
+  "prior": "FM+TD",
+  "inputCondition": "Image",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "",
+  "task": "Scene",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@article{4dnex,\n  title={4DNeX: Feed-Forward 4D Generative Modeling Made Easy},\n  author={Zhaoxi Chen and Tianqi Liu and Long Zhuo and Jiawei Ren and Zeng Tao and He Zhu and Fangzhou Hong and Liang Pan and Ziwei Liu},\n  journal={arXiv preprint arXiv:2508.13154},\n  year={2025}\n}"
+}

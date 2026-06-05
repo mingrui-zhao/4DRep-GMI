@@ -1,13 +1,17 @@
 {
-  "representation": "Mesh",
+  "representation": [
+    "Mesh"
+  ],
   "task": "Object",
   "category": "3D-to-4D",
   "projectPage": "https://www.liuisabella.com/RigAnything/",
   "paperUrl": "https://arxiv.org/abs/2502.09615",
-  "codeUrl": "",
+  "codeUrl": "https://github.com/Isabella98Liu/RigAnything",
   "tags": [],
-  "motion": "Articulation",
-  "codeAvailability": false,
+  "motion": [
+    "Articulation"
+  ],
+  "codeAvailability": true,
   "interaction": "",
   "bibtex": "@article{liu2025riganything,   title={Riganything: Template-free autoregressive rigging for diverse 3d assets},   author={Liu, Isabella and Xu, Zhan and Yifan, Wang and Tan, Hao and Xu, Zexiang and Wang, Xiaolong and Su, Hao and Shi, Zifan},   journal={ACM Transactions on Graphics (TOG)},   volume={44},   number={4},   pages={1--12},   year={2025},   publisher={ACM New York, NY, USA} }",
   "title": "Riganything: Template-free autoregressive rigging for diverse 3d assets",
@@ -22,7 +26,11 @@
     "Zifan Shi"
   ],
   "year": "2025",
-  "venue": "ACM Transactions on Graphics (TOG)",
+  "venue": "ACM TOG",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "liu2025riganything",
+  "prior": "TD",
+  "inputCondition": "Mesh",
+  "trainingStrategy": "Feed-forward"
 }

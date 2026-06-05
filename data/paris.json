@@ -1,7 +1,7 @@
 {
   "representation": [
-    "NeRF",
-    "Part"
+    "Part",
+    "NeRF"
   ],
   "task": "Object",
   "category": [
@@ -11,7 +11,9 @@
   "paperUrl": "https://arxiv.org/abs/2308.07391",
   "codeUrl": "https://github.com/3dlg-hcvc/paris",
   "tags": [],
-  "motion": "Articulation",
+  "motion": [
+    "Articulation"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@inproceedings{jiayi2023paris, author = {Liu, Jiayi and Mahdavi-Amiri, Ali and Savva, Manolis}, title = {{PARIS}: Part-level Reconstruction and Motion Analysis for Articulated Objects}, year = {2023}, booktitle = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)} }",
@@ -24,5 +26,9 @@
   "year": "2023",
   "venue": "ICCV",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "liu2023paris",
+  "prior": "Input",
+  "inputCondition": "Image",
+  "trainingStrategy": "Per-scene"
 }

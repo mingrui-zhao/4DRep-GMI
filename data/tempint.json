@@ -1,5 +1,7 @@
 {
-  "representation": "NeRF",
+  "representation": [
+    "NeRF"
+  ],
   "task": "Scene",
   "category": "Video-to-4D",
   "projectPage": "https://sungheonpark.github.io/tempinterpnerf/",
@@ -7,8 +9,7 @@
   "codeUrl": "",
   "tags": [],
   "motion": [
-    "Space-Time",
-    "Deformation"
+    "Space-Time"
   ],
   "codeAvailability": false,
   "interaction": "",
@@ -25,5 +26,9 @@
   "year": "2023",
   "venue": "CVPR",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "park2023temporal",
+  "prior": "Input",
+  "inputCondition": "Video",
+  "trainingStrategy": "Per-scene"
 }

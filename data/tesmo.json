@@ -1,0 +1,34 @@
+{
+  "title": "Generating Human Interaction Motions in Scenes with Text Control",
+  "authors": [
+    "Hongwei Yi",
+    "Justus Thies",
+    "Michael J. Black",
+    "Xue Bin Peng",
+    "Davis Rempe"
+  ],
+  "year": "2024",
+  "venue": "ECCV",
+  "paperUrl": "https://arxiv.org/abs/2404.10685",
+  "projectPage": "https://research.nvidia.com/labs/toronto-ai/tesmo/",
+  "codeUrl": "https://github.com/nv-tlabs/tesmo",
+  "representation": [
+    "Template"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "TD",
+  "inputCondition": "Text",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "HSI",
+  "task": "Human",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{tesmo,\n  title={Generating Human Interaction Motions in Scenes with Text Control},\n  author={Hongwei Yi and Justus Thies and Michael J. Black and Xue Bin Peng and Davis Rempe},\n  booktitle={ECCV},\n  year={2024}\n}"
+}

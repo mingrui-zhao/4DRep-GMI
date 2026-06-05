@@ -149,6 +149,58 @@ body:
     validations:
       required: false
 
+  - type: dropdown
+    id: prior
+    attributes:
+      label: Generative Prior
+      description: "Source of generative prior (select all that apply). FM = pretrained image/video/3D generative model; TD = trains its own model on its own data; Input = derived only from the input; LLM = language/vision-language model used in the method; Human = pretrained human template/pose prior. Cascades are combined, e.g. FM+TD."
+      multiple: true
+      options:
+        - FM
+        - TD
+        - Input
+        - LLM
+        - Human
+    validations:
+      required: false
+
+  - type: input
+    id: input-condition
+    attributes:
+      label: Input Condition
+      description: "Modality the user provides (e.g. Text, Image, Video, Point Cloud, Mesh, Multi-view, Skeleton). Combine with + or / as in the survey tables."
+      placeholder: "Video"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: training-strategy
+    attributes:
+      label: Training Strategy
+      options:
+        - Per-scene
+        - Feed-forward
+        - Hybrid
+    validations:
+      required: false
+
+  - type: dropdown
+    id: interaction-type
+    attributes:
+      label: Interaction Type
+      description: "Only for interaction-centered papers — the interaction scope."
+      options:
+        - HOI
+        - HSI
+        - HHI
+        - Hand-O
+        - Hand-Hand
+        - two-hand
+        - OOI
+        - Affordance prediction
+    validations:
+      required: false
+
   - type: input
     id: interaction
     attributes:

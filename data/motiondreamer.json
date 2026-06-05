@@ -7,7 +7,7 @@
   "codeUrl": "https://github.com/MotionDreamer/MotionDreamer",
   "tags": [],
   "motion": "Articulation",
-  "codeAvailability": true,
+  "codeAvailability": false,
   "interaction": "",
   "bibtex": "@inproceedings{ wang2025motiondreamer, title={MotionDreamer: One-to-Many Motion Synthesis with Localized Generative Masked Transformer}, author={Yilin Wang and chuan guo and Yuxuan Mu and Muhammad Gohar Javed and Xinxin Zuo and Juwei Lu and Hai Jiang and Li cheng}, booktitle={The Thirteenth International Conference on Learning Representations}, year={2025}, url={https://openreview.net/forum?id=d23EVDRJ6g} }",
   "title": "MotionDreamer: One-to-Many Motion Synthesis with Localized Generative Masked Transformer",

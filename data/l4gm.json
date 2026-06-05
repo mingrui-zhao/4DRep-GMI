@@ -8,7 +8,9 @@
   "paperUrl": "https://arxiv.org/abs/2406.10324",
   "codeUrl": "https://github.com/nv-tlabs/L4GM-official",
   "tags": [],
-  "motion": "Per frame",
+  "motion": [
+    "Per frame"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@inproceedings{ren2024l4gm,           title={L4GM: Large 4D Gaussian Reconstruction Model},           author={Ren, Jiawei and Xie, Kevin and Mirzaei, Ashkan and Liang, Hanxue and Zeng, Xiaohui and Kreis, Karsten and Liu, Ziwei and Torralba, Antonio and Fidler, Sanja and Kim, Seung Wook and Ling, Huan},           booktitle={Advances in Neural Information Processing Systems},           month={December},           year={2024} }",
@@ -29,5 +31,9 @@
   "year": "2024",
   "venue": "NeurIPS",
   "dataset": true,
-  "survey": false
+  "survey": false,
+  "bibkey": "ren2024l4gm",
+  "prior": "FM+TD",
+  "inputCondition": "Video",
+  "trainingStrategy": "Feed-forward"
 }

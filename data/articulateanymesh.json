@@ -9,7 +9,9 @@
   "paperUrl": "https://arxiv.org/abs/2502.02590",
   "codeUrl": "https://github.com/UMass-Embodied-AGI/Articulate-Anymesh",
   "tags": [],
-  "motion": "Articulation",
+  "motion": [
+    "Articulation"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@article{qiu2025articulate,   title={Articulate anymesh: Open-vocabulary 3d articulated objects modeling},   author={Qiu, Xiaowen and Yang, Jincheng and Wang, Yian and Chen, Zhehuan and Wang, Yufei and Wang, Tsun-Hsuan and Xian, Zhou and Gan, Chuang},   journal={CoRL},   year={2025} }",
@@ -27,5 +29,9 @@
   "year": "2025",
   "venue": "CoRL",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "qiu2025articulate",
+  "prior": "FM+LLM",
+  "inputCondition": "Mesh",
+  "trainingStrategy": "Per-scene"
 }

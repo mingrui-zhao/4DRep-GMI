@@ -1,5 +1,7 @@
 {
-  "representation": "Gaussian Splatting",
+  "representation": [
+    "Gaussian Splatting"
+  ],
   "task": "Object",
   "category": "Video-to-4D",
   "projectPage": "https://soolab.github.io/MVTokenFlow/",
@@ -7,8 +9,8 @@
   "codeUrl": "https://github.com/SooLab/MVTokenFlow",
   "tags": [],
   "motion": [
-    "Tracking",
-    "Deformation"
+    "Deformation",
+    "Tracking"
   ],
   "codeAvailability": false,
   "interaction": "",
@@ -25,5 +27,9 @@
   "year": "2025",
   "venue": "ICLR",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "huang2025mvtokenflow",
+  "prior": "FM",
+  "inputCondition": "Video",
+  "trainingStrategy": "Per-scene"
 }

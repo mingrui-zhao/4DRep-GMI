@@ -1,5 +1,7 @@
 {
-  "representation": "NeRF",
+  "representation": [
+    "NeRF"
+  ],
   "task": "Scene",
   "category": [
     "Text-to-4D"
@@ -8,7 +10,9 @@
   "paperUrl": "https://arxiv.org/abs/2311.17984",
   "codeUrl": "https://github.com/sherwinbahmani/4dfy",
   "tags": [],
-  "motion": "Deformation",
+  "motion": [
+    "Deformation"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@article{bah20244dfy,  author = {Bahmani, Sherwin and Skorokhodov, Ivan and Rong, Victor and Wetzstein, Gordon and Guibas, Leonidas and Wonka, Peter and Tulyakov, Sergey and Park, Jeong Joon and Tagliasacchi, Andrea and Lindell, David B.},  title = {4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling},  journal = {IEEE Conference on Computer Vision and Pattern Recognition ({CVPR})},  year = {2024},}",
@@ -28,5 +32,9 @@
   "year": "2024",
   "venue": "CVPR",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "bahmani20244dfy",
+  "prior": "FM",
+  "inputCondition": "Text",
+  "trainingStrategy": "Per-scene"
 }

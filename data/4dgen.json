@@ -1,12 +1,16 @@
 {
-  "representation": "Gaussian Splatting",
+  "representation": [
+    "Gaussian Splatting"
+  ],
   "task": "Object",
   "category": "Video-to-4D",
   "projectPage": "https://vita-group.github.io/4DGen/",
   "paperUrl": "https://arxiv.org/abs/2312.17225",
   "codeUrl": "https://github.com/VITA-Group/4DGen",
   "tags": [],
-  "motion": "Deformation",
+  "motion": [
+    "Deformation"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@article{yin20234dgen,   title={4dgen: Grounded 4d content generation with spatial-temporal consistency},   author={Yin, Yuyang and Xu, Dejia and Wang, Zhangyang and Zhao, Yao and Wei, Yunchao},   journal={arXiv preprint arXiv:2312.17225},   year={2023} }}",
@@ -21,5 +25,9 @@
   "year": "2023",
   "venue": "ArXiv",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "yin_4dgen_2023",
+  "prior": "FM",
+  "inputCondition": "Video",
+  "trainingStrategy": "Per-scene"
 }

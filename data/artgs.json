@@ -1,5 +1,6 @@
 {
   "representation": [
+    "Part",
     "Gaussian Splatting"
   ],
   "task": [
@@ -11,7 +12,9 @@
   "paperUrl": "https://arxiv.org/abs/2502.19459",
   "codeUrl": "https://github.com/YuLiu-LY/ArtGS",
   "tags": [],
-  "motion": "Articulation",
+  "motion": [
+    "Articulation"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@inproceedings{liu2025building,   title={Building Interactable Replicas of Complex Articulated Objects via Gaussian Splatting},   author={Liu, Yu and Jia, Baoxiong and Lu, Ruijie and Ni, Junfeng and Zhu, Song-Chun and Huang, Siyuan},   booktitle={The Thirteenth International Conference on Learning Representations},   year={2025}, }",
@@ -27,5 +30,9 @@
   "year": "2025",
   "venue": "ICLR",
   "dataset": true,
-  "survey": false
+  "survey": false,
+  "bibkey": "liu2025artgs",
+  "prior": "Input",
+  "inputCondition": "Image",
+  "trainingStrategy": "Per-scene"
 }

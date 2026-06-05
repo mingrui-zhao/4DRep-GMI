@@ -1,0 +1,37 @@
+{
+  "title": "HandNeRF: Neural Radiance Fields for Animatable Interacting Hands",
+  "authors": [
+    "Zhiyang Guo",
+    "Wengang Zhou",
+    "Min Wang",
+    "Li Li",
+    "Houqiang Li"
+  ],
+  "year": "2023",
+  "venue": "CVPR",
+  "paperUrl": "https://arxiv.org/abs/2303.13825",
+  "projectPage": "",
+  "codeUrl": "",
+  "representation": [
+    "Template",
+    "NeRF"
+  ],
+  "motion": [
+    "Articulation",
+    "Deformation"
+  ],
+  "prior": "Input",
+  "inputCondition": "Multi-view",
+  "trainingStrategy": "Per-scene",
+  "interactionType": "Hand-Hand",
+  "task": "Hand",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": false,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{guo2023handnerf,\n  title={HandNeRF: Neural Radiance Fields for Animatable Interacting Hands},\n  author={Guo, Zhiyang and Zhou, Wengang and Wang, Min and Li, Li and Li, Houqiang},\n  booktitle={CVPR},\n  year={2023}\n}",
+  "bibkey": "guo2023handnerf"
+}

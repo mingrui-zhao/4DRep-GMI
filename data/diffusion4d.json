@@ -13,7 +13,7 @@
   "codeUrl": "https://github.com/VITA-Group/Diffusion4D",
   "tags": [],
   "motion": "Deformation",
-  "codeAvailability": false,
+  "codeAvailability": true,
   "interaction": "",
   "bibtex": "@article{liang2024diffusion4d,   title={Diffusion4d: Fast spatial-temporal consistent 4d generation via video diffusion models},   author={Liang, Hanwen and Yin, Yuyang and Xu, Dejia and Liang, Hanxue and Wang, Zhangyang and Plataniotis, Konstantinos N and Zhao, Yao and Wei, Yunchao},   journal={NeurIPS},   year={2024} }",
   "title": "Diffusion4d: Fast spatial-temporal consistent 4d generation via video diffusion models",

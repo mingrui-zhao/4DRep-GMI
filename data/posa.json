@@ -1,0 +1,33 @@
+{
+  "title": "Populating 3D Scenes by Learning Human-Scene Interaction",
+  "authors": [
+    "Mohamed Hassan",
+    "Partha Ghosh",
+    "Joachim Tesch",
+    "Dimitrios Tzionas",
+    "Michael J. Black"
+  ],
+  "year": "2021",
+  "venue": "CVPR",
+  "paperUrl": "https://arxiv.org/abs/2012.11581",
+  "projectPage": "https://posa.is.tue.mpg.de/",
+  "codeUrl": "https://github.com/mohamedhassanmus/POSA",
+  "representation": [
+    "Template"
+  ],
+  "motion": [],
+  "prior": "TD",
+  "inputCondition": "Mesh+Scene",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "HSI",
+  "task": "Human",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{hassan2021populating,\n  title={Populating 3D Scenes by Learning Human-Scene Interaction},\n  author={Hassan, Mohamed and Ghosh, Partha and Tesch, Joachim and Tzionas, Dimitrios and Black, Michael J.},\n  booktitle={CVPR},\n  year={2021}\n}",
+  "bibkey": "POSA"
+}

@@ -9,7 +9,10 @@
   "paperUrl": "https://arxiv.org/abs/2412.12093",
   "codeUrl": "https://github.com/felixtaubner/cap4d",
   "tags": [],
-  "motion": "Deformation",
+  "motion": [
+    "Articulation",
+    "Deformation"
+  ],
   "codeAvailability": true,
   "interaction": "",
   "bibtex": "@inproceedings{taubner2025cap4d, author    = {Taubner, Felix and Zhang, Ruihang and Tuli, Mathieu and Lindell, David B.},     title     = {CAP4D: Creating Animatable 4D Portrait Avatars with Morphable Multi-View Diffusion Models},     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},     month     = {June},     year      = {2025},     pages     = {5318-5330} }",
@@ -23,5 +26,9 @@
   "year": "2025",
   "venue": "CVPR",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "taubner2025cap4d",
+  "prior": "FM+TD",
+  "inputCondition": "Image",
+  "trainingStrategy": "Hybrid"
 }

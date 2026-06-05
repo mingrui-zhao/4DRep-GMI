@@ -1,0 +1,38 @@
+{
+  "title": "FORCE: Dataset and Method for Intuitive Physics Guided Human-object Interaction",
+  "authors": [
+    "Xiaohan Zhang",
+    "Bharat Lal Bhatnagar",
+    "Sebastian Starke",
+    "Ilya Petrov",
+    "Vladimir Guzov",
+    "Helisa Dhamo",
+    "Eduardo Pérez-Pellitero",
+    "Gerard Pons-Moll"
+  ],
+  "year": "2025",
+  "venue": "3DV",
+  "paperUrl": "https://arxiv.org/abs/2403.11237",
+  "projectPage": "https://virtualhumans.mpi-inf.mpg.de/force/",
+  "codeUrl": "https://github.com/xz6014/FORCE_dataset",
+  "representation": [
+    "Template"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "TD",
+  "inputCondition": "Action+Object",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "HOI",
+  "task": "Human",
+  "category": [],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "@inproceedings{zhang2025force,\n  title={FORCE: Dataset and Method for Intuitive Physics Guided Human-object Interaction},\n  author={Zhang, Xiaohan and Bhatnagar, Bharat Lal and Starke, Sebastian and Petrov, Ilya and Guzov, Vladimir and Dhamo, Helisa and P{\\'e}rez-Pellitero, Eduardo and Pons-Moll, Gerard},\n  booktitle={3DV},\n  year={2025}\n}",
+  "bibkey": "FORCEIntuitivePhysics"
+}

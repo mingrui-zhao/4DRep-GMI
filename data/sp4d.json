@@ -7,10 +7,12 @@
   "category": "Video-to-4D",
   "projectPage": "https://stablepartdiffusion4d.github.io/",
   "paperUrl": "https://arxiv.org/abs/2509.10687",
-  "codeUrl": "https://stablepartdiffusion4d.github.io/#",
+  "codeUrl": "https://github.com/Stability-AI/generative-models/tree/sp4d",
   "tags": [],
-  "motion": "Articulation",
-  "codeAvailability": false,
+  "motion": [
+    "Articulation"
+  ],
+  "codeAvailability": true,
   "interaction": "",
   "bibtex": "@article{zhang2025stable,   title={Stable Part Diffusion 4D: Multi-View RGB and Kinematic Parts Video Generation},   author={Zhang, Hao and Yao, Chun-Han and Donne, Simon and Ahuja, Narendra and Jampani, Varun},   journal={NeurIPS},   year={2025} }",
   "title": "Stable Part Diffusion 4D: Multi-View RGB and Kinematic Parts Video Generation",
@@ -24,5 +26,9 @@
   "year": "2025",
   "venue": "NeurIPS",
   "dataset": false,
-  "survey": false
+  "survey": false,
+  "bibkey": "zhang2025sp4d",
+  "prior": "FM+TD",
+  "inputCondition": "Video",
+  "trainingStrategy": "Hybrid"
 }
