@@ -1,0 +1,38 @@
+{
+  "title": "FreeArt3D: Training-Free Articulated Object Generation using 3D Diffusion",
+  "authors": [
+    "Chuhao Chen",
+    "Isabella Liu",
+    "Xinyue Wei",
+    "Hao Su",
+    "Minghua Liu"
+  ],
+  "year": "2025",
+  "venue": "SIGGRAPH Asia",
+  "paperUrl": "https://arxiv.org/abs/2510.25765",
+  "projectPage": "https://czzzzh.github.io/FreeArt3D",
+  "codeUrl": "https://github.com/CzzzzH/FreeArt3D",
+  "representation": [
+    "Mesh",
+    "Part"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "FM",
+  "inputCondition": "Multi-view",
+  "trainingStrategy": "Per-scene",
+  "interactionType": "",
+  "task": "Object",
+  "category": [
+    "Image-to-4D"
+  ],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "",
+  "bibkey": ""
+}

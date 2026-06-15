@@ -22,7 +22,11 @@
     ·
     <a href="https://www.cs.sfu.ca/~haoz/" target="_blank"><strong>Hao (Richard) Zhang</strong></a>
     <br />
-    <i>ArXiv, 2025</i>    
+    <i>Computer Graphics Forum (CGF), 2026</i>    
+  </p>
+
+  <p align="center">
+    <b>🎉 Accepted to Computer Graphics Forum (CGF) 2026!</b>
   </p>
 
   <p align="center">
@@ -141,13 +145,11 @@ backward-compatible additions.
 If you found our survey helpful, please consider citing:
 
 ```bibtex
-@misc{zhao2025advances4drepresentationgeometry,
-      title={Advances in 4D Representation: Geometry, Motion, and Interaction}, 
+@article{zhao2026advances4drepresentation,
+      title={Advances in 4D Representation: Geometry, Motion, and Interaction},
       author={Mingrui Zhao and Sauradip Nag and Kai Wang and Aditya Vora and Guangda Ji and Peter Chun and Ali Mahdavi-Amiri and Hao Zhang},
-      year={2025},
-      eprint={2510.19255},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2510.19255}, 
+      journal={Computer Graphics Forum},
+      year={2026},
+      url={https://arxiv.org/abs/2510.19255},
 }
 ```

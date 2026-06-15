@@ -1,0 +1,39 @@
+{
+  "title": "4DGT: Learning a 4D Gaussian Transformer Using Real-World Monocular Videos",
+  "authors": [
+    "Zhen Xu",
+    "Zhengqin Li",
+    "Zhao Dong",
+    "Xiaowei Zhou",
+    "Richard Newcombe",
+    "Zhaoyang Lv"
+  ],
+  "year": "2025",
+  "venue": "NeurIPS",
+  "paperUrl": "https://arxiv.org/abs/2506.08015",
+  "projectPage": "https://4dgt.github.io",
+  "codeUrl": "",
+  "representation": [
+    "Gaussian Splatting"
+  ],
+  "motion": [
+    "Space-Time",
+    "Deformation"
+  ],
+  "prior": "TD",
+  "inputCondition": "Video",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "",
+  "task": "Scene",
+  "category": [
+    "Video-to-4D"
+  ],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": false,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "",
+  "bibkey": ""
+}

@@ -1,0 +1,38 @@
+{
+  "title": "iTACO: Interactable Digital Twins of Articulated Objects from Casually Captured RGBD Videos",
+  "authors": [
+    "Weikun Peng",
+    "Jun Lv",
+    "Cewu Lu",
+    "Manolis Savva"
+  ],
+  "year": "2025",
+  "venue": "3DV",
+  "paperUrl": "https://arxiv.org/abs/2506.08334",
+  "projectPage": "https://3dlg-hcvc.github.io/video2articulation/",
+  "codeUrl": "",
+  "representation": [
+    "Part",
+    "Mesh",
+    "Point Cloud"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "Input",
+  "inputCondition": "Video",
+  "trainingStrategy": "Per-scene",
+  "interactionType": "",
+  "task": "Object",
+  "category": [
+    "Video-to-4D"
+  ],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": false,
+  "dataset": true,
+  "survey": false,
+  "doi": "",
+  "bibtex": "",
+  "bibkey": ""
+}

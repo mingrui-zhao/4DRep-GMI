@@ -1,0 +1,39 @@
+{
+  "title": "GenHSI: Controllable Generation of Human-Scene Interaction Videos",
+  "authors": [
+    "Zekun Li",
+    "Rui Zhou",
+    "Rahul Sajnani",
+    "Xiaoyan Cong",
+    "Daniel Ritchie",
+    "Srinath Sridhar"
+  ],
+  "year": "2025",
+  "venue": "ArXiv",
+  "paperUrl": "https://arxiv.org/abs/2506.19840",
+  "projectPage": "",
+  "codeUrl": "",
+  "representation": [
+    "Template",
+    "Gaussian Splatting"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "FM+LLM+Human",
+  "inputCondition": "Text+Image",
+  "trainingStrategy": "Hybrid",
+  "interactionType": "HSI",
+  "task": "Human",
+  "category": [
+    "Image-to-4D"
+  ],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": false,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "",
+  "bibkey": ""
+}

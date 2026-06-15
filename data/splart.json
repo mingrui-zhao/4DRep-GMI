@@ -1,0 +1,40 @@
+{
+  "title": "SplArt: Articulation Estimation and Part-Level Reconstruction with 3D Gaussian Splatting",
+  "authors": [
+    "Shengjie Lin",
+    "Jiading Fang",
+    "Muhammad Zubair Irshad",
+    "Vitor Campagnolo Guizilini",
+    "Rares Andrei Ambrus",
+    "Greg Shakhnarovich",
+    "Matthew R. Walter"
+  ],
+  "year": "2025",
+  "venue": "ArXiv",
+  "paperUrl": "https://arxiv.org/abs/2506.03594",
+  "projectPage": "",
+  "codeUrl": "https://github.com/ripl/splart",
+  "representation": [
+    "Gaussian Splatting",
+    "Part"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "Input",
+  "inputCondition": "Multi-view",
+  "trainingStrategy": "Per-scene",
+  "interactionType": "",
+  "task": "Object",
+  "category": [
+    "Image-to-4D"
+  ],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "",
+  "bibkey": ""
+}

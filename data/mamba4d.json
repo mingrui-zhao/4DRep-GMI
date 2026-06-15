@@ -1,0 +1,39 @@
+{
+  "title": "Mamba4D: Efficient 4D Point Cloud Video Understanding with Disentangled Spatial-Temporal State Space Models",
+  "authors": [
+    "Jiuming Liu",
+    "Jinru Han",
+    "Lihao Liu",
+    "Angelica I. Aviles-Rivero",
+    "Chaokang Jiang",
+    "Zhe Liu",
+    "Hesheng Wang"
+  ],
+  "year": "2025",
+  "venue": "CVPR",
+  "paperUrl": "https://arxiv.org/abs/2405.14338",
+  "projectPage": "",
+  "codeUrl": "https://github.com/IRMVLab/Mamba4D",
+  "representation": [
+    "Point Cloud"
+  ],
+  "motion": [
+    "Space-Time"
+  ],
+  "prior": "TD",
+  "inputCondition": "Point Cloud",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "",
+  "task": "Scene",
+  "category": [
+    "4D understanding"
+  ],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "",
+  "bibkey": ""
+}

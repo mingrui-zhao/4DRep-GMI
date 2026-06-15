@@ -1,0 +1,36 @@
+{
+  "title": "TAPIP3D: Tracking Any Point in Persistent 3D Geometry",
+  "authors": [
+    "Bowei Zhang",
+    "Lei Ke",
+    "Adam W. Harley",
+    "Katerina Fragkiadaki"
+  ],
+  "year": "2025",
+  "venue": "NeurIPS",
+  "paperUrl": "https://arxiv.org/abs/2504.14717",
+  "projectPage": "https://tapip3d.github.io",
+  "codeUrl": "https://github.com/zbw001/TAPIP3D",
+  "representation": [
+    "Point Cloud"
+  ],
+  "motion": [
+    "Tracking"
+  ],
+  "prior": "TD",
+  "inputCondition": "Video",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "",
+  "task": "Scene",
+  "category": [
+    "4D understanding"
+  ],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": true,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "",
+  "bibkey": ""
+}

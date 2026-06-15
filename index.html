@@ -331,7 +331,7 @@
                 <a href="https://arash-mham.github.io/" class="author-link" target="_blank" rel="noopener">Ali Mahdavi-Amiri</a>,
                 <a href="https://www.cs.sfu.ca/~haoz/" class="author-link" target="_blank" rel="noopener">Hao (Richard) Zhang</a>
             </div>
-            <div class="venue-line">ArXiv, 2025</div>
+            <div class="venue-line">🎉 Accepted to Computer Graphics Forum (CGF), 2026</div>
 
             <div class="header-actions">
                 <a href="https://arxiv.org/abs/2510.19255" class="btn btn-primary" target="_blank" rel="noopener">📄 Read the Paper</a>
@@ -364,13 +364,11 @@
                 <details class="info">
                     <summary>📚 Cite this survey</summary>
                     <div class="info-body">
-                        <div class="bibtex-box" id="citeBox">@misc{zhao2025advances4drepresentationgeometry,
+                        <div class="bibtex-box" id="citeBox">@article{zhao2026advances4drepresentation,
   title={Advances in 4D Representation: Geometry, Motion, and Interaction},
   author={Mingrui Zhao and Sauradip Nag and Kai Wang and Aditya Vora and Guangda Ji and Peter Chun and Ali Mahdavi-Amiri and Hao Zhang},
-  year={2025},
-  eprint={2510.19255},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
+  journal={Computer Graphics Forum},
+  year={2026},
   url={https://arxiv.org/abs/2510.19255},
 }<button class="copy-mini" type="button" data-copy-target="citeBox">Copy</button></div>
                     </div>
@@ -437,7 +435,7 @@
 
     <script>
     // Stamped by scripts/build_bundle.py for cache-busting.
-    const DATA_VERSION = "e0dfd71514";
+    const DATA_VERSION = "025f8a1e1a";
     (function () {
         "use strict";
 
@@ -476,7 +474,7 @@
                 _authors: asArray(p.authors),
                 _code: p.codeAvailability === true,
                 _hasRepo: !!p.codeUrl,
-                _kind: p.dataset === true ? "dataset" : (p.survey === true ? "survey" : "method"),
+                _kinds: (p.survey === true ? ["survey"] : ["method"]).concat(p.dataset === true ? ["dataset"] : []),
                 _yearNum: parseInt(p.year, 10) || 0,
                 _search: [p.title, asArray(p.authors).join(" "), p.venue,
                           asArray(p.representation).join(" "), asArray(p.motion).join(" "),
@@ -531,7 +529,7 @@
             if (f["f-year"] && String(p.year) !== f["f-year"]) return false;
             if (f["f-code"] === "yes" && !p._code) return false;
             if (f["f-code"] === "no" && p._code) return false;
-            if (f["f-kind"] && p._kind !== f["f-kind"]) return false;
+            if (f["f-kind"] && !p._kinds.includes(f["f-kind"])) return false;
             return true;
         }
         function sortPapers(list) {

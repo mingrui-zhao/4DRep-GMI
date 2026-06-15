@@ -1,0 +1,38 @@
+{
+  "title": "GenHOI: Generalizing Text-driven 4D Human-Object Interaction Synthesis for Unseen Objects",
+  "authors": [
+    "Shujia Li",
+    "Haiyu Zhang",
+    "Xinyuan Chen",
+    "Yaohui Wang",
+    "Yutong Ban"
+  ],
+  "year": "2025",
+  "venue": "ArXiv",
+  "paperUrl": "https://arxiv.org/abs/2506.15483",
+  "projectPage": "",
+  "codeUrl": "",
+  "representation": [
+    "Template",
+    "Mesh"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "TD+Human",
+  "inputCondition": "Text+Object",
+  "trainingStrategy": "Feed-forward",
+  "interactionType": "HOI",
+  "task": "Human",
+  "category": [
+    "Text-to-4D"
+  ],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": false,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "",
+  "bibkey": ""
+}

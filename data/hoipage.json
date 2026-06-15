@@ -1,0 +1,36 @@
+{
+  "title": "HOI-PAGE: Zero-Shot Human-Object Interaction Generation with Part Affordance Guidance",
+  "authors": [
+    "Lei Li",
+    "Angela Dai"
+  ],
+  "year": "2025",
+  "venue": "ArXiv",
+  "paperUrl": "https://arxiv.org/abs/2506.07209",
+  "projectPage": "https://craigleili.github.io/projects/hoipage/",
+  "codeUrl": "",
+  "representation": [
+    "Template",
+    "Part",
+    "Graph"
+  ],
+  "motion": [
+    "Articulation"
+  ],
+  "prior": "FM+LLM",
+  "inputCondition": "Text+Mesh",
+  "trainingStrategy": "Per-scene",
+  "interactionType": "HOI",
+  "task": "Human",
+  "category": [
+    "Text-to-4D"
+  ],
+  "tags": [],
+  "interaction": "",
+  "codeAvailability": false,
+  "dataset": false,
+  "survey": false,
+  "doi": "",
+  "bibtex": "",
+  "bibkey": ""
+}
