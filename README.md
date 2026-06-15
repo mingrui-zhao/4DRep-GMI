@@ -40,105 +40,97 @@ We present a comprehensive survey on 4D generation and reconstruction, a fast-ev
 
 ## About This Survey
 
-## 📊 Survey Statistics
+Rather than enumerate every paper in the field, we curate **representative** works and
+read them through a single lens — the **4D representation** that models 3D geometry
+evolving over time. We organize the field around three pillars:
 
-- **Total Papers:** 76+ papers
-- **Representation Types:** NeRF, Gaussian Splatting, Mesh, Point Cloud, Voxel, Template, Graph
-- **Task Categories:** Scene, Object, Human, Face, Hand
-- **Input Modalities:** Text-to-4D, Image-to-4D, Video-to-4D, Point-to-4D, Mesh-to-4D, 3D-to-4D
-- **Motion Types:** Deformation, Articulation, Space-Time, Tracking, Scene Graph
+- **Geometry** — how a method represents shape (Mesh, Point Cloud, NeRF, Gaussian
+  Splatting, Template, Part, Graph, …).
+- **Motion** — how that geometry changes over time (deformation, articulation,
+  tracking, space-time, per-frame).
+- **Interaction** — how moving 3D entities interact with each other and the world
+  (human–object, human–scene, hand–object, and the pose / contact / affordance /
+  physical-regulation aspects involved).
 
-## 🚀 Submit Your Paper
+The companion **[interactive project page](https://mingrui-zhao.github.io/4DRep-GMI/)**
+turns this taxonomy into a living, searchable catalog that stays up to date as the
+field moves.
 
-We welcome contributions to this survey! If you have a paper related to 4D representations, dynamic 3D content, or spatiotemporal 3D understanding, please submit it using our GitHub issue template.
+## 🔎 Explore the Interactive Survey
 
-### How to Submit
+Visit the **[project page](https://mingrui-zhao.github.io/4DRep-GMI/)** to browse every
+paper interactively:
 
-1. **Go to the [Issues](https://github.com/your-username/4D-Survey/issues) page**
-2. **Click "New Issue"**
-3. **Select "Submit Paper to 4D Survey" template**
-4. **Fill in all required fields:**
-   - Paper title, authors, year, venue
-   - Paper URL and project page (if available)
-   - Code repository (if available)
-   - Representation type, task, and category
-   - Motion type and interaction capabilities
-   - Complete BibTeX entry
-   - Teaser image (PNG format only)
-5. **Submit the issue**
+- **Search & filter** across the full taxonomy — geometry, motion, generative prior,
+  input condition, training strategy, interaction type, target, venue, year, and code
+  availability.
+- **Grid ⇄ table views** — scan rich cards with teaser figures, or switch to a dense,
+  sortable comparison table.
+- **Color-coded tags & legend** so each geometry family is recognizable at a glance.
+- **Dark mode, mobile-friendly, and fast** — the whole catalog loads in a single
+  request, with one-click BibTeX for every entry.
 
-### Submission Requirements
+## 📊 At a Glance
 
-#### Required Information
-- **Paper Title:** Full title of your paper
-- **Authors:** All authors in "Firstname Lastname" format
-- **Publication Details:** Year, venue, paper URL
-- **Technical Classification:** Representation type, task, category, motion type
-- **BibTeX Entry:** Complete citation in BibTeX format
-- **Teaser Image:** PNG image showing your results
+- **113 representative works** — including **14** with dataset contributions, **3**
+  surveys, and **22** interaction-centered methods; **85** ship public code.
+- **Geometry:** Mesh · Point Cloud · NeRF · Gaussian Splatting · Template · Part ·
+  Graph · Image
+- **Motion:** Deformation · Articulation · Tracking · Space-Time · Per-frame · Scene Graph
+- **Generative prior:** Foundation Model (FM) · Trained-on-own-Data (TD) · Input-only ·
+  LLM · Human-template — including cascades such as `FM+TD`
+- **Input condition:** Text · Image · Video · Multi-view · Point Cloud · Mesh · …
+- **Training strategy:** Per-scene · Feed-forward · Hybrid
+- **Interaction:** HOI (human–object) · HSI (human–scene) · HHI (human–human) ·
+  Hand–object, with pose / contact / affordance / physical-regulation aspects
+- **Targets:** Scene · Object · Human · Hand
 
-#### Optional Information
-- **Project Page:** Official project webpage
-- **Code Repository:** GitHub or other code repository
-- **Interaction Method:** How the interactions are modeled, if any
+## 🚀 Contribute Your Paper
 
+We welcome contributions! If you have a paper on 4D representations, dynamic 3D
+content, or spatiotemporal 3D understanding, add it in a few clicks — no coding needed.
 
-#### Image Requirements
-- **Format:** PNG only 
-- **Naming:** Should be `[paper-name].png` (e.g., `in24d.png`)
+1. Open the **[paper submission form](https://github.com/mingrui-zhao/4DRep-GMI/issues/new?template=submit_paper.yml)**
+   (a guided GitHub issue template).
+2. Fill in the details:
+   - **Required:** title, authors, year, venue, paper URL, BibTeX, and the taxonomy
+     tags (geometry, motion, target, category).
+   - **Recommended:** project page, code repository, generative prior, input condition,
+     training strategy, and interaction type — the same axes used throughout the survey.
+   - **Teaser image:** a PNG named `[paper-name].png` (e.g. `in24d.png`).
+3. Submit. Our automation converts the issue into a paper record and opens a pull
+   request; we review it for relevance and accuracy before it appears on the site.
 
-### Review Process
+You can also use the same form to flag a **correction** (e.g. a mis-tagged paper) or an
+**update** (code released, new venue).
 
-1. **Automatic Processing:** Your submission will be automatically processed and converted to our JSON format
-2. **Pull Request Creation:** A pull request will be created with your paper data
-3. **Review:** We'll review the submission for relevance and completeness
-4. **Approval:** If approved, your paper will be added to the survey
-5. **Notification:** You'll be notified when your paper is included
+## 📁 How This Repository Is Organized
 
-## 📁 Repository Structure
+This is a dependency-light **static website** — no framework, no server — designed to
+load fast and stay easy to maintain.
 
 ```
-4D-Survey/
-├── data/                           # Paper data
-│   ├── 4d-fy.json                 # Individual paper data (editable source of truth)
-│   ├── 4dgs.json
-│   ├── ...
-│   ├── paper-list.json            # Per-paper file manifest
-│   └── papers.json                # GENERATED consolidated bundle (loaded by the site)
-├── images/                         # Paper teaser images
-├── scripts/                        # Build & sync tooling (Python, no deps)
-│   ├── tex_lib.py                 # Shared LaTeX-table parser + vocabularies
-│   ├── tex_sync.py                # Sync tags from the LaTeX source-of-truth tables
-│   ├── build_bundle.py            # Compile data/*.json -> data/papers.json (+ validate)
-│   ├── check_drift.py             # Flag drift between the .tex tables and the JSON
-│   └── devserver.py               # Local static preview server
-├── process_submission.py           # Convert GitHub-issue submissions -> data/<name>.json
-├── RECONCILIATION.md               # Generated tag reconciliation report
-└── index.html                      # Survey website (single static page)
+4DRep-GMI/
+├── index.html      # The entire website: one self-contained page
+├── data/           # The paper catalog
+│   ├── <paper>.json    # One editable record per paper (the source of truth)
+│   └── papers.json     # A single bundled file the website loads in one request
+├── images/         # Optimized WebP teaser figures (lazy-loaded)
+└── scripts/        # Small helpers that assemble the bundle and keep tags consistent
 ```
 
-### 🛠️ Building the site
+**The pipeline, briefly:** each paper lives as its own small JSON record. A build step
+compiles those records into one consolidated `papers.json` so the page loads everything
+in a single fast request, validates the taxonomy, and optimizes teaser images to
+lightweight WebP. The taxonomy tags mirror the tables in the published survey, and a
+consistency check keeps the website and the paper in agreement. Contributions through
+the form above flow through this same pipeline automatically.
 
-The website loads **one** file — `data/papers.json` — for fast startup. The per-paper
-`data/*.json` files remain the editable source of truth; the bundle is generated:
+## 📫 Contact
 
-```bash
-python scripts/build_bundle.py     # compile + validate + cache-bust index.html
-python scripts/build_bundle.py --check   # validate only (CI)
-```
-
-The taxonomy tags (Geometry / Motion / Generative Prior / Input Condition /
-Training Strategy / Interaction Type) are kept in sync with the LaTeX survey
-tables. To re-sync after the tables change and verify there is no drift:
-
-```bash
-python scripts/tex_sync.py         # writes tags into data/*.json + RECONCILIATION.md
-python scripts/check_drift.py      # exits non-zero if JSON != .tex tables
-```
-
-Each paper JSON additionally carries the fields `prior`, `inputCondition`,
-`trainingStrategy`, and (for interaction papers) `interactionType` — all
-backward-compatible additions.
+Questions, corrections, or suggestions are very welcome — open an issue or email
+**[mza143@sfu.ca](mailto:mza143@sfu.ca)**. If you find this resource useful, please
+consider giving the repo a ⭐.
 
 ## Citation
 
